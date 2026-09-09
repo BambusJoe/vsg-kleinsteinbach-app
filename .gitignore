@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+# Node
+node_modules/
+# Build-/Deploy-Artefakte (werden erzeugt)
+*.zip
+artifact.html
+# lokale Zwischendateien
+/tmp/

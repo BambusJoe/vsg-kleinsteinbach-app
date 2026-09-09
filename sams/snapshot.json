@@ -1,0 +1,5404 @@
+{
+ "season": "2026/27",
+ "generatedAt": "2026-09-08T18:03:41.665Z",
+ "club": "VSG Kleinsteinbach",
+ "teams": {
+  "h1": {
+   "badge": "H1",
+   "name": "Herren 1 · Eisvögel",
+   "league": "Oberliga Baden Männer",
+   "j": false,
+   "short": "Herren 1",
+   "pos": 2,
+   "stats": [
+    [
+     "–",
+     "Platz"
+    ],
+    [
+     "0–0",
+     "Bilanz"
+    ],
+    [
+     "0:0",
+     "Sätze"
+    ]
+   ],
+   "table": [
+    {
+     "p": 1,
+     "t": "VfR Merzhausen 1",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 2,
+     "t": "VSG Kleinsteinbach",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": true
+    },
+    {
+     "p": 3,
+     "t": "VSG KiLa",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 4,
+     "t": "VSG Ettlingen/Rüppurr",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 5,
+     "t": "USC Freiburg",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "TV Kappelrodeck",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 7,
+     "t": "SG Sinsheim/Helmstadt",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "FT 1844 Freiburg 4",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "FT 1844 Freiburg 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 10,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    }
+   ],
+   "games": [
+    {
+     "d": "26.09.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VSG Ettlingen/Rüppurr",
+     "today": false,
+     "t": "14:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "03.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "SG Sinsheim/Helmstadt",
+     "today": false,
+     "t": "19:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Sinsheim"
+    },
+    {
+     "d": "10.10.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VSG KiLa",
+     "today": false,
+     "t": "14:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "17.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "FT 1844 Freiburg 4",
+     "today": false,
+     "t": "16:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Freiburg"
+    },
+    {
+     "d": "31.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "today": false,
+     "t": "19:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "08.11.",
+     "wd": "So",
+     "h": true,
+     "o": "FT 1844 Freiburg 3",
+     "today": false,
+     "t": "12:30",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "15.11.",
+     "wd": "So",
+     "h": true,
+     "o": "TV Kappelrodeck",
+     "today": false,
+     "t": "16:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "21.11.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VfR Merzhausen 1",
+     "today": false,
+     "t": "19:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Merzhausen"
+    },
+    {
+     "d": "28.11.",
+     "wd": "Sa",
+     "h": false,
+     "o": "USC Freiburg",
+     "today": false,
+     "t": "16:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Freiburg"
+    },
+    {
+     "d": "13.12.",
+     "wd": "So",
+     "h": true,
+     "o": "SG Sinsheim/Helmstadt",
+     "today": false,
+     "t": "12:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "23.01.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VSG Ettlingen/Rüppurr",
+     "today": false,
+     "t": "19:30",
+     "sub": "Oberliga Baden Männer · Auswärts · Karlsruhe-Rüppurr"
+    },
+    {
+     "d": "30.01.",
+     "wd": "Sa",
+     "h": true,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "today": false,
+     "t": "19:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "07.02.",
+     "wd": "So",
+     "h": true,
+     "o": "FT 1844 Freiburg 4",
+     "today": false,
+     "t": "12:30",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "13.02.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TV Kappelrodeck",
+     "today": false,
+     "t": "20:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Kappelrodeck"
+    },
+    {
+     "d": "20.02.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VfR Merzhausen 1",
+     "today": false,
+     "t": "15:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "07.03.",
+     "wd": "So",
+     "h": true,
+     "o": "USC Freiburg",
+     "today": false,
+     "t": "16:00",
+     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "14.03.",
+     "wd": "So",
+     "h": false,
+     "o": "VSG KiLa",
+     "today": false,
+     "t": "14:00",
+     "sub": "Oberliga Baden Männer · Auswärts · Kippenheim"
+    },
+    {
+     "d": "20.03.",
+     "wd": "Sa",
+     "h": false,
+     "o": "FT 1844 Freiburg 3",
+     "today": false,
+     "t": "19:30",
+     "sub": "Oberliga Baden Männer · Auswärts · Freiburg"
+    }
+   ],
+   "matchdays": [
+    {
+     "no": 1,
+     "date": "2026-09-26",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "date": "2026-10-03",
+     "matches": [
+      {
+       "h": "USC Freiburg",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "16:30",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "date": "2026-10-10",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "date": "2026-10-17",
+     "matches": [
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "date": "2026-10-31",
+     "matches": [
+      {
+       "h": "USC Freiburg",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "date": "2026-11-08",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "12:30",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "date": "2026-11-08",
+     "matches": [
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "17:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "date": "2026-11-14",
+     "matches": [
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "date": "2026-11-21",
+     "matches": [
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "16:30",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "date": "2026-12-12",
+     "matches": [
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "date": "2027-01-09",
+     "matches": [
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "date": "2027-01-16",
+     "matches": [
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "12:30",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "date": "2027-01-22",
+     "matches": [
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:30",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "date": "2027-01-30",
+     "matches": [
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "date": "2027-02-13",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "20:00",
+       "own": true
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "date": "2027-02-20",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "17:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "date": "2027-03-06",
+     "matches": [
+      {
+       "h": "VfR Merzhausen 1",
+       "a": "FT 1844 Freiburg 3",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TV Kappelrodeck",
+       "a": "SG Sinsheim/Helmstadt",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "USC Freiburg",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr",
+       "a": "FT 1844 Freiburg 4",
+       "r": null,
+       "t": "16:30",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "date": "2027-03-20",
+     "matches": [
+      {
+       "h": "FT 1844 Freiburg 4",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "USC Freiburg",
+       "a": "VSG Ettlingen/Rüppurr",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "VfR Merzhausen 1",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FT 1844 Freiburg 3",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:30",
+       "own": true
+      },
+      {
+       "h": "VSG KiLa",
+       "a": "TV Kappelrodeck",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      }
+     ]
+    }
+   ]
+  },
+  "d2": {
+   "badge": "D2",
+   "name": "Damen 2",
+   "league": "Landesliga Frauen 2",
+   "j": false,
+   "short": "Damen 2",
+   "pos": 1,
+   "stats": [
+    [
+     "–",
+     "Platz"
+    ],
+    [
+     "0–0",
+     "Bilanz"
+    ],
+    [
+     "0:0",
+     "Sätze"
+    ]
+   ],
+   "table": [
+    {
+     "p": 1,
+     "t": "VSG Kleinsteinbach 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": true
+    },
+    {
+     "p": 2,
+     "t": "VSG Hochstetten-Liedolsheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 3,
+     "t": "VSG Ettlingen/Rüppurr 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 4,
+     "t": "VC Mönsheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 5,
+     "t": "SV KA-Beiertheim 5",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "SG Ersingen-Ispringen-Pforzheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 7,
+     "t": "Post Südstadt Karlsruhe",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "KIT Sport-Club 2010",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "FT Forchheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 10,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    }
+   ],
+   "games": [
+    {
+     "d": "03.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "FT Forchheim",
+     "today": false,
+     "t": "13:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Rheinstetten, Mörsch"
+    },
+    {
+     "d": "11.10.",
+     "wd": "So",
+     "h": false,
+     "o": "VC Mönsheim",
+     "today": false,
+     "t": "13:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Mönsheim"
+    },
+    {
+     "d": "24.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Karlsruhe-Waldstadt"
+    },
+    {
+     "d": "14.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VSG Ettlingen/Rüppurr 3",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "14.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VSG Hochstetten-Liedolsheim",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "22.11.",
+     "wd": "So",
+     "h": false,
+     "o": "SG Ersingen-Ispringen-Pforzheim",
+     "today": false,
+     "t": "11:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Pforzheim"
+    },
+    {
+     "d": "28.11.",
+     "wd": "Sa",
+     "h": false,
+     "o": "Post Südstadt Karlsruhe",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "05.12.",
+     "wd": "Sa",
+     "h": true,
+     "o": "KIT Sport-Club 2010",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "05.12.",
+     "wd": "Sa",
+     "h": true,
+     "o": "SV KA-Beiertheim 5",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "12.12.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VSG Hochstetten-Liedolsheim",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Dettenheim"
+    },
+    {
+     "d": "09.01.",
+     "wd": "Sa",
+     "h": true,
+     "o": "FT Forchheim",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "09.01.",
+     "wd": "Sa",
+     "h": true,
+     "o": "Post Südstadt Karlsruhe",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "24.01.",
+     "wd": "So",
+     "h": false,
+     "o": "VSG Ettlingen/Rüppurr 3",
+     "today": false,
+     "t": "11:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Ettlingen"
+    },
+    {
+     "d": "31.01.",
+     "wd": "So",
+     "h": false,
+     "o": "SG Ersingen-Ispringen-Pforzheim",
+     "today": false,
+     "t": "11:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Pforzheim"
+    },
+    {
+     "d": "14.02.",
+     "wd": "So",
+     "h": false,
+     "o": "SV KA-Beiertheim 5",
+     "today": false,
+     "t": "11:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "06.03.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VC Mönsheim",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "06.03.",
+     "wd": "Sa",
+     "h": true,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Frauen 2 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "13.03.",
+     "wd": "Sa",
+     "h": false,
+     "o": "KIT Sport-Club 2010",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Frauen 2 · Auswärts · Karlsruhe"
+    }
+   ],
+   "matchdays": [
+    {
+     "no": 1,
+     "date": "2026-10-03",
+     "matches": [
+      {
+       "h": "FT Forchheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "date": "2026-10-10",
+     "matches": [
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "date": "2026-10-24",
+     "matches": [
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "date": "2026-11-07",
+     "matches": [
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "date": "2026-11-22",
+     "matches": [
+      {
+       "h": "FT Forchheim",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "date": "2026-11-28",
+     "matches": [
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "date": "2026-12-05",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "date": "2026-12-12",
+     "matches": [
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "date": "2027-01-09",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "date": "2027-01-24",
+     "matches": [
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "date": "2027-01-30",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 3",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "10:30",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "10:30",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "date": "2027-02-13",
+     "matches": [
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Post Südstadt Karlsruhe",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "date": "2027-03-06",
+     "matches": [
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "date": "2027-03-13",
+     "matches": [
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 5",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Hochstetten-Liedolsheim",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "date": "2027-03-20",
+     "matches": [
+      {
+       "h": "VC Mönsheim",
+       "a": "Post Südstadt Karlsruhe",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "KIT Sport-Club 2010",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "VSG Hochstetten-Liedolsheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    }
+   ]
+  },
+  "h2": {
+   "badge": "H2",
+   "name": "Herren 2",
+   "league": "Landesliga Männer 2",
+   "j": false,
+   "short": "Herren 2",
+   "pos": 2,
+   "stats": [
+    [
+     "–",
+     "Platz"
+    ],
+    [
+     "0–0",
+     "Bilanz"
+    ],
+    [
+     "0:0",
+     "Sätze"
+    ]
+   ],
+   "table": [
+    {
+     "p": 1,
+     "t": "VT Hagsfeld",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 2,
+     "t": "VSG Kleinsteinbach 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": true
+    },
+    {
+     "p": 3,
+     "t": "TV Flehingen",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 4,
+     "t": "TSV Ötisheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 5,
+     "t": "TSG Blankenloch 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "TG Ötigheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 7,
+     "t": "NVV-Kader männlich",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "FT Forchheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 6",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 10,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 5",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    }
+   ],
+   "games": [
+    {
+     "d": "04.10.",
+     "wd": "So",
+     "h": true,
+     "o": "VT Hagsfeld",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "04.10.",
+     "wd": "So",
+     "h": true,
+     "o": "TSG Blankenloch 3",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "17.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TSV Ötisheim",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Ötisheim"
+    },
+    {
+     "d": "24.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 6",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "31.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "NVV-Kader männlich",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Karlsruhe-Waldstadt"
+    },
+    {
+     "d": "08.11.",
+     "wd": "So",
+     "h": false,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 5",
+     "today": false,
+     "t": "11:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "15.11.",
+     "wd": "So",
+     "h": false,
+     "o": "TG Ötigheim",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Ötigheim"
+    },
+    {
+     "d": "05.12.",
+     "wd": "Sa",
+     "h": true,
+     "o": "FT Forchheim",
+     "today": false,
+     "t": "13:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "05.12.",
+     "wd": "Sa",
+     "h": true,
+     "o": "TV Flehingen",
+     "today": false,
+     "t": "13:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "10.01.",
+     "wd": "So",
+     "h": true,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 6",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "10.01.",
+     "wd": "So",
+     "h": true,
+     "o": "TSV Ötisheim",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "23.01.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TSG Blankenloch 3",
+     "today": false,
+     "t": "13:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Stutensee-Blankenloch"
+    },
+    {
+     "d": "30.01.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VT Hagsfeld",
+     "today": false,
+     "t": "15:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Karlsruhe (Hagsfeld)"
+    },
+    {
+     "d": "06.03.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TV Flehingen",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Flehingen"
+    },
+    {
+     "d": "13.03.",
+     "wd": "Sa",
+     "h": true,
+     "o": "TG Ötigheim",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "13.03.",
+     "wd": "Sa",
+     "h": true,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 5",
+     "today": false,
+     "t": "14:00",
+     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+    },
+    {
+     "d": "21.03.",
+     "wd": "So",
+     "h": false,
+     "o": "FT Forchheim",
+     "today": false,
+     "t": "11:00",
+     "sub": "Landesliga Männer 2 · Auswärts · Rheinstetten, Mörsch"
+    }
+   ],
+   "matchdays": [
+    {
+     "no": 1,
+     "date": "2026-09-19",
+     "matches": [
+      {
+       "h": "NVV-Kader männlich",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "NVV-Kader männlich",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "date": "2026-10-03",
+     "matches": [
+      {
+       "h": "TG Ötigheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TG Ötigheim",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "date": "2026-10-11",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "TV Flehingen",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "date": "2026-10-24",
+     "matches": [
+      {
+       "h": "VT Hagsfeld",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VT Hagsfeld",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "date": "2026-11-07",
+     "matches": [
+      {
+       "h": "TV Flehingen",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "date": "2026-11-15",
+     "matches": [
+      {
+       "h": "TG Ötigheim",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TG Ötigheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VT Hagsfeld",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VT Hagsfeld",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "date": "2026-12-05",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "date": "2026-12-20",
+     "matches": [
+      {
+       "h": "TG Ötigheim",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "TG Ötigheim",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "date": "2027-01-23",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "TV Flehingen",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "date": "2027-01-30",
+     "matches": [
+      {
+       "h": "VT Hagsfeld",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VT Hagsfeld",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "date": "2027-03-06",
+     "matches": [
+      {
+       "h": "TV Flehingen",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TG Ötigheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TG Ötigheim",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "date": "2027-03-13",
+     "matches": [
+      {
+       "h": "VT Hagsfeld",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VT Hagsfeld",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 2",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "TSG Blankenloch 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TSV Ötisheim",
+       "a": "FT Forchheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "date": "2027-03-20",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "TV Flehingen",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 3",
+       "a": "TG Ötigheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 6",
+       "a": "TSV Ötisheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "VT Hagsfeld",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      }
+     ]
+    }
+   ]
+  },
+  "d1": {
+   "badge": "D1",
+   "name": "Damen 1",
+   "league": "Regionalliga Süd Frauen",
+   "j": false,
+   "short": "Damen 1",
+   "pos": 2,
+   "stats": [
+    [
+     "–",
+     "Platz"
+    ],
+    [
+     "0–0",
+     "Bilanz"
+    ],
+    [
+     "0:0",
+     "Sätze"
+    ]
+   ],
+   "table": [
+    {
+     "p": 1,
+     "t": "VfB Ulm",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 2,
+     "t": "VSG Kleinsteinbach",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": true
+    },
+    {
+     "p": 3,
+     "t": "USC Konstanz",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 4,
+     "t": "TV Rottenburg",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 5,
+     "t": "TSF Ditzingen",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "TG Biberach",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 7,
+     "t": "SV Fellbach",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "Heidelberger TV 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "FV Tübinger Modell",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 10,
+     "t": "DJK Schwäbisch Gmünd",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    }
+   ],
+   "games": [
+    {
+     "d": "04.10.",
+     "wd": "So",
+     "h": false,
+     "o": "FV Tübinger Modell",
+     "today": false,
+     "t": "16:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Tübingen"
+    },
+    {
+     "d": "10.10.",
+     "wd": "Sa",
+     "h": true,
+     "o": "TV Rottenburg",
+     "today": false,
+     "t": "19:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "17.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TG Biberach",
+     "today": false,
+     "t": "19:30",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Biberach"
+    },
+    {
+     "d": "31.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "SV Fellbach",
+     "today": false,
+     "t": "20:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Fellbach"
+    },
+    {
+     "d": "08.11.",
+     "wd": "So",
+     "h": true,
+     "o": "VfB Ulm",
+     "today": false,
+     "t": "16:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "15.11.",
+     "wd": "So",
+     "h": true,
+     "o": "TSF Ditzingen",
+     "today": false,
+     "t": "12:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "21.11.",
+     "wd": "Sa",
+     "h": false,
+     "o": "DJK Schwäbisch Gmünd",
+     "today": false,
+     "t": "19:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Schwäbisch Gmünd-Straßdorf"
+    },
+    {
+     "d": "29.11.",
+     "wd": "So",
+     "h": true,
+     "o": "Heidelberger TV 2",
+     "today": false,
+     "t": "12:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "13.12.",
+     "wd": "So",
+     "h": true,
+     "o": "FV Tübinger Modell",
+     "today": false,
+     "t": "16:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "20.12.",
+     "wd": "So",
+     "h": false,
+     "o": "USC Konstanz",
+     "today": false,
+     "t": "16:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Konstanz"
+    },
+    {
+     "d": "23.01.",
+     "wd": "Sa",
+     "h": false,
+     "o": "Heidelberger TV 2",
+     "today": false,
+     "t": "19:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Heidelberg"
+    },
+    {
+     "d": "30.01.",
+     "wd": "Sa",
+     "h": true,
+     "o": "SV Fellbach",
+     "today": false,
+     "t": "15:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "07.02.",
+     "wd": "So",
+     "h": true,
+     "o": "TG Biberach",
+     "today": false,
+     "t": "16:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "14.02.",
+     "wd": "So",
+     "h": false,
+     "o": "TSF Ditzingen",
+     "today": false,
+     "t": "16:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Ditzingen"
+    },
+    {
+     "d": "20.02.",
+     "wd": "Sa",
+     "h": true,
+     "o": "DJK Schwäbisch Gmünd",
+     "today": false,
+     "t": "19:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "07.03.",
+     "wd": "So",
+     "h": true,
+     "o": "USC Konstanz",
+     "today": false,
+     "t": "12:00",
+     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "14.03.",
+     "wd": "So",
+     "h": false,
+     "o": "TV Rottenburg",
+     "today": false,
+     "t": "12:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Rottenburg"
+    },
+    {
+     "d": "20.03.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VfB Ulm",
+     "today": false,
+     "t": "19:00",
+     "sub": "Regionalliga Süd Frauen · Auswärts · Ulm"
+    }
+   ],
+   "matchdays": [
+    {
+     "no": 1,
+     "date": "2026-10-03",
+     "matches": [
+      {
+       "h": "Heidelberger TV 2",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      },
+      {
+       "h": "TV Rottenburg",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "date": "2026-10-10",
+     "matches": [
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfB Ulm",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "date": "2026-10-17",
+     "matches": [
+      {
+       "h": "TV Rottenburg",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Heidelberger TV 2",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TG Biberach",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:30",
+       "own": true
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "date": "2026-10-24",
+     "matches": [
+      {
+       "h": "VfB Ulm",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "14:30",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "date": "2026-10-31",
+     "matches": [
+      {
+       "h": "Heidelberger TV 2",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "20:00",
+       "own": true
+      },
+      {
+       "h": "TG Biberach",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "date": "2026-11-08",
+     "matches": [
+      {
+       "h": "TV Rottenburg",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfB Ulm",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "date": "2026-11-08",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      },
+      {
+       "h": "Heidelberger TV 2",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "18:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "date": "2026-11-21",
+     "matches": [
+      {
+       "h": "Heidelberger TV 2",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "date": "2026-11-28",
+     "matches": [
+      {
+       "h": "VfB Ulm",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "TG Biberach",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "TV Rottenburg",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "date": "2026-12-12",
+     "matches": [
+      {
+       "h": "TG Biberach",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VfB Ulm",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "14:30",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "date": "2027-01-09",
+     "matches": [
+      {
+       "h": "TG Biberach",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "Heidelberger TV 2",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TV Rottenburg",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "date": "2027-01-16",
+     "matches": [
+      {
+       "h": "VfB Ulm",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "date": "2027-01-23",
+     "matches": [
+      {
+       "h": "Heidelberger TV 2",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "TG Biberach",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "TV Rottenburg",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "date": "2027-01-30",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfB Ulm",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "TV Rottenburg",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "date": "2027-02-13",
+     "matches": [
+      {
+       "h": "Heidelberger TV 2",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TG Biberach",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "date": "2027-02-20",
+     "matches": [
+      {
+       "h": "VfB Ulm",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TV Rottenburg",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      },
+      {
+       "h": "TG Biberach",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "date": "2027-03-06",
+     "matches": [
+      {
+       "h": "DJK Schwäbisch Gmünd",
+       "a": "VfB Ulm",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "Heidelberger TV 2",
+       "a": "TG Biberach",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "SV Fellbach",
+       "a": "TV Rottenburg",
+       "r": null,
+       "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach",
+       "a": "USC Konstanz",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      },
+      {
+       "h": "TSF Ditzingen",
+       "a": "FV Tübinger Modell",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "date": "2027-03-20",
+     "matches": [
+      {
+       "h": "TV Rottenburg",
+       "a": "TSF Ditzingen",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TG Biberach",
+       "a": "SV Fellbach",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "USC Konstanz",
+       "a": "Heidelberger TV 2",
+       "r": null,
+       "t": "19:00",
+       "own": false
+      },
+      {
+       "h": "VfB Ulm",
+       "a": "VSG Kleinsteinbach",
+       "r": null,
+       "t": "19:00",
+       "own": true
+      },
+      {
+       "h": "FV Tübinger Modell",
+       "a": "DJK Schwäbisch Gmünd",
+       "r": null,
+       "t": "19:30",
+       "own": false
+      }
+     ]
+    }
+   ]
+  },
+  "h3": {
+   "badge": "H3",
+   "name": "Herren 3",
+   "league": "Bezirksklasse Männer 3",
+   "j": false,
+   "short": "Herren 3",
+   "pos": 3,
+   "stats": [
+    [
+     "–",
+     "Platz"
+    ],
+    [
+     "0–0",
+     "Bilanz"
+    ],
+    [
+     "0:0",
+     "Sätze"
+    ]
+   ],
+   "table": [
+    {
+     "p": 1,
+     "t": "VSG Ubstadt/Forst 4",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 2,
+     "t": "VSG Ubstadt/Forst 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 3,
+     "t": "VSG Kleinsteinbach 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": true
+    },
+    {
+     "p": 4,
+     "t": "VC Mönsheim",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 5,
+     "t": "TV Flehingen 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "TSG Blankenloch 4",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 7,
+     "t": "SV Langensteinbach",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "KTV Karlsruhe 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    }
+   ],
+   "games": [
+    {
+     "d": "24.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TSG Blankenloch 4",
+     "today": false,
+     "t": "13:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Stutensee-Blankenloch"
+    },
+    {
+     "d": "07.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VSG Ubstadt/Forst 3",
+     "today": false,
+     "t": "14:00",
+     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "07.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "TV Flehingen 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "14.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "SV Langensteinbach",
+     "today": false,
+     "t": "14:00",
+     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "14.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "KTV Karlsruhe 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "28.11.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VSG Ubstadt/Forst 4",
+     "today": false,
+     "t": "14:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Ubstadt"
+    },
+    {
+     "d": "05.12.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VC Mönsheim",
+     "today": false,
+     "t": "16:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Mönsheim"
+    },
+    {
+     "d": "13.12.",
+     "wd": "So",
+     "h": false,
+     "o": "VSG Ubstadt/Forst 4",
+     "today": false,
+     "t": "11:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Forst"
+    },
+    {
+     "d": "09.01.",
+     "wd": "Sa",
+     "h": false,
+     "o": "SV Langensteinbach",
+     "today": false,
+     "t": "15:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Karlsbad Langensteinbach"
+    },
+    {
+     "d": "24.01.",
+     "wd": "So",
+     "h": false,
+     "o": "VC Mönsheim",
+     "today": false,
+     "t": "10:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Mönsheim"
+    },
+    {
+     "d": "31.01.",
+     "wd": "So",
+     "h": false,
+     "o": "VSG Ubstadt/Forst 3",
+     "today": false,
+     "t": "11:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Ubstadt"
+    },
+    {
+     "d": "14.03.",
+     "wd": "So",
+     "h": true,
+     "o": "TV Flehingen 2",
+     "today": false,
+     "t": "11:00",
+     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal"
+    },
+    {
+     "d": "14.03.",
+     "wd": "So",
+     "h": true,
+     "o": "KTV Karlsruhe 2",
+     "today": false,
+     "t": "11:00",
+     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal"
+    },
+    {
+     "d": "20.03.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TSG Blankenloch 4",
+     "today": false,
+     "t": "13:00",
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Stutensee-Blankenloch"
+    }
+   ],
+   "matchdays": [
+    {
+     "no": 1,
+     "date": "2026-10-04",
+     "matches": [
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "KTV Karlsruhe 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "date": "2026-10-11",
+     "matches": [
+      {
+       "h": "VSG Ubstadt/Forst 3",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 3",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen 2",
+       "a": "KTV Karlsruhe 2",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen 2",
+       "a": "TSG Blankenloch 4",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "date": "2026-10-24",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "VSG Ubstadt/Forst 4",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "date": "2026-11-07",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "KTV Karlsruhe 2",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "VSG Ubstadt/Forst 4",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "date": "2026-11-21",
+     "matches": [
+      {
+       "h": "SV Langensteinbach",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "SV Langensteinbach",
+       "a": "VSG Ubstadt/Forst 4",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "TSG Blankenloch 4",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "date": "2026-11-28",
+     "matches": [
+      {
+       "h": "TV Flehingen 2",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen 2",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "TSG Blankenloch 4",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "date": "2026-12-05",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "16:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "date": "2026-12-12",
+     "matches": [
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "date": "2027-01-09",
+     "matches": [
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "VSG Ubstadt/Forst 4",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "SV Langensteinbach",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "SV Langensteinbach",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "date": "2027-01-16",
+     "matches": [
+      {
+       "h": "TV Flehingen 2",
+       "a": "KTV Karlsruhe 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TV Flehingen 2",
+       "a": "TSG Blankenloch 4",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "VSG Ubstadt/Forst 4",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "10:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "date": "2027-01-31",
+     "matches": [
+      {
+       "h": "VSG Ubstadt/Forst 3",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "VSG Ubstadt/Forst 3",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "KTV Karlsruhe 2",
+       "a": "TSG Blankenloch 4",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "date": "2027-02-13",
+     "matches": [
+      {
+       "h": "VSG Ubstadt/Forst 3",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 3",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "TSG Blankenloch 4",
+       "a": "SV Langensteinbach",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "date": "2027-03-06",
+     "matches": [
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "KTV Karlsruhe 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ubstadt/Forst 4",
+       "a": "VSG Ubstadt/Forst 3",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "TSG Blankenloch 4",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "16:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "date": "2027-03-13",
+     "matches": [
+      {
+       "h": "SV Langensteinbach",
+       "a": "VC Mönsheim",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "SV Langensteinbach",
+       "a": "VSG Ubstadt/Forst 4",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "TV Flehingen 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "KTV Karlsruhe 2",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      }
+     ]
+    }
+   ]
+  },
+  "d3": {
+   "badge": "D3",
+   "name": "Damen 3",
+   "league": "Kreisliga Frauen 4",
+   "j": false,
+   "short": "Damen 3",
+   "pos": 1,
+   "stats": [
+    [
+     "–",
+     "Platz"
+    ],
+    [
+     "0–0",
+     "Bilanz"
+    ],
+    [
+     "0:0",
+     "Sätze"
+    ]
+   ],
+   "table": [
+    {
+     "p": 1,
+     "t": "VSG Kleinsteinbach 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": true
+    },
+    {
+     "p": 2,
+     "t": "VSG Hochstetten-Liedolsheim 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 3,
+     "t": "VSG Ettlingen/Rüppurr 5",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 4,
+     "t": "VC Mönsheim 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 5,
+     "t": "TV Bretten 4",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "SV KA-Beiertheim 7",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 7,
+     "t": "NVV-Kader weiblich",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "Karlsruher TV 2",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "sp": 0,
+     "pk": 0,
+     "sr": "0:0",
+     "own": false
+    }
+   ],
+   "games": [
+    {
+     "d": "24.10.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TV Bretten 4",
+     "today": false,
+     "t": "15:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Bretten"
+    },
+    {
+     "d": "14.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VSG Hochstetten-Liedolsheim 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal"
+    },
+    {
+     "d": "14.11.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VC Mönsheim 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal"
+    },
+    {
+     "d": "28.11.",
+     "wd": "Sa",
+     "h": false,
+     "o": "SV KA-Beiertheim 7",
+     "today": false,
+     "t": "15:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "05.12.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VSG Ettlingen/Rüppurr 5",
+     "today": false,
+     "t": "13:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Ettlingen"
+    },
+    {
+     "d": "12.12.",
+     "wd": "Sa",
+     "h": false,
+     "o": "SV KA-Beiertheim 7",
+     "today": false,
+     "t": "12:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Karlsruhe"
+    },
+    {
+     "d": "20.12.",
+     "wd": "So",
+     "h": true,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "today": false,
+     "t": "12:00",
+     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "20.12.",
+     "wd": "So",
+     "h": true,
+     "o": "Karlsruher TV 2",
+     "today": false,
+     "t": "12:00",
+     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+    },
+    {
+     "d": "06.01.",
+     "wd": "Mi",
+     "h": false,
+     "o": "NVV-Kader weiblich",
+     "today": false,
+     "t": "11:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Ettlingen"
+    },
+    {
+     "d": "10.01.",
+     "wd": "So",
+     "h": false,
+     "o": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "today": false,
+     "t": "11:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Karlsruhe-Waldstadt"
+    },
+    {
+     "d": "23.01.",
+     "wd": "Sa",
+     "h": false,
+     "o": "VSG Ettlingen/Rüppurr 5",
+     "today": false,
+     "t": "13:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Ettlingen"
+    },
+    {
+     "d": "31.01.",
+     "wd": "So",
+     "h": false,
+     "o": "VSG Hochstetten-Liedolsheim 2",
+     "today": false,
+     "t": "11:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Linkenheim-Hochstetten"
+    },
+    {
+     "d": "13.02.",
+     "wd": "Sa",
+     "h": false,
+     "o": "TV Bretten 4",
+     "today": false,
+     "t": "15:00",
+     "sub": "Kreisliga Frauen 4 · Auswärts · Bretten"
+    },
+    {
+     "d": "13.03.",
+     "wd": "Sa",
+     "h": true,
+     "o": "VC Mönsheim 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal"
+    },
+    {
+     "d": "13.03.",
+     "wd": "Sa",
+     "h": true,
+     "o": "Karlsruher TV 2",
+     "today": false,
+     "t": "14:00",
+     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal"
+    }
+   ],
+   "matchdays": [
+    {
+     "no": 1,
+     "date": "2026-09-20",
+     "matches": [
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "date": "2026-10-04",
+     "matches": [
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "date": "2026-10-10",
+     "matches": [
+      {
+       "h": "VC Mönsheim 2",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim 2",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ho-Li",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ho-Li",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "date": "2026-10-24",
+     "matches": [
+      {
+       "h": "Karlsruher TV 2",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Karlsruher TV 2",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "date": "2026-11-01",
+     "matches": [
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "date": "2026-11-07",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "date": "2026-11-21",
+     "matches": [
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Karlsruher TV 2",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "Karlsruher TV 2",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "date": "2026-11-28",
+     "matches": [
+      {
+       "h": "VC Mönsheim 2",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim 2",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "date": "2026-12-05",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "date": "2026-12-12",
+     "matches": [
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "12:00",
+       "own": true
+      },
+      {
+       "h": "Karlsruher TV 2",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "Karlsruher TV 2",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "date": "2027-01-06",
+     "matches": [
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "date": "2027-01-10",
+     "matches": [
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "date": "2027-01-23",
+     "matches": [
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "13:00",
+       "own": true
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim 2",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VC Mönsheim 2",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "date": "2027-01-31",
+     "matches": [
+      {
+       "h": "Karlsruher TV 2",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "Karlsruher TV 2",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ho-Li",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "11:00",
+       "own": true
+      },
+      {
+       "h": "VSG Ho-Li",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "11:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "date": "2027-02-13",
+     "matches": [
+      {
+       "h": "TV Bretten 4",
+       "a": "VSG Kleinsteinbach 3",
+       "r": null,
+       "t": "15:00",
+       "own": true
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ho-Li",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ho-Li",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "14:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "date": "2027-03-06",
+     "matches": [
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "VSG Ho-Li",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "SV KA-Beiertheim 7",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "12:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "TV Bretten 4",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      },
+      {
+       "h": "VSG Ettlingen/Rüppurr 5",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "10:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "date": "2027-03-13",
+     "matches": [
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "VC Mönsheim 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "VSG Kleinsteinbach 3",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "14:00",
+       "own": true
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "a": "SV KA-Beiertheim 7",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    },
+    {
+     "no": 18,
+     "date": "2027-03-20",
+     "matches": [
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "Karlsruher TV 2",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      },
+      {
+       "h": "NVV-Kader weiblich",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 3",
+       "r": null,
+       "t": "15:00",
+       "own": false
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

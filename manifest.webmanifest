@@ -1,0 +1,17 @@
+{
+  "name": "VSG Kleinsteinbach",
+  "short_name": "VSG",
+  "description": "Spieltag-Live-Ticker, Vereinsticker und Termine der VSG Kleinsteinbach.",
+  "lang": "de",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E2131",
+  "theme_color": "#009FE3",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
