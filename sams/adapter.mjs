@@ -36,6 +36,36 @@ export function shortDate(dateStr) {
   return dateStr.slice(8, 10) + '.' + dateStr.slice(5, 7) + '.';
 }
 
+// ---- Datum / „heute" (in index.html 1:1 gespiegelt) ----
+const pad2 = (n) => String(n).padStart(2, '0');
+/** Date -> "2026-09-23" in LOKALER Zeit (toISOString wäre UTC und kippt nachts den Tag). */
+export function localISO(d) {
+  return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate());
+}
+/** Heutiges Datum der App. `?heute=JJJJ-MM-TT` in der URL überschreibt es (zum Testen). */
+export function resolveToday(search, now = new Date()) {
+  const m = /[?&]heute=(\d{4})-(\d{2})-(\d{2})(?:&|$)/.exec(search || '');
+  if (m) {
+    const d = new Date(+m[1], +m[2] - 1, +m[3]);
+    if (d.getMonth() === +m[2] - 1 && d.getDate() === +m[3]) return localISO(d);
+  }
+  return localISO(now);
+}
+/** "23.01." + Saison "2026/27" -> "2027-01-23". Juli–Dezember = Startjahr, Januar–Juni = Folgejahr. */
+export function gameISO(short, seasonLabel) {
+  const m = /^(\d{2})\.(\d{2})\.$/.exec(short || '');
+  const y = parseInt(seasonLabel, 10);
+  if (!m || !y) return '';
+  return (+m[2] >= 7 ? y : y + 1) + '-' + m[2] + '-' + m[1];
+}
+const MONTHS_SHORT = ['Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sept.', 'Okt.', 'Nov.', 'Dez.'];
+/** "2026-09-26" -> "Sa · 26. Sept." */
+export function dayLabel(iso) {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00');
+  return isNaN(d) ? '' : WEEKDAYS[d.getDay()] + ' · ' + d.getDate() + '. ' + MONTHS_SHORT[d.getMonth()];
+}
+
 /**
  * Ein SAMS-league-match aus Sicht des eigenen Vereins (clubUuid) auf das App-Modell abbilden.
  * Gibt null zurück, wenn keine Mannschaft des Vereins beteiligt ist.

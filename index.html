@@ -516,7 +516,7 @@ body{
       <section class="view active" id="v-spieltag">
         <div class="datestrip">
           <h1>Spieltag</h1>
-          <span class="sub">Sa · 12. Sept.</span>
+          <span class="sub" id="spieltag-date"></span>
         </div>
         <div style="padding:0 18px 2px; font-size:12px; color:var(--ink-3); font-weight:500; line-height:1.4">Live-Ansicht als Beispiel · echte Stände kommen im Spielbetrieb (SAMS). Teams &amp; Kalender zeigen bereits echte Saisondaten.</div>
 
@@ -924,12 +924,33 @@ function closeMehr(){
 // ---------- Kalender: Monatsansicht mit Event-Markierungen ----------
 const MONTHS=['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
 const WDS=['So','Mo','Di','Mi','Do','Fr','Sa'];
-const TODAY='2026-09-12';
 const pad=n=>String(n).padStart(2,'0');
+// Datum / „heute" – Spiegel von sams/adapter.mjs (localISO, resolveToday, gameISO, dayLabel)
+function localISO(d){ return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); }
+function resolveToday(search, now=new Date()){
+  const m=/[?&]heute=(\d{4})-(\d{2})-(\d{2})(?:&|$)/.exec(search||'');
+  if(m){ const d=new Date(+m[1],+m[2]-1,+m[3]); if(d.getMonth()===+m[2]-1&&d.getDate()===+m[3]) return localISO(d); }
+  return localISO(now);
+}
+function gameISO(short, seasonLabel){
+  const m=/^(\d{2})\.(\d{2})\.$/.exec(short||''), y=parseInt(seasonLabel,10);
+  if(!m||!y) return '';
+  return (+m[2]>=7?y:y+1)+'-'+m[2]+'-'+m[1];
+}
+const MONTHS_SHORT=['Jan.','Feb.','März','Apr.','Mai','Juni','Juli','Aug.','Sept.','Okt.','Nov.','Dez.'];
+function dayLabel(iso){
+  if(!iso) return '';
+  const d=new Date(iso+'T00:00:00');
+  return isNaN(d)?'':WDS[d.getDay()]+' · '+d.getDate()+'. '+MONTHS_SHORT[d.getMonth()];
+}
+const TODAY=resolveToday(location.search);   // zum Testen: ?heute=2026-09-26
+// „heute"-Markierung zur Laufzeit setzen (der Snapshot kennt nur sein Build-Datum)
+for(const id in TEAMS) TEAMS[id].games.forEach(g=>{ g.iso=gameISO(g.d,SEASON_LABEL); g.today=(g.iso===TODAY); });
+{ const el=document.getElementById('spieltag-date'); if(el) el.textContent=dayLabel(TODAY); }
 function buildEvents(){
   const ev={}; const add=(k,e)=>{(ev[k]=ev[k]||[]).push(e);};
   for(const id in TEAMS){ const t=TEAMS[id]; t.games.forEach(g=>{
-    const [dd,mm]=g.d.split('.'); const key=`2026-${mm}-${dd}`;
+    const key=g.iso||gameISO(g.d,SEASON_LABEL); if(!key) return;
     add(key,{kind:'spiel', team:t.short||t.name, badge:t.badge, j:t.j, o:g.o, r:g.r, t:g.t, live:g.live, h:g.h});
   });}
   [['2026-09-13','Vereinsausflug','Wandertag am Turmberg'],
@@ -986,7 +1007,7 @@ function runSearch(q){
 }
 document.getElementById('search-input').addEventListener('input', function(e){ runSearch(e.target.value); });
 document.getElementById('search-input').addEventListener('keydown', function(e){ if(e.key==='Escape') closeSearch(); });
-let cal={y:2026,m:9}, calSel=TODAY;
+let cal={y:+TODAY.slice(0,4), m:+TODAY.slice(5,7)}, calSel=TODAY;
 function calRight(e){
   if(e.live) return '<span class="er live"><span class="ld"></span>Live</span>';
   if(e.r){const p=e.r.split(':').map(Number); return `<span class="er ${p[0]>p[1]?'w':'l'}">${e.r}</span>`;}
@@ -1001,7 +1022,7 @@ function evRow(e){
     +`<div class="et"><div class="t">${e.team}</div><div class="s">${e.h?'Heim':'Auswärts'} · ${e.o}</div></div>${calRight(e)}</div>`;
 }
 function renderDay(key){
-  const d=new Date(key), list=EV[key]||[];
+  const d=new Date(key+'T00:00:00'), list=EV[key]||[];
   const head=`${WDS[d.getDay()]} · ${d.getDate()}. ${MONTHS[d.getMonth()]}`;
   document.getElementById('cal-day').innerHTML=`<div class="dh">${head}</div>`
     +(list.length? list.map(evRow).join('') : '<div class="cal-empty">Keine Termine an diesem Tag</div>');
@@ -1038,7 +1059,7 @@ function teamStatus(t){
   const g=t.games||[];
   const live=g.find(x=>x.live); if(live) return {d:'Live',cls:'var(--live)',s:'läuft'};
   const played=g.filter(x=>x.r); if(played.length){ const l=played[played.length-1]; const p=(l.r||'').split(':').map(Number); return {d:l.r,cls:(p[0]>p[1]?'var(--win)':'var(--ink-3)'),s:(l.h?'vs ':'@ ')+l.o}; }
-  const up=g.find(x=>x.t); if(up) return {d:up.wd+' '+up.d,cls:'',s:(up.h?'vs ':'@ ')+up.o};
+  const up=g.find(x=>!x.r&&(x.iso||'')>=TODAY); if(up) return {d:up.wd+' '+up.d,cls:'',s:(up.h?'vs ':'@ ')+up.o};
   return {d:'',cls:'',s:''};
 }
 function renderTeamsList(){

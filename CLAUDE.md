@@ -21,7 +21,7 @@
 | `VSG Wappen Freigestellt Original.png` | Original-Wappen (Quelle für Icons und Logo) |
 | `sponsors/*.svg` | Sponsoren-Logos: `rosswag.svg`, `awesome-logo.svg` |
 | `sams/adapter.mjs` | Reine Mapping-Funktionen (SAMS → App-Modell) |
-| `sams/adapter.test.mjs` | 14 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
+| `sams/adapter.test.mjs` | 18 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
 | `sams/fixtures/` | Echte SAMS-Antworten (2025/26 mit Ergebnissen, 2026/27 mit Spielplan, Tabellen) |
 | `sams/build-snapshot.mjs` | Baut `sams/snapshot.json` für die aktuelle Saison. Die Saison wird dynamisch nach Datum gewählt. |
 | `sams/fetch-fixtures.mjs` | Lädt die Test-Fixtures neu |
@@ -125,7 +125,8 @@ TEAMS[key] = {
   - Segment-Umschalter `segShow('md'|'plan'|'table')`
   - `renderMatchday()` mit `mdState`; `currentMatchdayIndex()` wählt den ersten Spieltag mit offenem Spiel
 - `v-news`: fest verdrahtete Beispiel-News (Array `NEWS` für die Suche)
-- `v-kalender`: `buildEvents()` aus TEAMS.games plus Vereins-Events, `renderCal()`, `selDay()`. **`TODAY='2026-09-12'` ist fest verdrahtet!**
+- `v-kalender`: `buildEvents()` aus TEAMS.games plus Vereins-Events, `renderCal()`, `selDay()`. Das Jahr eines Spiels (`g.d` = "23.01.") ergibt sich aus `SEASON_LABEL` über `gameISO()` (Juli–Dez = Startjahr, Jan–Juni = Folgejahr).
+- **„Heute":** `TODAY=resolveToday(location.search)` ist das lokale Datum. **Zum Testen `?heute=JJJJ-MM-TT` an die URL hängen** (z. B. `?heute=2026-09-26`). Beim Laden werden `g.iso` und `g.today` für alle Spiele gesetzt, und der Spieltag-Kopf (`#spieltag-date`) wird befüllt. Die Datums-Helfer (`localISO`, `resolveToday`, `gameISO`, `dayLabel`) sind ein 1:1-Spiegel von `sams/adapter.mjs` und dort getestet. Bei Änderungen beide Stellen anpassen.
 - `v-mehr`: Wappen plus zwei Menüpunkte (Sponsoren, Push) → `openMehr()`, `closeMehr()`
 - `v-sponsoren`: Kacheln `.slog`; Array `SPONSORS` für die Suche
 - `v-push`: Schalter werden in `localStorage['vsg-push-settings']` gespeichert; der Hauptschalter sperrt alle Gruppen
@@ -172,7 +173,7 @@ TEAMS[key] = {
 - Vergleichs-App: „Mein Volleyball" (S. Knapp) deckt die allgemeinen Ligadaten ab. Der Mehrwert unserer App liegt im Vereins-Fokus und im Vereinsleben.
 
 ## 10. Nächste Schritte (Priorität)
-1. **`TODAY` bzw. „heute" dynamisch machen.** Kalender (`TODAY='2026-09-12'`) und das Spieltag-Datum („Sa · 12. Sept.") sind fest verdrahtet und inzwischen veraltet.
+1. ~~„Heute" dynamisch machen~~ – erledigt am 23.09.2026 (inkl. Fix: Rückrunden-Spiele lagen im Kalender im falschen Jahr).
 2. **Skript `sams/inject-snapshot.mjs`**, das den Snapshot per Befehl in `index.html` einsetzt (siehe 3a). Optional als GitHub Action, die den Snapshot wöchentlich neu baut.
 3. **Live-Proxy** (Cloudflare Worker), der den Key serverseitig hält und CORS erlaubt. Die App holt die Daten dann zur Laufzeit, der Snapshot bleibt Fallback. **Saisonstart: Sa 26.09.2026, H1 gegen Ettlingen/Rüppurr, 14:00, Hagwaldhalle.**
 4. **Spieltag-Screen live machen** über `/score` plus die heutigen Spiele aus TEAMS. Danach den „Beispiel"-Hinweis entfernen. Testen lässt sich das an jedem gerade laufenden Fremdspiel.

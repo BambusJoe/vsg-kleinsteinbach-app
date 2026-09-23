@@ -7,3 +7,4 @@ node_modules/
 artifact.html
 # lokale Zwischendateien
 /tmp/
+.claude/

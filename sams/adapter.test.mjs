@@ -6,6 +6,7 @@ import { readFileSync } from 'node:fs';
 import {
   items, parseScore, pointsForResult, weekday, shortDate,
   mapMatch, groupByTeam, teamRecord, mapRanking, currentMatchdayIndex,
+  localISO, resolveToday, gameISO, dayLabel,
 } from './adapter.mjs';
 
 const CLUB = '6e67881d-08be-4e37-822b-7e3c60e88cd7'; // VSG Kleinsteinbach
@@ -193,4 +194,38 @@ test('ECHT 2026/27: kommende Spiele vorhanden (Spielplan veröffentlicht)', () =
     assert.equal(g.result, null);
     assert.ok(g.date, 'kommendes Spiel hat ein Datum');
   }
+});
+
+// ---------- Datum / „heute" (wird 1:1 in index.html gespiegelt) ----------
+test('localISO nutzt die lokale Zeit, nicht UTC', () => {
+  assert.equal(localISO(new Date(2026, 8, 23, 23, 45)), '2026-09-23');
+  assert.equal(localISO(new Date(2026, 0, 1, 0, 5)), '2026-01-01');
+});
+
+test('resolveToday: ?heute=JJJJ-MM-TT überschreibt, sonst lokales Datum', () => {
+  const now = new Date(2026, 8, 23, 12, 0);
+  assert.equal(resolveToday('?heute=2026-10-10', now), '2026-10-10');
+  assert.equal(resolveToday('?kiosk=1&heute=2027-01-23', now), '2027-01-23');
+  assert.equal(resolveToday('', now), '2026-09-23');
+  assert.equal(resolveToday('?heute=quatsch', now), '2026-09-23');   // ungültig -> ignorieren
+  assert.equal(resolveToday('?heute=2026-13-40', now), '2026-09-23'); // kein echtes Datum
+});
+
+test('gameISO: Jahr aus der Saison ableiten (Hinrunde = Startjahr, Rückrunde = Folgejahr)', () => {
+  assert.equal(gameISO('26.09.', '2026/27'), '2026-09-26');
+  assert.equal(gameISO('13.12.', '2026/27'), '2026-12-13');
+  assert.equal(gameISO('23.01.', '2026/27'), '2027-01-23');
+  assert.equal(gameISO('20.03.', '2026/27'), '2027-03-20');
+  assert.equal(gameISO('01.07.', '2026/27'), '2026-07-01'); // Saisonbeginn Juli
+  assert.equal(gameISO('30.06.', '2026/27'), '2027-06-30'); // Saisonende Juni
+  assert.equal(gameISO('', '2026/27'), '');
+  assert.equal(gameISO('26.09.', ''), '');
+});
+
+test('dayLabel: "Sa · 26. Sept."', () => {
+  assert.equal(dayLabel('2026-09-26'), 'Sa · 26. Sept.');
+  assert.equal(dayLabel('2026-09-23'), 'Mi · 23. Sept.');
+  assert.equal(dayLabel('2027-03-07'), 'So · 7. März');
+  assert.equal(dayLabel('2026-05-01'), 'Fr · 1. Mai');
+  assert.equal(dayLabel(''), '');
 });
