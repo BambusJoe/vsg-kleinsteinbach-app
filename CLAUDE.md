@@ -10,7 +10,10 @@
 - **Artifact-Vorschau:** https://claude.ai/code/artifact/59b8632a-1120-4c00-8d4c-d0fb35750054
   - In derselben Session hält ein Republish über denselben Dateipfad die URL.
   - In einer neuen Session muss die `url` mitgegeben und das Artifact vorher gelesen werden.
-- **Daten:** echte Ligadaten aus **SAMS** (Volleyball-Verband Baden), aktuell als eingebetteter Snapshot. Einen Live-Proxy gibt es noch nicht.
+- **Daten:** echte Ligadaten aus **SAMS** (Volleyball-Verband Baden).
+  - **Live:** Die App holt beim Öffnen und dann regelmäßig frische Daten vom **Live-Proxy** `https://vsg-anzeigetafel.vercel.app/api/app`. Takt: 20 s, wenn ein VSG-Spiel läuft, 60 s am Wochenende oder an Spieltagen, sonst 10 min, plus sofort beim Zurückkehren in die App.
+  - **Fallback:** der eingebettete Snapshot (`const TEAMS`), den die GitHub Action aktuell hält.
+  - Der Proxy liegt im **Anzeigetafel-Projekt** (`~/Documents/Claude Projekte/Anzeigetafel`, Repo `BambusJoe/vsg-anzeigetafel`, Vercel). Er nutzt eine Kopie von `sams/adapter.mjs` und `sams/snapshot.mjs` in `api/_lib/app/`.
 
 ## 2. Projektstruktur (dieser Ordner = Git-Repo)
 | Pfad | Inhalt |
@@ -21,11 +24,13 @@
 | `VSG Wappen Freigestellt Original.png` | Original-Wappen (Quelle für Icons und Logo) |
 | `sponsors/*.svg` | Sponsoren-Logos: `rosswag.svg`, `awesome-logo.svg` |
 | `sams/adapter.mjs` | Reine Mapping-Funktionen (SAMS → App-Modell) |
-| `sams/adapter.test.mjs` | 18 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
+| `sams/adapter.test.mjs` | 22 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
+| `sams/snapshot.mjs` | Baut den kompletten Snapshot aus SAMS (`buildSnapshot({get})`, Seitenabfrage `fetchAll`). Wird von `build-snapshot.mjs` **und** vom Live-Proxy genutzt. Tests: `sams/snapshot.test.mjs` (6, simuliert SAMS mit den Fixtures) |
+| `sams/copy-to-proxy.mjs` | Kopiert `adapter.mjs` und `snapshot.mjs` in den Proxy (`Anzeigetafel/api/_lib/app/`). **Nach jeder Änderung an diesen beiden Dateien ausführen** und im Anzeigetafel-Repo committen und pushen. |
 | `sams/fixtures/` | Echte SAMS-Antworten (2025/26 mit Ergebnissen, 2026/27 mit Spielplan, Tabellen) |
-| `sams/build-snapshot.mjs` | Baut `sams/snapshot.json` für die aktuelle Saison. Die Saison wird dynamisch nach Datum gewählt. |
+| `sams/build-snapshot.mjs` | Schreibt `sams/snapshot.json` (dünner Aufrufer von `snapshot.mjs`). |
 | `sams/inject.mjs`, `sams/inject-snapshot.mjs` | Setzen `snapshot.json` in `index.html` ein (Funktion bzw. Befehl). Tests: `sams/inject.test.mjs` (6) |
-| `.github/workflows/snapshot.yml` | GitHub Action: täglich 06:30 plus Sa/So 23:30 frische SAMS-Daten → einsetzen → nur bei Änderung committen und Pages-Build anstoßen. Braucht das Repo-Secret `SAMS_API_KEY`. Manuell startbar unter Actions → „Run workflow". |
+| `.github/workflows/snapshot.yml` | GitHub Action: täglich 06:30 plus Sa/So 10:00–23:30 alle 30 min frische SAMS-Daten → einsetzen → nur bei Änderung committen und Pages-Build anstoßen. Braucht das Repo-Secret `SAMS_API_KEY`. Manuell startbar unter Actions → „Run workflow". |
 | `sams/fetch-fixtures.mjs` | Lädt die Test-Fixtures neu |
 | `artifact.html` | Artifact-Variante von `index.html`. Wird erzeugt, ist gitignored. |
 
@@ -34,7 +39,7 @@
 cd "/Users/ethoma/Documents/Claude Projekte/JHV 2026/VSG-App-Prototyp"
 
 # Tests (immer vor dem Deploy)
-node --test sams/adapter.test.mjs sams/inject.test.mjs
+node --test sams/adapter.test.mjs sams/snapshot.test.mjs sams/inject.test.mjs
 
 # Design-Check (Ziel: 0 Befunde)
 ~/.claude/skills/impeccable/scripts/impeccable detect --json index.html
@@ -120,6 +125,7 @@ TEAMS[key] = {
   - `renderMatchday()` mit `mdState`; `currentMatchdayIndex()` wählt den ersten Spieltag mit offenem Spiel
 - `v-news`: fest verdrahtete Beispiel-News (Array `NEWS` für die Suche)
 - `v-kalender`: `buildEvents()` aus TEAMS.games plus Vereins-Events, `renderCal()`, `selDay()`. Das Jahr eines Spiels (`g.d` = "23.01.") ergibt sich aus `SEASON_LABEL` über `gameISO()` (Juli–Dez = Startjahr, Jan–Juni = Folgejahr).
+- **Live-Daten:** `loadLive()` holt `LIVE_URL`. Nur wenn `isUsableSnapshot()` die Antwort akzeptiert, ersetzt `applyTeams()` den Inhalt von TEAMS und rendert Teams-Liste, Kalender, Suche und eine offene Team-Seite neu (`fillTeam`; Reiter und Spieltag bleiben erhalten). Den nächsten Abruf bestimmt `refreshDelayMs()`. Beide Funktionen sind ein Spiegel von `sams/adapter.mjs`. Der Teams-Kopf zeigt „Stand HH:MM“.
 - **„Heute":** `TODAY=resolveToday(location.search)` ist das lokale Datum. **Zum Testen `?heute=JJJJ-MM-TT` an die URL hängen** (z. B. `?heute=2026-09-26`). Beim Laden werden `g.iso` und `g.today` für alle Spiele gesetzt, und der Spieltag-Kopf (`#spieltag-date`) wird befüllt. Die Datums-Helfer (`localISO`, `resolveToday`, `gameISO`, `dayLabel`) sind ein 1:1-Spiegel von `sams/adapter.mjs` und dort getestet. Bei Änderungen beide Stellen anpassen.
 - `v-mehr`: Wappen plus zwei Menüpunkte (Sponsoren, Push) → `openMehr()`, `closeMehr()`
 - `v-sponsoren`: Kacheln `.slog`; Array `SPONSORS` für die Suche
@@ -155,6 +161,10 @@ TEAMS[key] = {
 - **Python `urllib` scheitert am SSL-Zertifikat** → für API-Aufrufe `curl` nehmen, in Node das eingebaute `fetch`.
 - `node --test sams/` funktioniert nicht, die Testdatei muss explizit angegeben werden.
 - **Das Repo ist public** → niemals den API-Key oder andere Secrets committen.
+- **Die GitHub Action committet selbst auf `main`** → vor jedem eigenen Push `git pull --ff-only`.
+- **Den API-Key nie im Klartext in einen Befehl schreiben** (wird blockiert). Lokal: `node --env-file="$HOME/Documents/Claude Projekte/Anzeigetafel/.env.local" sams/build-snapshot.mjs`.
+- **Live-Erkennung:** SAMS liefert bei laufenden Spielen `results` schon mit Zwischenstand, aber ohne `results.winner`. Deshalb gilt: nur mit `winner` beendet, sonst `live`. Ein Endergebnis ohne diese Prüfung wäre falsch.
+- **Keine URL-Parameter für die Proxy-Adresse** einführen: Die Teamnamen landen per `innerHTML` in der Seite, eine fremde Datenquelle wäre also eine XSS-Lücke.
 
 ## 9. Entscheidungen und Vorlieben des Auftraggebers
 - Die Mitglieder- und Beitragsverwaltung bleibt bewusst draußen (DSGVO, SEPA).
@@ -169,7 +179,7 @@ TEAMS[key] = {
 ## 10. Nächste Schritte (Priorität)
 1. ~~„Heute" dynamisch machen~~ – erledigt am 23.09.2026 (inkl. Fix: Rückrunden-Spiele lagen im Kalender im falschen Jahr).
 2. ~~Snapshot per Befehl einsetzen + GitHub Action~~ – erledigt am 23.09.2026. **Offen: Repo-Secret `SAMS_API_KEY` muss der Vorstand selbst anlegen**, erst dann läuft die Action.
-3. **Live-Proxy** (Cloudflare Worker), der den Key serverseitig hält und CORS erlaubt. Die App holt die Daten dann zur Laufzeit, der Snapshot bleibt Fallback. **Saisonstart: Sa 26.09.2026, H1 gegen Ettlingen/Rüppurr, 14:00, Hagwaldhalle.**
+3. ~~Live-Proxy~~ – erledigt am 23.09.2026 als Vercel-Funktion `api/app.js` im Anzeigetafel-Projekt (statt Cloudflare: ein Dienst, ein Key). **Beim Saisonstart Sa 26.09.2026 (H1 gegen Ettlingen/Rüppurr, 14:00, Hagwaldhalle) prüfen, ob SAMS die Zwischenstände wirklich live liefert** (siehe `Anzeigetafel/LIVE-TEST.md`).
 4. **Spieltag-Screen live machen** über `/score` plus die heutigen Spiele aus TEAMS. Danach den „Beispiel"-Hinweis entfernen. Testen lässt sich das an jedem gerade laufenden Fremdspiel.
 5. Die fest verdrahteten Spieltag-Abschnitte („Gleich", „Ergebnisse heute") aus echten Daten erzeugen.
 6. Offen:

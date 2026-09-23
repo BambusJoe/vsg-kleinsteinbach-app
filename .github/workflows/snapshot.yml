@@ -4,8 +4,8 @@ name: SAMS-Snapshot aktualisieren
 
 on:
   schedule:
-    - cron: '30 4 * * *'     # täglich 06:30 MESZ
-    - cron: '30 21 * * 6,0'  # Sa + So 23:30 MESZ (Ergebnisse vom Spieltag)
+    - cron: '30 4 * * *'        # täglich 06:30 MESZ
+    - cron: '*/30 8-21 * * 6,0' # Sa + So 10:00–23:30 MESZ alle 30 min (Fallback, falls der Live-Proxy ausfällt)
   workflow_dispatch:         # manuell: Actions → „SAMS-Snapshot aktualisieren" → Run workflow
 
 permissions:

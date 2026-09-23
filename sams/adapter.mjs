@@ -66,6 +66,22 @@ export function dayLabel(iso) {
   return isNaN(d) ? '' : WEEKDAYS[d.getDay()] + ' · ' + d.getDate() + '. ' + MONTHS_SHORT[d.getMonth()];
 }
 
+// ---- Live-Aktualisierung (in index.html 1:1 gespiegelt) ----
+/** Wie oft die App frische Daten holt: laufendes Spiel 20 s, Wochenende/Spieltag 60 s, sonst 10 min. */
+export function refreshDelayMs(teams, today) {
+  const games = Object.values(teams || {}).flatMap((t) => t.games || []);
+  if (games.some((g) => g.live)) return 20000;
+  const wd = new Date(today + 'T00:00:00').getDay();
+  if (wd === 0 || wd === 6 || games.some((g) => g.iso === today)) return 60000;
+  return 600000;
+}
+/** Taugt eine Proxy-Antwort als Ersatz für die eingebetteten Daten? */
+export function isUsableSnapshot(s, seasonLabel) {
+  if (!s || s.season !== seasonLabel || !s.teams) return false;
+  const ts = Object.values(s.teams);
+  return ts.length > 0 && ts.every((t) => t && Array.isArray(t.games) && Array.isArray(t.table) && Array.isArray(t.matchdays));
+}
+
 /**
  * Ein SAMS-league-match aus Sicht des eigenen Vereins (clubUuid) auf das App-Modell abbilden.
  * Gibt null zurück, wenn keine Mannschaft des Vereins beteiligt ist.
@@ -82,7 +98,10 @@ export function mapMatch(match, clubUuid) {
   const opp = weAre1 ? t2 : t1;
   const ourUuid = our.uuid;
 
+  // Ergebnisse ohne Sieger = Spiel läuft (SAMS schreibt Zwischenstände live mit)
   const played = !!match.results;
+  const finished = played && !!match.results.winner;
+  const live = played && !finished;
   const home = match.host ? match.host === ourUuid : weAre1;
 
   let result = null, won = null, setsList = [];
@@ -91,8 +110,8 @@ export function mapMatch(match, clubUuid) {
     if (sp) {
       const [a, b] = weAre1 ? sp : [sp[1], sp[0]];
       result = a + ':' + b;
-      won = a > b;
-    } else if (match.results.winner) {
+      won = finished ? a > b : null;
+    } else if (finished) {
       won = match.results.winner === ourUuid;
     }
     setsList = (match.results.sets || []).map((set) => {
@@ -113,7 +132,8 @@ export function mapMatch(match, clubUuid) {
     home,
     date: match.date || null,
     time: match.time || null,
-    status: played ? 'played' : 'upcoming',
+    status: finished ? 'played' : live ? 'live' : 'upcoming',
+    live,
     result,
     won,
     setsList,

@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 import {
   items, parseScore, pointsForResult, weekday, shortDate,
   mapMatch, groupByTeam, teamRecord, mapRanking, currentMatchdayIndex,
-  localISO, resolveToday, gameISO, dayLabel,
+  localISO, resolveToday, gameISO, dayLabel, refreshDelayMs, isUsableSnapshot,
 } from './adapter.mjs';
 
 const CLUB = '6e67881d-08be-4e37-822b-7e3c60e88cd7'; // VSG Kleinsteinbach
@@ -90,6 +90,42 @@ test('mapMatch: kommendes Spiel (ohne Ergebnis)', () => {
   assert.equal(r.won, null);
   assert.equal(r.time, '15:00');
   assert.deepEqual(r.setsList, []);
+});
+
+test('mapMatch: laufendes Spiel (Ergebnisse ohne Sieger) = live, nicht beendet', () => {
+  const m = {
+    uuid: 'l', leagueUuid: 'L', date: '2026-09-26', time: '14:00', host: 'oppT',
+    _embedded: {
+      team1: { uuid: 'oppT', name: 'VSG Ettlingen/Rüppurr', sportsclubUuid: 'other' },
+      team2: { uuid: 'meT', name: 'VSG Kleinsteinbach', sportsclubUuid: CLUB },
+    },
+    results: { setPoints: '1:2', sets: [
+      { number: 1, ballPoints: '25:20', winner: 'oppT' },
+      { number: 2, ballPoints: '18:25', winner: 'meT' },
+      { number: 3, ballPoints: '21:25', winner: 'meT' },
+      { number: 4, ballPoints: '12:10' },            // läuft
+    ] },
+  };
+  const r = mapMatch(m, CLUB);
+  assert.equal(r.status, 'live');
+  assert.equal(r.live, true);
+  assert.equal(r.result, '2:1');   // Zwischenstand Sätze aus VSG-Sicht
+  assert.equal(r.won, null);       // noch kein Sieger
+  assert.deepEqual(r.setsList, ['20:25', '25:18', '25:21', '10:12']);
+});
+
+test('mapMatch: Ergebnis-Objekt ohne Sätze und ohne Sieger (Anpfiff) = live 0:0', () => {
+  const m = {
+    uuid: 'k', leagueUuid: 'L', date: '2026-09-26', time: '14:00', host: 'meT',
+    _embedded: {
+      team1: { uuid: 'meT', name: 'VSG Kleinsteinbach', sportsclubUuid: CLUB },
+      team2: { uuid: 'oppT', name: 'Gast', sportsclubUuid: 'other' },
+    },
+    results: { setPoints: '0:0', sets: [] },
+  };
+  const r = mapMatch(m, CLUB);
+  assert.equal(r.status, 'live');
+  assert.equal(r.result, '0:0');
 });
 
 test('mapMatch: fremdes Spiel -> null', () => {
@@ -228,4 +264,25 @@ test('dayLabel: "Sa · 26. Sept."', () => {
   assert.equal(dayLabel('2027-03-07'), 'So · 7. März');
   assert.equal(dayLabel('2026-05-01'), 'Fr · 1. Mai');
   assert.equal(dayLabel(''), '');
+});
+
+// ---------- Live-Aktualisierung der App (wird 1:1 in index.html gespiegelt) ----------
+const T = (games) => ({ h1: { games } });
+test('refreshDelayMs: 20 s bei laufendem Spiel, 60 s am Wochenende/Spieltag, sonst 10 min', () => {
+  assert.equal(refreshDelayMs(T([{ iso: '2026-09-26', live: true }]), '2026-09-26'), 20000);
+  assert.equal(refreshDelayMs(T([{ iso: '2026-09-26', t: '14:00' }]), '2026-09-26'), 60000); // Spieltag (Sa)
+  assert.equal(refreshDelayMs(T([]), '2026-09-27'), 60000);                               // Sonntag
+  assert.equal(refreshDelayMs(T([{ iso: '2027-01-06', t: '11:00' }]), '2027-01-06'), 60000); // Spiel an einem Mittwoch
+  assert.equal(refreshDelayMs(T([{ iso: '2026-09-26' }]), '2026-09-23'), 600000);         // normaler Mittwoch
+  assert.equal(refreshDelayMs({}, '2026-09-23'), 600000);
+});
+
+test('isUsableSnapshot: nur vollständige Proxy-Antworten ersetzen die eingebetteten Daten', () => {
+  const ok = { season: '2026/27', teams: { h1: { name: 'Herren 1', games: [], table: [], matchdays: [] } } };
+  assert.equal(isUsableSnapshot(ok, '2026/27'), true);
+  assert.equal(isUsableSnapshot(ok, '2025/26'), false);          // andere Saison als die App kennt
+  assert.equal(isUsableSnapshot({ error: 'SAMS 503' }, '2026/27'), false);
+  assert.equal(isUsableSnapshot({ season: '2026/27', teams: {} }, '2026/27'), false);
+  assert.equal(isUsableSnapshot({ season: '2026/27', teams: { h1: { name: 'x' } } }, '2026/27'), false); // ohne games
+  assert.equal(isUsableSnapshot(null, '2026/27'), false);
 });
