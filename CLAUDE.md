@@ -24,6 +24,8 @@
 | `sams/adapter.test.mjs` | 18 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
 | `sams/fixtures/` | Echte SAMS-Antworten (2025/26 mit Ergebnissen, 2026/27 mit Spielplan, Tabellen) |
 | `sams/build-snapshot.mjs` | Baut `sams/snapshot.json` für die aktuelle Saison. Die Saison wird dynamisch nach Datum gewählt. |
+| `sams/inject.mjs`, `sams/inject-snapshot.mjs` | Setzen `snapshot.json` in `index.html` ein (Funktion bzw. Befehl). Tests: `sams/inject.test.mjs` (6) |
+| `.github/workflows/snapshot.yml` | GitHub Action: täglich 06:30 plus Sa/So 23:30 frische SAMS-Daten → einsetzen → nur bei Änderung committen und Pages-Build anstoßen. Braucht das Repo-Secret `SAMS_API_KEY`. Manuell startbar unter Actions → „Run workflow". |
 | `sams/fetch-fixtures.mjs` | Lädt die Test-Fixtures neu |
 | `artifact.html` | Artifact-Variante von `index.html`. Wird erzeugt, ist gitignored. |
 
@@ -32,7 +34,7 @@
 cd "/Users/ethoma/Documents/Claude Projekte/JHV 2026/VSG-App-Prototyp"
 
 # Tests (immer vor dem Deploy)
-node --test sams/adapter.test.mjs
+node --test sams/adapter.test.mjs sams/inject.test.mjs
 
 # Design-Check (Ziel: 0 Befunde)
 ~/.claude/skills/impeccable/scripts/impeccable detect --json index.html
@@ -41,23 +43,15 @@ node --test sams/adapter.test.mjs
 python3 -m http.server 8791        # http://localhost:8791
 
 # Daten aus SAMS neu ziehen (Key nur als Umgebungsvariable!)
-SAMS_API_KEY=<key> node sams/build-snapshot.mjs
-# -> danach TEAMS in index.html ersetzen (siehe 3a)
+SAMS_API_KEY=<key> node sams/build-snapshot.mjs && node sams/inject-snapshot.mjs
+# (läuft auch automatisch per GitHub Action, siehe snapshot.yml)
 
 # Deploy (GitHub Pages baut ~1 Min)
 git add -A && git commit -m "…" && git push
 ```
 
-### 3a. Snapshot in `index.html` einsetzen (es gibt noch kein Skript dafür)
-Regex-Ersetzung des Blocks `const TEAMS = {…};\nconst SEASON_LABEL = "…";`:
-```python
-import json,re
-snap=json.load(open('sams/snapshot.json'))
-src=open('index.html',encoding='utf-8').read()
-new='const TEAMS = '+json.dumps(snap['teams'],ensure_ascii=False)+';\nconst SEASON_LABEL = '+json.dumps(snap['season'])+';'
-src=re.sub(r'const TEAMS = \{.*?\};\s*\nconst SEASON_LABEL = [^\n]*;', lambda m:new, src, count=1, flags=re.S)
-open('index.html','w',encoding='utf-8').write(src)
-```
+### 3a. Snapshot in `index.html` einsetzen
+`node sams/inject-snapshot.mjs` ersetzt den Block `const TEAMS = {…};\nconst SEASON_LABEL = "…";` und lässt den Rest unverändert. Der Befehl ist idempotent: Er meldet „unverändert“, wenn die Daten gleich sind. `<` wird als `\u003c` maskiert, damit kein `</script>` entstehen kann. Der Snapshot enthält bewusst **kein** Datum vom Bau-Tag (`today`), damit sich `index.html` nur bei echten Datenänderungen ändert.
 
 ### 3b. Artifact neu bauen und veröffentlichen
 Der Artifact-Host legt eigene `<head>`/`<body>`-Tags um die Seite.
@@ -112,7 +106,7 @@ TEAMS[key] = {
   badge:'D2', name:'Damen 2', short:'Damen 2', league:'Landesliga Frauen 2', j:false, pos:1|null,
   stats:[['–','Platz'],['0–0','Bilanz'],['0:0','Sätze']],
   table:[{p,t,sp,pk,sr,own}],                        // Liga-Tabelle
-  games:[{d:'03.10.',wd:'Sa',h:true,o:'Gegner',r?,s?,t?,sub?,today?,live?}],  // eigener Spielplan
+  games:[{d:'03.10.',wd:'Sa',iso:'2026-10-03',h:true,o:'Gegner',r?,s?,t?,sub?,live?}],  // eigener Spielplan; today wird zur Laufzeit gesetzt
   matchdays:[{no,date,matches:[{h,a,r,t,own}]}]      // alle Paarungen der Liga
 }
 ```
@@ -174,7 +168,7 @@ TEAMS[key] = {
 
 ## 10. Nächste Schritte (Priorität)
 1. ~~„Heute" dynamisch machen~~ – erledigt am 23.09.2026 (inkl. Fix: Rückrunden-Spiele lagen im Kalender im falschen Jahr).
-2. **Skript `sams/inject-snapshot.mjs`**, das den Snapshot per Befehl in `index.html` einsetzt (siehe 3a). Optional als GitHub Action, die den Snapshot wöchentlich neu baut.
+2. ~~Snapshot per Befehl einsetzen + GitHub Action~~ – erledigt am 23.09.2026. **Offen: Repo-Secret `SAMS_API_KEY` muss der Vorstand selbst anlegen**, erst dann läuft die Action.
 3. **Live-Proxy** (Cloudflare Worker), der den Key serverseitig hält und CORS erlaubt. Die App holt die Daten dann zur Laufzeit, der Snapshot bleibt Fallback. **Saisonstart: Sa 26.09.2026, H1 gegen Ettlingen/Rüppurr, 14:00, Hagwaldhalle.**
 4. **Spieltag-Screen live machen** über `/score` plus die heutigen Spiele aus TEAMS. Danach den „Beispiel"-Hinweis entfernen. Testen lässt sich das an jedem gerade laufenden Fremdspiel.
 5. Die fest verdrahteten Spieltag-Abschnitte („Gleich", „Ergebnisse heute") aus echten Daten erzeugen.

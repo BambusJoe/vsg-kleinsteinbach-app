@@ -1,5 +1,5 @@
 // Erzeugt einen app-fertigen Daten-Snapshot aus echten SAMS-Daten (aktuelle Saison, dynamisch).
-// Aufruf:  SAMS_API_KEY=<key> node sams/build-snapshot.mjs
+// Aufruf:  SAMS_API_KEY=<key> node sams/build-snapshot.mjs  &&  node sams/inject-snapshot.mjs
 // Ergebnis: sams/snapshot.json  (TEAMS-Objekt im App-Format + Saison-Label)
 import { writeFileSync } from 'node:fs';
 import { items, mapMatch, groupByTeam, teamRecord, mapRanking, shortDate, weekday } from './adapter.mjs';
@@ -94,7 +94,7 @@ for (const uuid in grouped) {
 
   // Spiele -> App-Format
   const games = g.games.map((m) => {
-    const base = { d: shortDate(m.date), wd: weekday(m.date), h: m.home, o: m.opponent, today: m.date === today };
+    const base = { d: shortDate(m.date), wd: weekday(m.date), iso: m.date, h: m.home, o: m.opponent };
     if (m.status === 'played' && m.result) return { ...base, r: m.result, s: m.setsList.join(' · ') };
     if (m.live) return { ...base, live: true, sub: (lg.name || '') };
     const venue = m.location && m.location.city ? ' · ' + (m.home ? 'Heim' : 'Auswärts') + ' · ' + m.location.city : ' · ' + (m.home ? 'Heim' : 'Auswärts');

@@ -6,9 +6,9 @@ als Fixtures gespeichert sind.
 
 ## Tests ausführen
 ```bash
-node --test sams/adapter.test.mjs
+node --test sams/adapter.test.mjs sams/inject.test.mjs
 ```
-13 Tests: Hilfsfunktionen, `mapMatch` (Heim/Auswärts, Perspektive drehen, kommend, fremd),
+18 + 6 Tests: Hilfsfunktionen, `mapMatch` (Heim/Auswärts, Perspektive drehen, kommend, fremd),
 `teamRecord`, `mapRanking` – plus **Integrationstests gegen echte SAMS-Fixtures**.
 
 ## Fixtures neu laden (echte Daten)
