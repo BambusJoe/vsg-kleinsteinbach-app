@@ -1,7 +1,7 @@
 // Baut den App-Snapshot (TEAMS im App-Format) aus SAMS – ohne eigenes Netz:
 // `get(path)` liefert das JSON für einen Pfad relativ zu /api/v2/ (z. B. "seasons").
 // Genutzt von sams/build-snapshot.mjs (GitHub Action) UND vom Live-Proxy (Anzeigetafel, api/app.js).
-import { items, groupByTeam, teamRecord, mapRanking, shortDate, weekday, localISO } from './adapter.mjs';
+import { items, groupByTeam, teamRecord, mapRanking, shortDate, weekday, localISO, applyTicker } from './adapter.mjs';
 
 export const CLUB = '6e67881d-08be-4e37-822b-7e3c60e88cd7';
 export const CLUBNAME = 'VSG Kleinsteinbach';
@@ -26,8 +26,8 @@ export function pickSeason(list, today) {
 // Team-Nummer aus Namen ("VSG Kleinsteinbach 2" -> 2, ohne Zahl -> 1)
 const teamNo = (name) => { const m = (name || '').match(/(\d+)\s*$/); return m ? parseInt(m[1], 10) : 1; };
 
-/** Alle Paarungen einer Liga, gruppiert & sortiert nach Spieltag. Live = Ergebnisse ohne Sieger. */
-function toMatchdays(matches, clubUuid) {
+/** Alle Paarungen einer Liga, gruppiert & sortiert nach Spieltag. Live = Ergebnisse ohne Sieger oder laut Ticker. */
+function toMatchdays(matches, clubUuid, ticker) {
   const groups = {};
   for (const m of matches) {
     const key = m.matchDayUuid || m.date || m.uuid;
@@ -53,12 +53,25 @@ function toMatchdays(matches, clubUuid) {
             own: t1.sportsclubUuid === clubUuid || t2.sportsclubUuid === clubUuid,
           };
           if (m.results && !finished) row.live = true;
+          const tk = ticker[m.uuid];                    // Ticker ist schneller als SAMS (Heim:Gast = team1:team2)
+          if (tk && tk.started) {
+            const sp = (tk.setPoints || {}), a = sp.team1 || 0, b = sp.team2 || 0;
+            const sets = (tk.matchSets || []).slice().sort((x, y) => x.setNumber - y.setNumber);
+            row.t = null;
+            if (tk.finished) { row.r = a + ':' + b; delete row.live; }
+            else {
+              row.r = null; row.live = true; row.lr = a + ':' + b;
+              const run = sets.length > a + b ? sets[sets.length - 1].setScore || {} : null;
+              row.cur = run ? (run.team1 || 0) + ':' + (run.team2 || 0) : '0:0';
+            }
+          }
           return row;
         }),
     }));
 }
 
-export async function buildSnapshot({ get, today = localISO(new Date()), clubUuid = CLUB, clubName = CLUBNAME }) {
+// ticker: matchStates des DVV-Live-Tickers ({[matchUuid]: state}), optional – nur der Proxy hat ihn.
+export async function buildSnapshot({ get, today = localISO(new Date()), clubUuid = CLUB, clubName = CLUBNAME, ticker = {} }) {
   // 1) Aktuelle Saison
   const season = pickSeason(await fetchAll(get, 'seasons'), today);
   if (!season) throw new Error('Keine Saison in SAMS gefunden');
@@ -69,6 +82,7 @@ export async function buildSnapshot({ get, today = localISO(new Date()), clubUui
   const TEAMS = {};
   for (const uuid in grouped) {
     const g = grouped[uuid];
+    g.games = g.games.map((m) => applyTicker(m, ticker[m.uuid]));
     const lg = await get('leagues/' + g.leagueUuid);
     const gender = (lg.genderName || lg.gender || '').toUpperCase();
     const isW = gender === 'FEMALE' || /frauen|damen|weiblich/i.test(lg.name || '');
@@ -85,7 +99,11 @@ export async function buildSnapshot({ get, today = localISO(new Date()), clubUui
     const games = g.games.map((m) => {
       const base = { d: shortDate(m.date), wd: weekday(m.date), iso: m.date, h: m.home, o: m.opponent };
       if (m.status === 'played' && m.result) return { ...base, r: m.result, s: m.setsList.join(' · ') };
-      if (m.live) return { ...base, live: true, r: m.result, s: m.setsList.join(' · '), sub: lg.name || '' };
+      if (m.live) {
+        const lv = { ...base, live: true, r: m.result, s: m.setsList.join(' · '), sub: lg.name || '' };
+        if (m.current != null) { lv.cur = m.current; lv.sv = m.serve; } // laufender Satz + Aufschlag (Ticker)
+        return lv;
+      }
       const venue = ' · ' + (m.home ? 'Heim' : 'Auswärts') + (m.location && m.location.city ? ' · ' + m.location.city : '');
       return { ...base, t: m.time || '', sub: (lg.name || '') + venue };
     });
@@ -102,7 +120,7 @@ export async function buildSnapshot({ get, today = localISO(new Date()), clubUui
       ],
       table: table.map((r) => ({ p: r.rank, t: r.teamName, sp: r.matchesPlayed, pk: r.points, sr: r.setRatio || '–', own: r.own })),
       games,
-      matchdays: toMatchdays(await fetchAll(get, `league-matches?for-league=${g.leagueUuid}&for-season=${season.uuid}`), clubUuid),
+      matchdays: toMatchdays(await fetchAll(get, `league-matches?for-league=${g.leagueUuid}&for-season=${season.uuid}`), clubUuid, ticker),
     };
   }
 

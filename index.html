@@ -478,15 +478,6 @@ body{
     <div class="splash-bar"><span></span></div>
   </div>
 
-  <!-- Push demo toast -->
-  <div class="toast" id="toast" role="status">
-    <div class="ic">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
-    </div>
-    <div class="tx"><b>Herren 1 · Satzball!</b><span>Eisvögel führen 2:0 – 24:20 im 3. Satz</span></div>
-    <div class="tm">jetzt</div>
-  </div>
-
   <div class="app">
     <!-- Globale Suche -->
     <div class="search" id="search">
@@ -505,9 +496,8 @@ body{
       <button class="icbtn" title="Suche" onclick="openSearch()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
       </button>
-      <button class="icbtn" title="Mitteilungen" onclick="fireToast()">
+      <button class="icbtn" title="Push-Benachrichtigungen" onclick="gotoTab('mehr'); openMehr('v-push')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
-        <span class="badge">3</span>
       </button>
     </div>
 
@@ -519,82 +509,7 @@ body{
           <h1>Spieltag</h1>
           <span class="sub" id="spieltag-date"></span>
         </div>
-        <div style="padding:0 18px 2px; font-size:12px; color:var(--ink-3); font-weight:500; line-height:1.4">Live-Ansicht als Beispiel · echte Stände kommen im Spielbetrieb (SAMS). Teams &amp; Kalender zeigen bereits echte Saisondaten.</div>
-
-        <div class="section">
-          <div class="sechead"><h2>Jetzt live</h2><div class="rule"></div><span class="count">2</span></div>
-
-          <div class="board">
-            <div class="board-top">
-              <span class="livetag"><span class="pulse"></span>Live</span>
-              <span class="sams">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 8-8M4 12a8 8 0 0 0 8 8M20 12a8 8 0 0 0-8-8"/><circle cx="12" cy="12" r="2.3" fill="currentColor" stroke="none"/></svg>
-                SAMS
-              </span>
-            </div>
-
-            <div class="match">
-              <div class="rowteam">
-                <div class="nm"><span class="tag">H1</span><span class="lbl">Eisvögel <small>· Oberliga</small></span></div>
-                <div class="sets">
-                  <span class="setbox won">25</span><span class="setbox won">25</span><span class="livecol" id="liveA">18</span>
-                </div>
-              </div>
-              <div class="rowteam">
-                <div class="nm"><span class="tag opp">TV</span><span class="lbl">TV Bühl<span class="serve"></span></span></div>
-                <div class="sets">
-                  <span class="setbox">22</span><span class="setbox">19</span><span class="livecol" id="liveB">15</span>
-                </div>
-              </div>
-              <div class="meta"><span class="setpill">Satz 3</span><span>·</span><span class="now">2:0 Sätze</span><span>·</span><span>Aufschlag Bühl</span></div>
-            </div>
-
-            <div class="match">
-              <div class="rowteam">
-                <div class="nm"><span class="tag">D3</span><span class="lbl">Damen 3 <small>· Bezirksklasse</small></span></div>
-                <div class="sets"><span class="setbox won">25</span><span class="setbox">20</span><span class="livecol">9</span></div>
-              </div>
-              <div class="rowteam">
-                <div class="nm"><span class="tag opp">SV</span><span class="lbl">SV Langensteinbach<span class="serve"></span></span></div>
-                <div class="sets"><span class="setbox">21</span><span class="setbox won">25</span><span class="livecol">11</span></div>
-              </div>
-              <div class="meta"><span class="setpill">Satz 3</span><span>·</span><span class="now">1:1 Sätze</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="sechead"><h2>Gleich</h2><div class="rule"></div><span class="count">2</span></div>
-          <div class="fix">
-            <div class="time tnum">15:00<small>HEIM</small></div>
-            <div class="vs"><div class="t"><span class="own">Damen 1</span> · SSC Karlsruhe II</div><div class="c">Regionalliga · Halle Kleinsteinbach</div></div>
-            <span class="chip">in 40 Min</span>
-          </div>
-          <div class="fix">
-            <div class="time tnum">16:30<small>AUSW.</small></div>
-            <div class="vs"><div class="t"><span class="own">Herren 2</span> · TG Bruchsal</div><div class="c">Landesliga · Auswärts</div></div>
-            <span class="chip">Fahrt 15:00</span>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="sechead"><h2>Ergebnisse heute</h2><div class="rule"></div><span class="count">3</span></div>
-          <div class="fix">
-            <div class="time tnum">11:00<small>ENDE</small></div>
-            <div class="vs"><div class="t"><span class="own">Damen 2</span> · VC Wiesloch</div><div class="c">Landesliga · 3 Sätze zu 1</div></div>
-            <span class="res w">3:1</span>
-          </div>
-          <div class="fix">
-            <div class="time tnum">10:00<small>ENDE</small></div>
-            <div class="vs"><div class="t"><span class="own">m-Jugend U18</span> · TV Ettlingen</div><div class="c">Bezirk · deutlich</div></div>
-            <span class="res w">3:0</span>
-          </div>
-          <div class="fix">
-            <div class="time tnum">09:30<small>ENDE</small></div>
-            <div class="vs"><div class="t"><span class="own">Herren 3</span> · TSV Grötzingen</div><div class="c">Bezirksklasse · knapp</div></div>
-            <span class="res l">2:3</span>
-          </div>
-        </div>
+        <div id="spieltag-body"></div>
         <div class="pad-bottom"></div>
       </section>
 
@@ -1092,11 +1007,93 @@ renderTeamsList();
 
 renderCal(); renderDay(calSel);
 
+// ---------- Spieltag-Startseite (Konzept wie die Anzeigetafel: live / heute noch / Endstand / nächster Spieltag) ----------
+// Spiegel von sams/adapter.mjs (spieltagView, liveBoard)
+const byTime=(a,b)=>String(a.g.t||'').localeCompare(String(b.g.t||''));
+function spieltagView(teams, today){
+  const all=[]; for(const key in teams||{}) for(const g of teams[key].games||[]) all.push({key,g});
+  const todays=all.filter(x=>x.g.iso===today);
+  const view={ live:todays.filter(x=>x.g.live), later:todays.filter(x=>!x.g.live&&!x.g.r).sort(byTime),
+    done:todays.filter(x=>!x.g.live&&x.g.r).sort(byTime), next:null, recent:null };
+  if(!todays.length){
+    const nextIso=all.filter(x=>x.g.iso>today&&!x.g.r).map(x=>x.g.iso).sort()[0];
+    if(nextIso) view.next={iso:nextIso, games:all.filter(x=>x.g.iso===nextIso&&!x.g.r).sort(byTime)};
+  }
+  const finished=x=>x.g.r&&!x.g.live;
+  const lastIso=all.filter(x=>x.g.iso<today&&finished(x)).map(x=>x.g.iso).sort().pop();
+  if(lastIso&&!view.done.length&&!view.live.length) view.recent={iso:lastIso, games:all.filter(x=>x.g.iso===lastIso&&finished(x)).sort(byTime)};
+  return view;
+}
+const pairOf=str=>{ const m=/^(\d+):(\d+)$/.exec(String(str||'').trim()); return m?[+m[1],+m[2]]:null; };
+function liveBoard(g){
+  const sets=String(g.s||'').split('·').map(pairOf).filter(Boolean);
+  const sp=pairOf(g.r)||[0,0], cur=g.cur!=null?pairOf(g.cur):null;
+  return { done:cur?sets.slice(0,sp[0]+sp[1]):sets, cur, setNo:(cur?sp[0]+sp[1]:sets.length)+1, sets:sp,
+    serve:g.sv===true?'us':g.sv===false?'opp':null };
+}
+const esc=v=>String(v==null?'':v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const leagueShort=l=>String(l||'').replace(/\s+(Männer|Frauen)(\s+\d+)?$/,'');
+const oppTag=o=>esc((String(o||'').split(/\s+/)[0]||'').slice(0,3).toUpperCase());
+const HA=g=>g.h?'Heim':'Auswärts';
+const LIVE_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 8-8M4 12a8 8 0 0 0 8 8M20 12a8 8 0 0 0-8-8"/><circle cx="12" cy="12" r="2.3" fill="currentColor" stroke="none"/></svg>';
+function daysUntil(iso){ return Math.round((new Date(iso+'T00:00:00')-new Date(TODAY+'T00:00:00'))/864e5); }
+function startsIn(g){
+  if(!g.t||g.iso!==localISO(new Date())) return '';
+  const [h,m]=g.t.split(':').map(Number), now=new Date(), min=Math.round((h*60+m)-(now.getHours()*60+now.getMinutes()+now.getSeconds()/60));
+  return min<=0?'gleich':min<=120?'in '+min+' Min':'';
+}
+function sechead(title, count){ return `<div class="sechead"><h2>${title}</h2><div class="rule"></div>${count!=null?`<span class="count">${count}</span>`:''}</div>`; }
+function boardMatch(key,g){
+  const t=TEAMS[key], b=liveBoard(g), id=key+'-'+g.iso;
+  const cells=i=>b.done.map(p=>`<span class="setbox${p[i]>p[1-i]?' won':''}">${p[i]}</span>`).join('')
+    +(b.cur?`<span class="livecol" data-live="${id}-${i}">${b.cur[i]}</span>`:'');
+  const row=(tag,opp,label,small,i,serves)=>`<div class="rowteam"><div class="nm"><span class="tag${opp?' opp':''}">${tag}</span>`
+    +`<span class="lbl">${label}${small?` <small>· ${small}</small>`:''}${serves?'<span class="serve"></span>':''}</span></div><div class="sets">${cells(i)}</div></div>`;
+  const meta=[`<span class="setpill">Satz ${b.setNo}</span>`, `<span class="now">${b.sets[0]}:${b.sets[1]} Sätze</span>`];
+  if(b.serve) meta.push(`<span>Aufschlag ${b.serve==='us'?esc(t.short):esc(g.o)}</span>`);
+  return `<div class="match">${row(esc(t.badge),false,esc(t.short),HA(g),0,b.serve==='us')}${row(oppTag(g.o),true,esc(g.o),'',1,b.serve==='opp')}`
+    +`<div class="meta">${meta.join('<span>·</span>')}</div></div>`;
+}
+function fixRow(key,g,{chip='',withDate=false}={}){
+  const t=TEAMS[key];
+  const left=g.r?`${esc(t.badge)}<small>${g.h?'HEIM':'AUSW.'}</small>`:`${esc(g.t||'–')}<small>${g.h?'HEIM':'AUSW.'}</small>`;
+  const c=g.r?(g.s?esc(g.s):esc(leagueShort(t.league))):esc(leagueShort(t.league))+' · '+HA(g);
+  let right='';
+  if(g.r){ const p=pairOf(g.r)||[0,0]; right=`<span class="res ${p[0]>p[1]?'w':'l'}">${esc(g.r)}</span>`; }
+  else if(chip) right=`<span class="chip">${chip}</span>`;
+  return `<div class="fix"><div class="time tnum">${left}</div><div class="vs"><div class="t"><span class="own">${esc(t.short)}</span> · ${esc(g.o)}</div><div class="c">${c}</div></div>${right}</div>`;
+}
+const lastLive={};
+function renderSpieltag(){
+  const v=spieltagView(TEAMS, TODAY); let html='';
+  if(v.live.length){
+    const src=v.live.some(x=>x.g.cur!=null)?'DVV-Ticker':'SAMS';
+    html+=`<div class="section">${sechead('Jetzt live',v.live.length)}<div class="board"><div class="board-top"><span class="livetag"><span class="pulse"></span>Live</span><span class="sams">${LIVE_ICON}${src}</span></div>`
+      +v.live.map(x=>boardMatch(x.key,x.g)).join('')+'</div></div>';
+  }
+  if(v.later.length) html+=`<div class="section">${sechead(v.live.length||v.done.length?'Heute noch':'Heute',v.later.length)}`+v.later.map(x=>fixRow(x.key,x.g,{chip:startsIn(x.g)})).join('')+'</div>';
+  if(v.done.length) html+=`<div class="section">${sechead('Ergebnisse heute',v.done.length)}`+v.done.map(x=>fixRow(x.key,x.g)).join('')+'</div>';
+  if(v.next){
+    const n=daysUntil(v.next.iso), when=n===1?'morgen':'in '+n+' Tagen';
+    html+=`<div class="section">${sechead('Nächster Spieltag',esc(dayLabel(v.next.iso)))}`+v.next.games.map((x,i)=>fixRow(x.key,x.g,{chip:i===0?when:''})).join('')+'</div>';
+  }
+  if(v.recent) html+=`<div class="section">${sechead('Letzte Ergebnisse',esc(dayLabel(v.recent.iso)))}`+v.recent.games.map(x=>fixRow(x.key,x.g)).join('')+'</div>';
+  if(!html) html='<div class="section"><div class="cal-empty">Keine Spiele geplant.</div></div>';
+  document.getElementById('spieltag-body').innerHTML=html;
+  // Punkt-Animation, wenn sich ein Live-Stand geändert hat
+  document.querySelectorAll('#spieltag-body [data-live]').forEach(el=>{
+    const k=el.dataset.live; if(lastLive[k]!=null && lastLive[k]!==el.textContent) flash(el); lastLive[k]=el.textContent;
+  });
+  const sub=document.getElementById('spieltag-date');
+  if(sub) sub.textContent=dayLabel(TODAY)+(liveState.at?' · Stand '+pad(liveState.at.getHours())+':'+pad(liveState.at.getMinutes()):'');
+}
+renderSpieltag();
+
 // ---------- Frische SAMS-Daten über den Proxy (eingebetteter Snapshot = Fallback) ----------
 // Spiegel von sams/adapter.mjs (refreshDelayMs, isUsableSnapshot)
 function refreshDelayMs(teams, today){
   const games=Object.values(teams||{}).flatMap(t=>t.games||[]);
-  if(games.some(g=>g.live)) return 20000;
+  if(games.some(g=>g.live)) return 15000;
   const wd=new Date(today+'T00:00:00').getDay();
   if(wd===0||wd===6||games.some(g=>g.iso===today)) return 60000;
   return 600000;
@@ -1111,7 +1108,7 @@ function applyTeams(teams){
   Object.assign(TEAMS, teams);
   prepGames();
   EV=buildEvents(); SEARCH_INDEX=buildIndex();
-  renderTeamsList(); renderCal(); renderDay(calSel);
+  renderTeamsList(); renderCal(); renderDay(calSel); renderSpieltag();
   // offene Team-Seite an Ort und Stelle aktualisieren (Reiter und Spieltag bleiben)
   if(document.getElementById('v-teamdetail').classList.contains('active') && mdState.id && fillTeam(mdState.id)) renderMatchday();
 }
@@ -1131,23 +1128,6 @@ document.addEventListener('visibilitychange', ()=>{
   if(document.visibilityState==='visible' && (!liveState.at || Date.now()-liveState.at>20000)) loadLive();
 });
 
-// Push toast demo
-let toastT;
-function fireToast(){
-  const el=document.getElementById('toast');
-  el.classList.add('show'); clearTimeout(toastT);
-  toastT=setTimeout(()=>el.classList.remove('show'),4200);
-}
-
-// Fake live score ticking on the Eisvögel match
-const a=document.getElementById('liveA'), b=document.getElementById('liveB');
-let sa=18, sb=15;
-setInterval(()=>{
-  if(Math.random()<0.5) return;
-  const home=Math.random()<0.55;
-  if(home){sa++; a.textContent=sa; flash(a);} else {sb++; b.textContent=sb; flash(b);}
-  if(sa>=25||sb>=25){sa=0;sb=0;a.textContent=0;b.textContent=0;}
-},2600);
 function flash(el){el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump');}
 
 // iOS-Fix: App exakt auf die real sichtbare Höhe setzen
@@ -1177,8 +1157,6 @@ if('serviceWorker' in navigator && window.top===window.self && location.protocol
   window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 }
 
-// Auto-demo the push once on load (nach dem Splash)
-setTimeout(fireToast, 2500);
 </script>
 </body>
 </html>

@@ -67,10 +67,10 @@ export function dayLabel(iso) {
 }
 
 // ---- Live-Aktualisierung (in index.html 1:1 gespiegelt) ----
-/** Wie oft die App frische Daten holt: laufendes Spiel 20 s, Wochenende/Spieltag 60 s, sonst 10 min. */
+/** Wie oft die App frische Daten holt: laufendes Spiel 15 s, Wochenende/Spieltag 60 s, sonst 10 min. */
 export function refreshDelayMs(teams, today) {
   const games = Object.values(teams || {}).flatMap((t) => t.games || []);
-  if (games.some((g) => g.live)) return 20000;
+  if (games.some((g) => g.live)) return 15000;
   const wd = new Date(today + 'T00:00:00').getDay();
   if (wd === 0 || wd === 6 || games.some((g) => g.iso === today)) return 60000;
   return 600000;
@@ -80,6 +80,49 @@ export function isUsableSnapshot(s, seasonLabel) {
   if (!s || s.season !== seasonLabel || !s.teams) return false;
   const ts = Object.values(s.teams);
   return ts.length > 0 && ts.every((t) => t && Array.isArray(t.games) && Array.isArray(t.table) && Array.isArray(t.matchdays));
+}
+
+// ---- Spieltag-Startseite nach dem Konzept der Anzeigetafel (in index.html 1:1 gespiegelt) ----
+const byTime = (a, b) => String(a.g.t || '').localeCompare(String(b.g.t || ''));
+/**
+ * Was die Startseite zeigt: heute live / heute noch / Ergebnisse heute –
+ * an spielfreien Tagen stattdessen den nächsten Spieltag (Standby) und die letzten Ergebnisse.
+ */
+export function spieltagView(teams, today) {
+  const all = [];
+  for (const key in teams || {}) for (const g of teams[key].games || []) all.push({ key, g });
+  const todays = all.filter((x) => x.g.iso === today);
+  const view = {
+    live: todays.filter((x) => x.g.live),
+    later: todays.filter((x) => !x.g.live && !x.g.r).sort(byTime),
+    done: todays.filter((x) => !x.g.live && x.g.r).sort(byTime),
+    next: null, recent: null,
+  };
+  if (!todays.length) {
+    const nextIso = all.filter((x) => x.g.iso > today && !x.g.r).map((x) => x.g.iso).sort()[0];
+    if (nextIso) view.next = { iso: nextIso, games: all.filter((x) => x.g.iso === nextIso && !x.g.r).sort(byTime) };
+  }
+  const finished = (x) => x.g.r && !x.g.live;
+  const lastIso = all.filter((x) => x.g.iso < today && finished(x)).map((x) => x.g.iso).sort().pop();
+  if (lastIso && !view.done.length && !view.live.length) {
+    view.recent = { iso: lastIso, games: all.filter((x) => x.g.iso === lastIso && finished(x)).sort(byTime) };
+  }
+  return view;
+}
+const pairOf = (str) => { const m = /^(\d+):(\d+)$/.exec(String(str || '').trim()); return m ? [+m[1], +m[2]] : null; };
+/** Live-Karte aus einem Spiel (VSG-Sicht): fertige Sätze, laufender Satz, Satznummer, Aufschlag. */
+export function liveBoard(g) {
+  const sets = String(g.s || '').split('·').map(pairOf).filter(Boolean);
+  const sp = pairOf(g.r) || [0, 0];
+  const cur = g.cur != null ? pairOf(g.cur) : null;
+  const done = cur ? sets.slice(0, sp[0] + sp[1]) : sets;
+  return {
+    done,
+    cur,
+    setNo: (cur ? sp[0] + sp[1] : sets.length) + 1,
+    sets: sp,
+    serve: g.sv === true ? 'us' : g.sv === false ? 'opp' : null,
+  };
 }
 
 /**
@@ -126,6 +169,7 @@ export function mapMatch(match, clubUuid) {
   return {
     uuid: match.uuid,
     teamUuid: ourUuid,
+    side: weAre1 ? 'team1' : 'team2',   // Seite der VSG in SAMS/Ticker (für applyTicker)
     teamName: our.name || match[weAre1 ? 'team1Description' : 'team2Description'],
     leagueUuid: match.leagueUuid,
     opponent: opp.name || match[weAre1 ? 'team2Description' : 'team1Description'] || '',
@@ -138,6 +182,31 @@ export function mapMatch(match, clubUuid) {
     won,
     setsList,
     location: loc ? { name: loc.name || '', city: (loc.address && loc.address.city) || '' } : null,
+  };
+}
+
+/**
+ * DVV-Live-Ticker über ein gemapptes Spiel legen (backend.sams-ticker.de, gleiche Match-UUIDs).
+ * Die SAMS-API liefert während des Spiels nichts (results=null) – der Ticker hat jeden Ballwechsel.
+ * Liefert eine Kopie; ohne Ticker oder vor Anpfiff unverändert.
+ */
+export function applyTicker(mapped, t) {
+  if (!mapped || !t || !t.started) return mapped;
+  const us = mapped.side, them = us === 'team1' ? 'team2' : 'team1';
+  const a = (t.setPoints && t.setPoints[us]) || 0, b = (t.setPoints && t.setPoints[them]) || 0;
+  const sets = (t.matchSets || []).slice().sort((x, y) => x.setNumber - y.setNumber)
+    .map((st) => ((st.setScore && st.setScore[us]) || 0) + ':' + ((st.setScore && st.setScore[them]) || 0));
+  const finished = !!t.finished;
+  const running = !finished && sets.length > a + b ? sets[sets.length - 1] : null;
+  return {
+    ...mapped,
+    status: finished ? 'played' : 'live',
+    live: !finished,
+    result: a + ':' + b,
+    won: finished ? a > b : null,
+    setsList: sets,
+    current: finished ? null : (running || '0:0'),
+    serve: finished ? null : t.serving === us,
   };
 }
 

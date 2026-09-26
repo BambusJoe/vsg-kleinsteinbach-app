@@ -91,3 +91,39 @@ test('bleibt unter dem SAMS-Limit: keine doppelten Abrufe', async () => {
   assert.equal(new Set(calls).size, calls.length, 'jeder Pfad nur einmal');
   assert.ok(calls.length <= 25, 'höchstens 25 Anfragen, waren ' + calls.length);
 });
+
+test('ECHT + Ticker: laufendes Spiel mit Satzstand und Aufschlag in Spielplan und Liga-Spieltag', async () => {
+  const matches = structuredClone(fx('league-matches_2025-26.json').content);
+  const m = matches.find((x) => x.results);
+  m.results = null;                                   // wie am 26.09.: SAMS weiß während des Spiels nichts
+  const weAre1 = m._embedded.team1.sportsclubUuid === '6e67881d-08be-4e37-822b-7e3c60e88cd7';
+  const ticker = { [m.uuid]: { started: true, finished: false, serving: weAre1 ? 'team1' : 'team2',
+    setPoints: { team1: 1, team2: 0 }, matchSets: [
+      { setNumber: 1, setScore: { team1: 25, team2: 21 } }, { setNumber: 2, setScore: { team1: 10, team2: 8 } }] } };
+  const { get } = fakeSams(matches);
+  const snap = await buildSnapshot({ get, today: '2026-01-10', ticker });
+  const g = Object.values(snap.teams).flatMap((t) => t.games).find((x) => x.live);
+  assert.ok(g, 'Spiel ist live');
+  assert.equal(g.r, weAre1 ? '1:0' : '0:1');
+  assert.equal(g.cur, weAre1 ? '10:8' : '8:10');
+  assert.equal(g.sv, true);
+  const md = Object.values(snap.teams).flatMap((t) => t.matchdays).flatMap((d) => d.matches).find((x) => x.live);
+  assert.ok(md, 'Liga-Spieltag kennt das Live-Spiel');
+  assert.equal(md.r, null);
+  assert.equal(md.lr, '1:0');                          // Liga-Spieltag bleibt team1:team2 (Heim:Gast)
+  assert.equal(md.cur, '10:8');
+});
+
+test('Ticker meldet Spielende -> Ergebnis sofort in Spielplan, Bilanz und Liga-Spieltag', async () => {
+  const matches = structuredClone(fx('league-matches_2025-26.json').content);
+  const m = matches.find((x) => x.results);
+  const sp = m.results.setPoints.split(':').map(Number);
+  m.results = null;
+  const ticker = { [m.uuid]: { started: true, finished: true, serving: 'team1',
+    setPoints: { team1: sp[0], team2: sp[1] }, matchSets: [] } };
+  const withT = await buildSnapshot({ get: fakeSams(matches).get, today: '2026-01-10', ticker });
+  const without = await buildSnapshot({ get: fakeSams(fx('league-matches_2025-26.json').content).get, today: '2026-01-10' });
+  assert.deepEqual(Object.values(withT.teams).map((t) => t.stats[1]), Object.values(without.teams).map((t) => t.stats[1]), 'Bilanz wie mit SAMS-Ergebnis');
+  const md = Object.values(withT.teams).flatMap((t) => t.matchdays).flatMap((d) => d.matches).filter((x) => x.r === sp.join(':'));
+  assert.ok(md.length > 0);
+});

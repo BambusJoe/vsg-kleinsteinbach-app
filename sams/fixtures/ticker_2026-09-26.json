@@ -1,0 +1,186 @@
+{
+ "note": "Echte DVV-Ticker-States vom 26.09.2026 ~14:08 (eventHistory/teamLineups entfernt) + SAMS-Match des VSG-Heimspiels",
+ "samsMatch": {
+  "uuid": "42228167-a45f-4cef-b8d1-d9010d4bb71e",
+  "_links": {
+   "self": {
+    "href": "https://www.volleyball-baden.de/api/v2/league-matches/42228167-a45f-4cef-b8d1-d9010d4bb71e"
+   },
+   "association": {
+    "href": "https://www.volleyball-baden.de/api/v2/associations/f7ecd96f-28b4-44e9-b54c-69683f57c4d7"
+   },
+   "season": {
+    "href": "https://www.volleyball-baden.de/api/v2/seasons/59a20232-8266-4d2f-8bb5-d9790f341b00"
+   },
+   "league": {
+    "href": "https://www.volleyball-baden.de/api/v2/leagues/3115e06d-977e-4906-8398-a1ef3f45c19d"
+   },
+   "match_day": {
+    "href": "https://www.volleyball-baden.de/api/v2/match-days/33b2f0df-813c-4ae6-9e88-2cba1d0b8e9a"
+   },
+   "location": {
+    "href": "https://www.volleyball-baden.de/api/v2/locations/40305ae2-ebc5-e63d-184e-2c6dd05c9d4a"
+   },
+   "team1": {
+    "href": "https://www.volleyball-baden.de/api/v2/teams/c5f6030c-12c8-4683-b2c0-b6a4e3c5f22b"
+   },
+   "team2": {
+    "href": "https://www.volleyball-baden.de/api/v2/teams/18f120dc-7084-425a-84ec-7b6e73481696"
+   },
+   "host": {
+    "href": "https://www.volleyball-baden.de/api/v2/teams/c5f6030c-12c8-4683-b2c0-b6a4e3c5f22b"
+   }
+  },
+  "_embedded": {
+   "team1": {
+    "uuid": "c5f6030c-12c8-4683-b2c0-b6a4e3c5f22b",
+    "masterTeamUuid": null,
+    "name": "VSG Kleinsteinbach",
+    "shortName": "",
+    "teamNumber": 2,
+    "sportsclubUuid": "6e67881d-08be-4e37-822b-7e3c60e88cd7",
+    "_links": {
+     "self": {
+      "href": "https://www.volleyball-baden.de/api/v2/teams/c5f6030c-12c8-4683-b2c0-b6a4e3c5f22b"
+     },
+     "sportsclub": {
+      "href": "https://www.volleyball-baden.de/api/v2/sportsclubs/6e67881d-08be-4e37-822b-7e3c60e88cd7"
+     }
+    }
+   },
+   "team2": {
+    "uuid": "18f120dc-7084-425a-84ec-7b6e73481696",
+    "masterTeamUuid": null,
+    "name": "VSG Ettlingen/Rüppurr",
+    "shortName": "",
+    "teamNumber": 10,
+    "sportsclubUuid": "9d7f9304-9143-4521-b7dc-0fac405aeaf3",
+    "_links": {
+     "self": {
+      "href": "https://www.volleyball-baden.de/api/v2/teams/18f120dc-7084-425a-84ec-7b6e73481696"
+     },
+     "sportsclub": {
+      "href": "https://www.volleyball-baden.de/api/v2/sportsclubs/9d7f9304-9143-4521-b7dc-0fac405aeaf3"
+     }
+    }
+   }
+  },
+  "date": "2026-09-26",
+  "time": "14:00",
+  "matchNumber": 16,
+  "fieldRoundNumber": 0,
+  "playingField": null,
+  "decidingMatch": false,
+  "gameReassessed": false,
+  "host": "c5f6030c-12c8-4683-b2c0-b6a4e3c5f22b",
+  "referees": {
+   "firstReferee": "Gramke, Julia",
+   "secondReferee": "Cota, Sarah-Maria",
+   "thirdReferee": null,
+   "challengeReferee": null
+  },
+  "spectators": 0,
+  "netDuration": null,
+  "verified": false,
+  "location": {
+   "uuid": "40305ae2-ebc5-e63d-184e-2c6dd05c9d4a",
+   "name": "Hagwaldhalle",
+   "longitude": 8.5552977,
+   "latitude": 48.9685242,
+   "address": {
+    "street": "Industriestr.",
+    "postcode": "76327",
+    "city": "Pfinztal, Ortsteil Kleinsteinbach",
+    "country": null,
+    "extrafield": "",
+    "region": "",
+    "postbox": ""
+   }
+  },
+  "seasonUuid": "59a20232-8266-4d2f-8bb5-d9790f341b00",
+  "associationUuid": "f7ecd96f-28b4-44e9-b54c-69683f57c4d7",
+  "team1Description": "VSG Kleinsteinbach",
+  "team2Description": "VSG Ettlingen/Rüppurr",
+  "results": null,
+  "team1Mvp": null,
+  "team2Mvp": null,
+  "matchDayUuid": "33b2f0df-813c-4ae6-9e88-2cba1d0b8e9a",
+  "leagueUuid": "3115e06d-977e-4906-8398-a1ef3f45c19d",
+  "indefinitelyRescheduled": false,
+  "delayPossible": false
+ },
+ "live": {
+  "matchUuid": "42228167-a45f-4cef-b8d1-d9010d4bb71e",
+  "matchSeriesUuid": "3115e06d-977e-4906-8398-a1ef3f45c19d",
+  "finished": false,
+  "finalized": false,
+  "started": true,
+  "ready": true,
+  "setPoints": {
+   "team1": 0,
+   "team2": 0
+  },
+  "serving": "team1",
+  "matchSets": [
+   {
+    "setScore": {
+     "team1": 10,
+     "team2": 8
+    },
+    "setNumber": 1,
+    "isGoldenSet": false
+   }
+  ],
+  "liveStatisticsEnabled": false,
+  "scoresheetPdfUrl": "https://distributor.sams-score.de/scoresheet/pdf/42228167-a45f-4cef-b8d1-d9010d4bb71e/16.pdf"
+ },
+ "finished": {
+  "matchUuid": "147177a6-7776-4408-9f6d-cf1a8daa5c60",
+  "matchSeriesUuid": "af67a6bc-3dc4-41ff-86f7-620dc0fdcc93",
+  "finished": true,
+  "finalized": true,
+  "started": true,
+  "ready": true,
+  "setPoints": {
+   "team1": 3,
+   "team2": 1
+  },
+  "serving": "team1",
+  "matchSets": [
+   {
+    "setScore": {
+     "team1": 25,
+     "team2": 14
+    },
+    "setNumber": 1,
+    "isGoldenSet": false
+   },
+   {
+    "setScore": {
+     "team1": 21,
+     "team2": 25
+    },
+    "setNumber": 2,
+    "isGoldenSet": false
+   },
+   {
+    "setScore": {
+     "team1": 25,
+     "team2": 20
+    },
+    "setNumber": 3,
+    "isGoldenSet": false
+   },
+   {
+    "setScore": {
+     "team1": 25,
+     "team2": 11
+    },
+    "setNumber": 4,
+    "isGoldenSet": false
+   }
+  ],
+  "liveStatisticsEnabled": false,
+  "scoresheetPdfUrl": "https://distributor.sams-score.de/scoresheet/pdf/147177a6-7776-4408-9f6d-cf1a8daa5c60/9.pdf"
+ }
+}

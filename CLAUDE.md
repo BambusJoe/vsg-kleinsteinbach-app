@@ -11,7 +11,8 @@
   - In derselben Session hält ein Republish über denselben Dateipfad die URL.
   - In einer neuen Session muss die `url` mitgegeben und das Artifact vorher gelesen werden.
 - **Daten:** echte Ligadaten aus **SAMS** (Volleyball-Verband Baden).
-  - **Live:** Die App holt beim Öffnen und dann regelmäßig frische Daten vom **Live-Proxy** `https://vsg-anzeigetafel.vercel.app/api/app`. Takt: 20 s, wenn ein VSG-Spiel läuft, 60 s am Wochenende oder an Spieltagen, sonst 10 min, plus sofort beim Zurückkehren in die App.
+  - **Live:** Die App holt beim Öffnen und dann regelmäßig frische Daten vom **Live-Proxy** `https://vsg-anzeigetafel.vercel.app/api/app`. Takt: 15 s, wenn ein VSG-Spiel läuft, 60 s am Wochenende oder an Spieltagen, sonst 10 min, plus sofort beim Zurückkehren in die App.
+  - **Live-Stände kommen aus dem DVV-Live-Ticker** (`backend.sams-ticker.de/live/indoor/tickers/dvv`, öffentlich, gleiche Match-UUIDs wie SAMS, ~2 MB, keine CORS-Header → nur über den Proxy). **Die SAMS-API liefert während des Spiels nichts** (`results: null`, beim Saisonstart am 26.09.2026 verifiziert). Der Proxy legt den Ticker per `applyTicker()` über die SAMS-Daten: Sätze, laufender Satz (`cur`), Aufschlag (`sv`), Spielende sofort.
   - **Fallback:** der eingebettete Snapshot (`const TEAMS`), den die GitHub Action aktuell hält.
   - Der Proxy liegt im **Anzeigetafel-Projekt** (`~/Documents/Claude Projekte/Anzeigetafel`, Repo `BambusJoe/vsg-anzeigetafel`, Vercel). Er nutzt eine Kopie von `sams/adapter.mjs` und `sams/snapshot.mjs` in `api/_lib/app/`.
 
@@ -24,10 +25,10 @@
 | `VSG Wappen Freigestellt Original.png` | Original-Wappen (Quelle für Icons und Logo) |
 | `sponsors/*.svg` | Sponsoren-Logos: `rosswag.svg`, `awesome-logo.svg` |
 | `sams/adapter.mjs` | Reine Mapping-Funktionen (SAMS → App-Modell) |
-| `sams/adapter.test.mjs` | 22 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
-| `sams/snapshot.mjs` | Baut den kompletten Snapshot aus SAMS (`buildSnapshot({get})`, Seitenabfrage `fetchAll`). Wird von `build-snapshot.mjs` **und** vom Live-Proxy genutzt. Tests: `sams/snapshot.test.mjs` (6, simuliert SAMS mit den Fixtures) |
+| `sams/adapter.test.mjs` | 30 Tests. Aufruf: `node --test sams/adapter.test.mjs` |
+| `sams/snapshot.mjs` | Baut den kompletten Snapshot aus SAMS (`buildSnapshot({get})`, Seitenabfrage `fetchAll`). Wird von `build-snapshot.mjs` **und** vom Live-Proxy genutzt. Tests: `sams/snapshot.test.mjs` (8, simuliert SAMS mit den Fixtures) |
 | `sams/copy-to-proxy.mjs` | Kopiert `adapter.mjs` und `snapshot.mjs` in den Proxy (`Anzeigetafel/api/_lib/app/`). **Nach jeder Änderung an diesen beiden Dateien ausführen** und im Anzeigetafel-Repo committen und pushen. |
-| `sams/fixtures/` | Echte SAMS-Antworten (2025/26 mit Ergebnissen, 2026/27 mit Spielplan, Tabellen) |
+| `sams/fixtures/` | Echte SAMS-Antworten (2025/26 mit Ergebnissen, 2026/27 mit Spielplan, Tabellen) und `ticker_2026-09-26.json` (echte Ticker-Stände vom Saisonstart) |
 | `sams/build-snapshot.mjs` | Schreibt `sams/snapshot.json` (dünner Aufrufer von `snapshot.mjs`). |
 | `sams/inject.mjs`, `sams/inject-snapshot.mjs` | Setzen `snapshot.json` in `index.html` ein (Funktion bzw. Befehl). Tests: `sams/inject.test.mjs` (6) |
 | `.github/workflows/snapshot.yml` | GitHub Action: täglich 06:30 plus Sa/So 10:00–23:30 alle 30 min frische SAMS-Daten → einsetzen → nur bei Änderung committen und Pages-Build anstoßen. Braucht das Repo-Secret `SAMS_API_KEY`. Manuell startbar unter Actions → „Run workflow". |
@@ -117,7 +118,8 @@ TEAMS[key] = {
 ```
 
 ## 6. Aufbau von `index.html` (Views und Funktionen)
-- `v-spieltag`: **fest verdrahtetes Demo** (Live-Board, Gleich, Ergebnisse), mit „Beispiel"-Hinweis
+- `v-spieltag`: **echte Daten, Konzept wie die Anzeigetafel.** `renderSpieltag()` nutzt `spieltagView()`: heute „Jetzt live“ (Anzeigetafel-Karte über `liveBoard()`: fertige Sätze, laufender Satz groß, Aufschlagpunkt, Quelle DVV-Ticker/SAMS), „Heute noch“ (mit „in 40 Min“), „Ergebnisse heute“. An spielfreien Tagen „Nächster Spieltag“ (Standby) und „Letzte Ergebnisse“. Ändert sich ein Punktestand, blinkt die Zahl (`flash`). Der Kopf zeigt Datum und „Stand HH:MM“. `spieltagView`/`liveBoard` sind Spiegel aus `sams/adapter.mjs`.
+- Die Glocke oben öffnet die Push-Einstellungen. Die Demo-Push-Meldung („Satzball!“) wurde entfernt.
 - `v-teams`: wird von `renderTeamsList()` aus TEAMS erzeugt
 - `v-teamdetail`:
   - `openTeam(id)`
@@ -180,8 +182,7 @@ TEAMS[key] = {
 1. ~~„Heute" dynamisch machen~~ – erledigt am 23.09.2026 (inkl. Fix: Rückrunden-Spiele lagen im Kalender im falschen Jahr).
 2. ~~Snapshot per Befehl einsetzen + GitHub Action~~ – erledigt am 23.09.2026. **Offen: Repo-Secret `SAMS_API_KEY` muss der Vorstand selbst anlegen**, erst dann läuft die Action.
 3. ~~Live-Proxy~~ – erledigt am 23.09.2026 als Vercel-Funktion `api/app.js` im Anzeigetafel-Projekt (statt Cloudflare: ein Dienst, ein Key). **Beim Saisonstart Sa 26.09.2026 (H1 gegen Ettlingen/Rüppurr, 14:00, Hagwaldhalle) prüfen, ob SAMS die Zwischenstände wirklich live liefert** (siehe `Anzeigetafel/LIVE-TEST.md`).
-4. **Spieltag-Screen live machen** über `/score` plus die heutigen Spiele aus TEAMS. Danach den „Beispiel"-Hinweis entfernen. Testen lässt sich das an jedem gerade laufenden Fremdspiel.
-5. Die fest verdrahteten Spieltag-Abschnitte („Gleich", „Ergebnisse heute") aus echten Daten erzeugen.
+4. ~~Spieltag-Screen live~~ und 5. ~~Spieltag-Abschnitte aus echten Daten~~ – erledigt am 26.09.2026 während des Saisonstarts (DVV-Ticker statt `/score`). Nächster Test: Doppel-Heimspieltag 10.10. (H1 14:00, D1 19:00).
 6. Offen:
    - News und Vereins-Termine sind Beispieldaten (Quelle klären: Instagram, Website?).
    - Jugend-Teams fehlen (eigene SAMS-Abfrage nötig).

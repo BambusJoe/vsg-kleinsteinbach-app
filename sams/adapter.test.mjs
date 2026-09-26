@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 import {
   items, parseScore, pointsForResult, weekday, shortDate,
   mapMatch, groupByTeam, teamRecord, mapRanking, currentMatchdayIndex,
-  localISO, resolveToday, gameISO, dayLabel, refreshDelayMs, isUsableSnapshot,
+  localISO, resolveToday, gameISO, dayLabel, refreshDelayMs, isUsableSnapshot, applyTicker, spieltagView, liveBoard,
 } from './adapter.mjs';
 
 const CLUB = '6e67881d-08be-4e37-822b-7e3c60e88cd7'; // VSG Kleinsteinbach
@@ -268,8 +268,8 @@ test('dayLabel: "Sa · 26. Sept."', () => {
 
 // ---------- Live-Aktualisierung der App (wird 1:1 in index.html gespiegelt) ----------
 const T = (games) => ({ h1: { games } });
-test('refreshDelayMs: 20 s bei laufendem Spiel, 60 s am Wochenende/Spieltag, sonst 10 min', () => {
-  assert.equal(refreshDelayMs(T([{ iso: '2026-09-26', live: true }]), '2026-09-26'), 20000);
+test('refreshDelayMs: 15 s bei laufendem Spiel, 60 s am Wochenende/Spieltag, sonst 10 min', () => {
+  assert.equal(refreshDelayMs(T([{ iso: '2026-09-26', live: true }]), '2026-09-26'), 15000);
   assert.equal(refreshDelayMs(T([{ iso: '2026-09-26', t: '14:00' }]), '2026-09-26'), 60000); // Spieltag (Sa)
   assert.equal(refreshDelayMs(T([]), '2026-09-27'), 60000);                               // Sonntag
   assert.equal(refreshDelayMs(T([{ iso: '2027-01-06', t: '11:00' }]), '2027-01-06'), 60000); // Spiel an einem Mittwoch
@@ -285,4 +285,88 @@ test('isUsableSnapshot: nur vollständige Proxy-Antworten ersetzen die eingebett
   assert.equal(isUsableSnapshot({ season: '2026/27', teams: {} }, '2026/27'), false);
   assert.equal(isUsableSnapshot({ season: '2026/27', teams: { h1: { name: 'x' } } }, '2026/27'), false); // ohne games
   assert.equal(isUsableSnapshot(null, '2026/27'), false);
+});
+
+// ---------- DVV-Live-Ticker (SAMS-API liefert während des Spiels nichts) ----------
+const TK = fx('ticker_2026-09-26.json');
+
+test('ECHT 26.09.: SAMS results=null, Ticker läuft -> live mit laufendem Satz und Aufschlag', () => {
+  const m = mapMatch(TK.samsMatch, CLUB);
+  assert.equal(m.status, 'upcoming');              // SAMS allein weiß nichts
+  const g = applyTicker(m, TK.live);
+  assert.equal(g.status, 'live');
+  assert.equal(g.live, true);
+  assert.equal(g.result, '0:0');                   // Sätze
+  assert.deepEqual(g.setsList, ['10:8']);          // laufender Satz steht mit drin
+  assert.equal(g.current, '10:8');
+  assert.equal(g.serve, true);                     // team1 = VSG schlägt auf
+  assert.equal(m.status, 'upcoming', 'Original bleibt unverändert');
+});
+
+test('applyTicker dreht die Perspektive, wenn die VSG team2 ist', () => {
+  const m = { ...mapMatch(TK.samsMatch, CLUB), side: 'team2' };
+  const t = { ...TK.live, setPoints: { team1: 1, team2: 0 }, matchSets: [
+    { setNumber: 1, setScore: { team1: 25, team2: 20 } }, { setNumber: 2, setScore: { team1: 7, team2: 12 } }] };
+  const g = applyTicker(m, t);
+  assert.equal(g.result, '0:1');
+  assert.deepEqual(g.setsList, ['20:25', '12:7']);
+  assert.equal(g.current, '12:7');
+  assert.equal(g.serve, false);                    // team1 (Gegner) schlägt auf
+});
+
+test('ECHT: beendetes Ticker-Spiel = Endergebnis, bevor SAMS es einträgt', () => {
+  const m = { ...mapMatch(TK.samsMatch, CLUB), side: 'team1' };
+  const t = TK.finished;
+  const g = applyTicker(m, t);
+  assert.equal(g.status, 'played');
+  assert.equal(g.live, false);
+  assert.equal(g.result, t.setPoints.team1 + ':' + t.setPoints.team2);
+  assert.equal(g.won, t.setPoints.team1 > t.setPoints.team2);
+  assert.equal(g.setsList.length, t.matchSets.length);
+  assert.equal(g.current, null);
+});
+
+test('applyTicker: ohne Ticker oder vor Anpfiff bleibt alles wie von SAMS', () => {
+  const m = mapMatch(TK.samsMatch, CLUB);
+  assert.deepEqual(applyTicker(m, null), m);
+  assert.deepEqual(applyTicker(m, { ...TK.live, started: false }), m);
+});
+
+// ---------- Spieltag-Startseite nach dem Konzept der Anzeigetafel ----------
+const TEAMSX = {
+  d1: { games: [{ iso: '2026-09-26', t: '19:00', o: 'A' }, { iso: '2026-10-10', t: '19:00', o: 'B' }] },
+  h1: { games: [{ iso: '2026-09-19', r: '3:1', o: 'C' }, { iso: '2026-09-26', live: true, r: '0:0', s: '13:10', cur: '13:10', sv: true, o: 'D' }] },
+  h2: { games: [{ iso: '2026-09-26', r: '3:2', o: 'E', t2: 1 }, { iso: '2026-10-04', t: '14:00', o: 'F' }] },
+};
+test('spieltagView am Spieltag: live / heute noch / Ergebnisse heute', () => {
+  const v = spieltagView(TEAMSX, '2026-09-26');
+  assert.deepEqual(v.live.map((x) => x.key + ':' + x.g.o), ['h1:D']);
+  assert.deepEqual(v.later.map((x) => x.key + ':' + x.g.o), ['d1:A']);
+  assert.deepEqual(v.done.map((x) => x.key + ':' + x.g.o), ['h2:E']);
+  assert.equal(v.next, null);
+});
+test('spieltagView ohne Spiel heute: nächster Spieltag (Standby) + letzte Ergebnisse', () => {
+  const v = spieltagView(TEAMSX, '2026-09-30');
+  assert.equal(v.live.length + v.later.length + v.done.length, 0);
+  assert.equal(v.next.iso, '2026-10-04');
+  assert.deepEqual(v.next.games.map((x) => x.key), ['h2']);
+  assert.equal(v.recent.iso, '2026-09-26');
+  assert.deepEqual(v.recent.games.map((x) => x.key + ':' + x.g.o), ['h2:E']); // nur beendete
+});
+test('spieltagView: Saisonende -> kein nächster Spieltag', () => {
+  const v = spieltagView(TEAMSX, '2027-06-01');
+  assert.equal(v.next, null);
+  assert.equal(v.recent.iso, '2026-09-26');
+});
+test('liveBoard: fertige Sätze, laufender Satz und Aufschlag aus VSG-Sicht', () => {
+  const b = liveBoard({ r: '1:0', s: '25:21 · 12:10', cur: '12:10', sv: false });
+  assert.deepEqual(b.done, [[25, 21]]);
+  assert.deepEqual(b.cur, [12, 10]);
+  assert.equal(b.setNo, 2);
+  assert.equal(b.serve, 'opp');
+  const ohneTicker = liveBoard({ r: '1:1', s: '25:20 · 20:25' });   // nur SAMS, kein laufender Satz
+  assert.deepEqual(ohneTicker.done, [[25, 20], [20, 25]]);
+  assert.equal(ohneTicker.cur, null);
+  assert.equal(ohneTicker.serve, null);
+  assert.equal(liveBoard({ r: '0:0', s: '', cur: '0:0' }).setNo, 1);
 });
