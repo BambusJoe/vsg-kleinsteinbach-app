@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-09-23T13:34:49.592Z",
+ "generatedAt": "2026-09-26T09:29:22.838Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2993,7 +2993,7 @@
      "h": false,
      "o": "VSG Ettlingen/Rüppurr",
      "t": "19:30",
-     "sub": "Oberliga Baden Männer · Auswärts · Karlsruhe-Rüppurr"
+     "sub": "Oberliga Baden Männer · Auswärts · Karlsruhe"
     },
     {
      "d": "30.01.",
@@ -4010,7 +4010,7 @@
      "h": false,
      "o": "TSG Blankenloch 3",
      "t": "13:00",
-     "sub": "Landesliga Männer 2 · Auswärts · Stutensee-Blankenloch"
+     "sub": "Landesliga Männer 2 · Auswärts · Stutensee"
     },
     {
      "d": "30.01.",
@@ -4801,7 +4801,7 @@
      "h": false,
      "o": "TSG Blankenloch 4",
      "t": "13:00",
-     "sub": "Bezirksklasse Männer 3 · Auswärts · Stutensee-Blankenloch"
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Stutensee"
     },
     {
      "d": "07.11.",
@@ -4918,7 +4918,7 @@
      "h": false,
      "o": "TSG Blankenloch 4",
      "t": "13:00",
-     "sub": "Bezirksklasse Männer 3 · Auswärts · Stutensee-Blankenloch"
+     "sub": "Bezirksklasse Männer 3 · Auswärts · Stutensee"
     }
    ],
    "matchdays": [
