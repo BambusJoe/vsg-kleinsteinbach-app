@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-09-26T09:29:22.838Z",
+ "generatedAt": "2026-09-26T16:51:19.536Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2801,21 +2801,37 @@
    "pos": 2,
    "stats": [
     [
-     "–",
+     "2.",
      "Platz"
     ],
     [
-     "0–0",
+     "0–1",
      "Bilanz"
     ],
     [
-     "0:0",
+     "2:3",
      "Sätze"
     ]
    ],
    "table": [
     {
      "p": 1,
+     "t": "VSG Ettlingen/Rüppurr",
+     "sp": 1,
+     "pk": 2,
+     "sr": "3:2",
+     "own": false
+    },
+    {
+     "p": 2,
+     "t": "VSG Kleinsteinbach",
+     "sp": 1,
+     "pk": 1,
+     "sr": "2:3",
+     "own": true
+    },
+    {
+     "p": 3,
      "t": "VfR Merzhausen 1",
      "sp": 0,
      "pk": 0,
@@ -2823,24 +2839,8 @@
      "own": false
     },
     {
-     "p": 2,
-     "t": "VSG Kleinsteinbach",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": true
-    },
-    {
-     "p": 3,
-     "t": "VSG KiLa",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
-    },
-    {
      "p": 4,
-     "t": "VSG Ettlingen/Rüppurr",
+     "t": "VSG KiLa",
      "sp": 0,
      "pk": 0,
      "sr": "0:0",
@@ -2902,8 +2902,8 @@
      "iso": "2026-09-26",
      "h": true,
      "o": "VSG Ettlingen/Rüppurr",
-     "t": "14:00",
-     "sub": "Oberliga Baden Männer · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+     "r": "2:3",
+     "s": "25:17 · 25:20 · 16:25 · 18:25 · 13:15"
     },
     {
      "d": "03.10.",
@@ -3067,8 +3067,8 @@
       {
        "h": "VSG Kleinsteinbach",
        "a": "VSG Ettlingen/Rüppurr",
-       "r": null,
-       "t": "14:00",
+       "r": "2:3",
+       "t": null,
        "own": true
       },
       {
