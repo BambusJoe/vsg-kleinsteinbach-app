@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-02T10:41:04.639Z",
+ "generatedAt": "2026-10-03T12:59:03.241Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1017,29 +1017,29 @@
    "league": "Landesliga Frauen 2",
    "j": false,
    "short": "Damen 2",
-   "pos": 1,
+   "pos": 10,
    "stats": [
     [
-     "–",
+     "10.",
      "Platz"
     ],
     [
-     "0–0",
+     "0–1",
      "Bilanz"
     ],
     [
-     "0:0",
+     "0:3",
      "Sätze"
     ]
    ],
    "table": [
     {
      "p": 1,
-     "t": "VSG Kleinsteinbach 2",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": true
+     "t": "FT Forchheim",
+     "sp": 1,
+     "pk": 3,
+     "sr": "3:0",
+     "own": false
     },
     {
      "p": 2,
@@ -1099,7 +1099,7 @@
     },
     {
      "p": 9,
-     "t": "FT Forchheim",
+     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
      "sp": 0,
      "pk": 0,
      "sr": "0:0",
@@ -1107,11 +1107,11 @@
     },
     {
      "p": 10,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
-     "sp": 0,
+     "t": "VSG Kleinsteinbach 2",
+     "sp": 1,
      "pk": 0,
-     "sr": "0:0",
-     "own": false
+     "sr": "0:3",
+     "own": true
     }
    ],
    "games": [
@@ -1121,8 +1121,8 @@
      "iso": "2026-10-03",
      "h": false,
      "o": "FT Forchheim",
-     "t": "13:00",
-     "sub": "Landesliga Frauen 2 · Auswärts · Rheinstetten, Mörsch"
+     "r": "0:3",
+     "s": "22:25 · 21:25 · 20:25"
     },
     {
      "d": "11.10.",
@@ -1286,8 +1286,8 @@
       {
        "h": "FT Forchheim",
        "a": "VSG Kleinsteinbach 2",
-       "r": null,
-       "t": "13:00",
+       "r": "3:0",
+       "t": null,
        "own": true
       },
       {
