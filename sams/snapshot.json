@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-04T13:38:37.857Z",
+ "generatedAt": "2026-10-04T17:56:49.490Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -9,18 +9,18 @@
    "league": "Regionalliga Süd Frauen",
    "j": false,
    "short": "Damen 1",
-   "pos": 3,
+   "pos": 9,
    "stats": [
     [
-     "–",
+     "9.",
      "Platz"
     ],
     [
-     "0–0",
+     "0–1",
      "Bilanz"
     ],
     [
-     "0:0",
+     "0:3",
      "Sätze"
     ]
    ],
@@ -35,7 +35,7 @@
     },
     {
      "p": 2,
-     "t": "VfB Ulm",
+     "t": "FV Tübinger Modell",
      "sp": 1,
      "pk": 3,
      "sr": "3:0",
@@ -43,59 +43,59 @@
     },
     {
      "p": 3,
-     "t": "VSG Kleinsteinbach",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": true
+     "t": "VfB Ulm",
+     "sp": 1,
+     "pk": 3,
+     "sr": "3:0",
+     "own": false
     },
     {
      "p": 4,
      "t": "TV Rottenburg",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
+     "sp": 1,
+     "pk": 3,
+     "sr": "3:0",
      "own": false
     },
     {
      "p": 5,
-     "t": "TSF Ditzingen",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
+     "t": "TG Biberach",
+     "sp": 1,
+     "pk": 2,
+     "sr": "3:2",
      "own": false
     },
     {
      "p": 6,
-     "t": "TG Biberach",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
+     "t": "TSF Ditzingen",
+     "sp": 1,
+     "pk": 1,
+     "sr": "2:3",
      "own": false
     },
     {
      "p": 7,
-     "t": "FV Tübinger Modell",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
-    },
-    {
-     "p": 8,
-     "t": "DJK Schwäbisch Gmünd",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
-    },
-    {
-     "p": 9,
      "t": "USC Konstanz",
      "sp": 1,
      "pk": 0,
      "sr": "0:3",
      "own": false
+    },
+    {
+     "p": 8,
+     "t": "DJK Schwäbisch Gmünd",
+     "sp": 1,
+     "pk": 0,
+     "sr": "0:3",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "VSG Kleinsteinbach",
+     "sp": 1,
+     "pk": 0,
+     "sr": "0:3",
+     "own": true
     },
     {
      "p": 10,
@@ -113,8 +113,8 @@
      "iso": "2026-10-04",
      "h": false,
      "o": "FV Tübinger Modell",
-     "t": "16:00",
-     "sub": "Regionalliga Süd Frauen · Auswärts · Tübingen"
+     "r": "0:3",
+     "s": "16:25 · 20:25 · 23:25"
     },
     {
      "d": "10.10.",
@@ -292,22 +292,22 @@
       {
        "h": "TSF Ditzingen",
        "a": "TG Biberach",
-       "r": null,
-       "t": "15:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       },
       {
        "h": "FV Tübinger Modell",
        "a": "VSG Kleinsteinbach",
-       "r": null,
-       "t": "16:00",
+       "r": "3:0",
+       "t": null,
        "own": true
       },
       {
        "h": "TV Rottenburg",
        "a": "DJK Schwäbisch Gmünd",
-       "r": null,
-       "t": "16:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       }
      ]
@@ -2798,10 +2798,10 @@
    "league": "Oberliga Baden Männer",
    "j": false,
    "short": "Herren 1",
-   "pos": 5,
+   "pos": 6,
    "stats": [
     [
-     "5.",
+     "6.",
      "Platz"
     ],
     [
@@ -2816,6 +2816,14 @@
    "table": [
     {
      "p": 1,
+     "t": "VSG Ettlingen/Rüppurr",
+     "sp": 2,
+     "pk": 4,
+     "sr": "6:4",
+     "own": false
+    },
+    {
+     "p": 2,
      "t": "TV Kappelrodeck",
      "sp": 1,
      "pk": 3,
@@ -2823,7 +2831,7 @@
      "own": false
     },
     {
-     "p": 2,
+     "p": 3,
      "t": "SG Sinsheim/Helmstadt",
      "sp": 1,
      "pk": 3,
@@ -2831,7 +2839,7 @@
      "own": false
     },
     {
-     "p": 3,
+     "p": 4,
      "t": "FT 1844 Freiburg 3",
      "sp": 1,
      "pk": 3,
@@ -2839,15 +2847,15 @@
      "own": false
     },
     {
-     "p": 4,
-     "t": "VSG Ettlingen/Rüppurr",
+     "p": 5,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
      "sp": 1,
-     "pk": 2,
-     "sr": "3:2",
+     "pk": 1,
+     "sr": "2:3",
      "own": false
     },
     {
-     "p": 5,
+     "p": 6,
      "t": "VSG Kleinsteinbach",
      "sp": 2,
      "pk": 1,
@@ -2855,7 +2863,7 @@
      "own": true
     },
     {
-     "p": 6,
+     "p": 7,
      "t": "VfR Merzhausen 1",
      "sp": 0,
      "pk": 0,
@@ -2863,16 +2871,8 @@
      "own": false
     },
     {
-     "p": 7,
-     "t": "VSG KiLa",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
-    },
-    {
      "p": 8,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "t": "VSG KiLa",
      "sp": 0,
      "pk": 0,
      "sr": "0:0",
@@ -3129,8 +3129,8 @@
       {
        "h": "VSG Ettlingen/Rüppurr",
        "a": "BADEN VOLLEYS SSC Karlsruhe 3",
-       "r": null,
-       "t": "16:30",
+       "r": "3:2",
+       "t": null,
        "own": false
       },
       {
@@ -3806,24 +3806,32 @@
    "league": "Landesliga Männer 2",
    "j": false,
    "short": "Herren 2",
-   "pos": 8,
+   "pos": 9,
    "stats": [
     [
-     "–",
+     "9.",
      "Platz"
     ],
     [
-     "0–0",
+     "0–2",
      "Bilanz"
     ],
     [
-     "0:0",
+     "2:6",
      "Sätze"
     ]
    ],
    "table": [
     {
      "p": 1,
+     "t": "VT Hagsfeld",
+     "sp": 2,
+     "pk": 6,
+     "sr": "6:2",
+     "own": false
+    },
+    {
+     "p": 2,
      "t": "NVV-Kader männlich",
      "sp": 4,
      "pk": 6,
@@ -3831,7 +3839,7 @@
      "own": false
     },
     {
-     "p": 2,
+     "p": 3,
      "t": "BADEN VOLLEYS SSC Karlsruhe 5",
      "sp": 2,
      "pk": 5,
@@ -3839,7 +3847,7 @@
      "own": false
     },
     {
-     "p": 3,
+     "p": 4,
      "t": "FT Forchheim",
      "sp": 3,
      "pk": 5,
@@ -3847,7 +3855,7 @@
      "own": false
     },
     {
-     "p": 4,
+     "p": 5,
      "t": "TSV Ötisheim",
      "sp": 1,
      "pk": 3,
@@ -3855,15 +3863,15 @@
      "own": false
     },
     {
-     "p": 5,
-     "t": "VT Hagsfeld",
+     "p": 6,
+     "t": "TSG Blankenloch 3",
      "sp": 1,
      "pk": 3,
      "sr": "3:1",
      "own": false
     },
     {
-     "p": 6,
+     "p": 7,
      "t": "TV Flehingen",
      "sp": 1,
      "pk": 1,
@@ -3871,7 +3879,7 @@
      "own": false
     },
     {
-     "p": 7,
+     "p": 8,
      "t": "TG Ötigheim",
      "sp": 2,
      "pk": 1,
@@ -3879,20 +3887,12 @@
      "own": false
     },
     {
-     "p": 8,
-     "t": "VSG Kleinsteinbach 2",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": true
-    },
-    {
      "p": 9,
-     "t": "TSG Blankenloch 3",
-     "sp": 0,
+     "t": "VSG Kleinsteinbach 2",
+     "sp": 2,
      "pk": 0,
-     "sr": "0:0",
-     "own": false
+     "sr": "2:6",
+     "own": true
     },
     {
      "p": 10,
@@ -3910,8 +3910,8 @@
      "iso": "2026-10-04",
      "h": true,
      "o": "VT Hagsfeld",
-     "t": "14:00",
-     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+     "r": "1:3",
+     "s": "16:25 · 25:22 · 17:25 · 16:25"
     },
     {
      "d": "04.10.",
@@ -3919,8 +3919,8 @@
      "iso": "2026-10-04",
      "h": true,
      "o": "TSG Blankenloch 3",
-     "t": "14:00",
-     "sub": "Landesliga Männer 2 · Heim · Pfinztal"
+     "r": "1:3",
+     "s": "22:25 · 22:25 · 25:15 · 24:26"
     },
     {
      "d": "17.10.",
@@ -4163,15 +4163,15 @@
       {
        "h": "VSG Kleinsteinbach 2",
        "a": "VT Hagsfeld",
-       "r": null,
-       "t": "14:00",
+       "r": "1:3",
+       "t": null,
        "own": true
       },
       {
        "h": "VSG Kleinsteinbach 2",
        "a": "TSG Blankenloch 3",
-       "r": null,
-       "t": "14:00",
+       "r": "1:3",
+       "t": null,
        "own": true
       }
      ]
