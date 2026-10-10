@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-10T18:45:04.886Z",
+ "generatedAt": "2026-10-10T22:09:36.225Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -9,93 +9,93 @@
    "league": "Regionalliga Süd Frauen",
    "j": false,
    "short": "Damen 1",
-   "pos": 9,
+   "pos": 8,
    "stats": [
     [
-     "9.",
+     "8.",
      "Platz"
     ],
     [
-     "0–1",
+     "0–2",
      "Bilanz"
     ],
     [
-     "0:3",
+     "1:6",
      "Sätze"
     ]
    ],
    "table": [
     {
      "p": 1,
-     "t": "Heidelberger TV 2",
-     "sp": 1,
-     "pk": 3,
-     "sr": "3:0",
+     "t": "VfB Ulm",
+     "sp": 2,
+     "pk": 6,
+     "sr": "6:0",
      "own": false
     },
     {
      "p": 2,
-     "t": "FV Tübinger Modell",
-     "sp": 1,
-     "pk": 3,
-     "sr": "3:0",
+     "t": "TV Rottenburg",
+     "sp": 2,
+     "pk": 6,
+     "sr": "6:1",
      "own": false
     },
     {
      "p": 3,
-     "t": "VfB Ulm",
-     "sp": 1,
-     "pk": 3,
-     "sr": "3:0",
+     "t": "TSF Ditzingen",
+     "sp": 2,
+     "pk": 4,
+     "sr": "5:4",
      "own": false
     },
     {
      "p": 4,
-     "t": "TV Rottenburg",
-     "sp": 1,
+     "t": "Heidelberger TV 2",
+     "sp": 2,
      "pk": 3,
-     "sr": "3:0",
+     "sr": "4:3",
      "own": false
     },
     {
      "p": 5,
      "t": "TG Biberach",
-     "sp": 1,
-     "pk": 2,
-     "sr": "3:2",
+     "sp": 2,
+     "pk": 3,
+     "sr": "5:5",
      "own": false
     },
     {
      "p": 6,
-     "t": "TSF Ditzingen",
-     "sp": 1,
-     "pk": 1,
-     "sr": "2:3",
+     "t": "FV Tübinger Modell",
+     "sp": 2,
+     "pk": 3,
+     "sr": "3:3",
      "own": false
     },
     {
      "p": 7,
+     "t": "DJK Schwäbisch Gmünd",
+     "sp": 2,
+     "pk": 2,
+     "sr": "3:5",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "VSG Kleinsteinbach",
+     "sp": 2,
+     "pk": 0,
+     "sr": "1:6",
+     "own": true
+    },
+    {
+     "p": 9,
      "t": "USC Konstanz",
      "sp": 1,
      "pk": 0,
      "sr": "0:3",
      "own": false
-    },
-    {
-     "p": 8,
-     "t": "DJK Schwäbisch Gmünd",
-     "sp": 1,
-     "pk": 0,
-     "sr": "0:3",
-     "own": false
-    },
-    {
-     "p": 9,
-     "t": "VSG Kleinsteinbach",
-     "sp": 1,
-     "pk": 0,
-     "sr": "0:3",
-     "own": true
     },
     {
      "p": 10,
@@ -122,8 +122,8 @@
      "iso": "2026-10-10",
      "h": true,
      "o": "TV Rottenburg",
-     "t": "19:00",
-     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+     "r": "1:3",
+     "s": "23:25 · 31:29 · 22:25 · 14:25"
     },
     {
      "d": "17.10.",
@@ -321,15 +321,15 @@
       {
        "h": "DJK Schwäbisch Gmünd",
        "a": "TG Biberach",
-       "r": null,
-       "t": "19:00",
+       "r": "3:2",
+       "t": null,
        "own": false
       },
       {
        "h": "TSF Ditzingen",
        "a": "Heidelberger TV 2",
-       "r": null,
-       "t": "19:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
@@ -342,8 +342,8 @@
       {
        "h": "VSG Kleinsteinbach",
        "a": "TV Rottenburg",
-       "r": null,
-       "t": "19:00",
+       "r": "1:3",
+       "t": null,
        "own": true
       },
       {
@@ -2861,10 +2861,10 @@
    "league": "Oberliga Baden Männer",
    "j": false,
    "short": "Herren 1",
-   "pos": 4,
+   "pos": 5,
    "stats": [
     [
-     "4.",
+     "5.",
      "Platz"
     ],
     [
@@ -2879,18 +2879,18 @@
    "table": [
     {
      "p": 1,
-     "t": "VfR Merzhausen 1",
-     "sp": 2,
+     "t": "VSG Ettlingen/Rüppurr",
+     "sp": 3,
      "pk": 6,
-     "sr": "6:0",
+     "sr": "9:6",
      "own": false
     },
     {
      "p": 2,
-     "t": "VSG Ettlingen/Rüppurr",
+     "t": "VfR Merzhausen 1",
      "sp": 2,
-     "pk": 4,
-     "sr": "6:4",
+     "pk": 6,
+     "sr": "6:0",
      "own": false
     },
     {
@@ -2903,19 +2903,19 @@
     },
     {
      "p": 4,
+     "t": "TV Kappelrodeck",
+     "sp": 2,
+     "pk": 4,
+     "sr": "5:3",
+     "own": false
+    },
+    {
+     "p": 5,
      "t": "VSG Kleinsteinbach",
      "sp": 3,
      "pk": 4,
      "sr": "5:6",
      "own": true
-    },
-    {
-     "p": 5,
-     "t": "TV Kappelrodeck",
-     "sp": 1,
-     "pk": 3,
-     "sr": "3:0",
-     "own": false
     },
     {
      "p": 6,
@@ -3194,8 +3194,8 @@
       {
        "h": "TV Kappelrodeck",
        "a": "VSG Ettlingen/Rüppurr",
-       "r": null,
-       "t": "20:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       },
       {
