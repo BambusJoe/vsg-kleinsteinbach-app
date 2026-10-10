@@ -113,7 +113,7 @@ TEAMS[key] = {
   stats:[['–','Platz'],['0–0','Bilanz'],['0:0','Sätze']],
   table:[{p,t,sp,pk,sr,own}],                        // Liga-Tabelle
   games:[{d:'03.10.',wd:'Sa',iso:'2026-10-03',h:true,o:'Gegner',r?,s?,t?,sub?,live?}],  // eigener Spielplan; today wird zur Laufzeit gesetzt
-  matchdays:[{no,date,matches:[{h,a,r,t,own}]}]      // alle Paarungen der Liga
+  matchdays:[{no,date,matches:[{h,a,r,t,own,dd?,live?,lr?,cur?}]}]  // alle Paarungen der Liga; Reihenfolge nach SAMS-Spielnummer, date = häufigstes Datum
 }
 ```
 
@@ -124,7 +124,7 @@ TEAMS[key] = {
 - `v-teamdetail`:
   - `openTeam(id)`
   - Segment-Umschalter `segShow('md'|'plan'|'table')`
-  - `renderMatchday()` mit `mdState`; `currentMatchdayIndex()` wählt den ersten Spieltag mit offenem Spiel
+  - `renderMatchday()` mit `mdState`; `currentMatchdayIndex(mds, TODAY)` wählt den **letzten Spieltag, der bis heute begonnen hat** (vor Saisonbeginn den ersten). Spiele mit abweichendem Datum zeigen „Spiel am Sa 26.09.“ (`dd`).
 - `v-news`: fest verdrahtete Beispiel-News (Array `NEWS` für die Suche)
 - `v-kalender`: `buildEvents()` aus TEAMS.games plus Vereins-Events, `renderCal()`, `selDay()`. Das Jahr eines Spiels (`g.d` = "23.01.") ergibt sich aus `SEASON_LABEL` über `gameISO()` (Juli–Dez = Startjahr, Jan–Juni = Folgejahr).
 - **Live-Daten:** `loadLive()` holt `LIVE_URL`. Nur wenn `isUsableSnapshot()` die Antwort akzeptiert, ersetzt `applyTeams()` den Inhalt von TEAMS und rendert Teams-Liste, Kalender, Suche und eine offene Team-Seite neu (`fillTeam`; Reiter und Spieltag bleiben erhalten). Den nächsten Abruf bestimmt `refreshDelayMs()`. Beide Funktionen sind ein Spiegel von `sams/adapter.mjs`. Der Teams-Kopf zeigt „Stand HH:MM“.
@@ -166,6 +166,7 @@ TEAMS[key] = {
 - **Die GitHub Action committet selbst auf `main`** → vor jedem eigenen Push `git pull --ff-only`.
 - **Den API-Key nie im Klartext in einen Befehl schreiben** (wird blockiert). Lokal: `node --env-file="$HOME/Documents/Claude Projekte/Anzeigetafel/.env.local" sams/build-snapshot.mjs`.
 - **Live-Erkennung:** SAMS liefert bei laufenden Spielen `results` schon mit Zwischenstand, aber ohne `results.winner`. Deshalb gilt: nur mit `winner` beendet, sonst `live`. Ein Endergebnis ohne diese Prüfung wäre falsch.
+- **Liga-Spieltage nie nach frühestem Datum sortieren:** Vorverlegte Spiele (z. B. H1 gegen Ettlingen am 26.09., eigentlich Spieltag 4 am 24.10.) machen sonst einen späten Spieltag zum ersten. `toMatchdays()` sortiert nach `matchNumber`, Datum = häufigstes Datum der Spiele.
 - **Keine URL-Parameter für die Proxy-Adresse** einführen: Die Teamnamen landen per `innerHTML` in der Seite, eine fremde Datenquelle wäre also eine XSS-Lücke.
 
 ## 9. Entscheidungen und Vorlieben des Auftraggebers

@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { buildSnapshot, fetchAll, pickSeason } from './snapshot.mjs';
+import { buildSnapshot, fetchAll, pickSeason, toMatchdays } from './snapshot.mjs';
 
 const fx = (p) => JSON.parse(readFileSync(new URL('./fixtures/' + p, import.meta.url)));
 const SEASON = { uuid: 'fde078d8-b9d5-4202-be3d-5c2614cc8d95', name: '2025/26', beginDate: '2025-07-01', endDate: '2026-06-30' };
@@ -126,4 +126,26 @@ test('Ticker meldet Spielende -> Ergebnis sofort in Spielplan, Bilanz und Liga-S
   assert.deepEqual(Object.values(withT.teams).map((t) => t.stats[1]), Object.values(without.teams).map((t) => t.stats[1]), 'Bilanz wie mit SAMS-Ergebnis');
   const md = Object.values(withT.teams).flatMap((t) => t.matchdays).flatMap((d) => d.matches).filter((x) => x.r === sp.join(':'));
   assert.ok(md.length > 0);
+});
+
+test('ECHT-Fall 26.09.: vorverlegtes Spiel bleibt in seinem Spieltag, Nummer und Datum aus SAMS-Reihenfolge', () => {
+  const C = '6e67881d-08be-4e37-822b-7e3c60e88cd7';
+  const m = (no, date, md, h, a, own) => ({ uuid: 'u' + no, matchNumber: no, date, time: '19:00', matchDayUuid: md,
+    team1Description: h, team2Description: a, _embedded: { team1: { sportsclubUuid: own ? C : 'x' }, team2: { sportsclubUuid: 'y' } } });
+  const matches = [
+    m(16, '2026-09-26', 'MD4', 'VSG Kleinsteinbach', 'VSG Ettlingen/Rüppurr', true),   // vorverlegt
+    m(17, '2026-10-24', 'MD4', 'VfR Merzhausen 1', 'SSC Karlsruhe 3'),
+    m(18, '2026-10-24', 'MD4', 'TV Kappelrodeck', 'USC Freiburg'),
+    m(20, '2026-10-23', 'MD4', 'FT Freiburg 3', 'FT Freiburg 4'),
+    m(1, '2026-10-03', 'MD1', 'USC Freiburg', 'FT Freiburg 3'),
+    m(2, '2026-10-03', 'MD1', 'FT Freiburg 4', 'TV Kappelrodeck'),
+    m(6, '2026-10-10', 'MD2', 'VSG Kleinsteinbach', 'VSG KiLa', true),
+    m(11, '2026-10-17', 'MD3', 'USC Freiburg', 'SG Sinsheim'),
+  ];
+  const mds = toMatchdays(matches, C, {});
+  assert.deepEqual(mds.map((d) => [d.no, d.date]), [[1, '2026-10-03'], [2, '2026-10-10'], [3, '2026-10-17'], [4, '2026-10-24']]);
+  const vorverlegt = mds[3].matches.find((x) => x.own);
+  assert.equal(vorverlegt.dd, 'Sa 26.09.', 'eigenes Datum, weil es vom Spieltag abweicht');
+  assert.equal(mds[3].matches.find((x) => x.h === 'FT Freiburg 3').dd, 'Fr 23.10.');
+  assert.equal(mds[3].matches.find((x) => x.h === 'TV Kappelrodeck').dd, undefined);
 });

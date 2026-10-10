@@ -26,18 +26,29 @@ export function pickSeason(list, today) {
 // Team-Nummer aus Namen ("VSG Kleinsteinbach 2" -> 2, ohne Zahl -> 1)
 const teamNo = (name) => { const m = (name || '').match(/(\d+)\s*$/); return m ? parseInt(m[1], 10) : 1; };
 
-/** Alle Paarungen einer Liga, gruppiert & sortiert nach Spieltag. Live = Ergebnisse ohne Sieger oder laut Ticker. */
-function toMatchdays(matches, clubUuid, ticker) {
+/** Häufigstes Datum der Spiele eines Spieltags (bei Gleichstand das spätere – verlegte Spiele sind meist vorgezogen). */
+function matchdayDate(matches) {
+  const n = {};
+  for (const m of matches) if (m.date) n[m.date] = (n[m.date] || 0) + 1;
+  return Object.keys(n).sort((a, b) => n[b] - n[a] || b.localeCompare(a))[0] || null;
+}
+const minNo = (g) => Math.min(...g.matches.map((m) => (m.matchNumber == null ? Infinity : m.matchNumber)));
+
+/**
+ * Alle Paarungen einer Liga, gruppiert nach SAMS-Spieltag. Reihenfolge nach Spielnummer (nicht nach frühestem
+ * Datum: ein vorverlegtes Spiel machte sonst einen späten Spieltag zum „1. Spieltag“). Spiele, deren Datum vom
+ * Spieltag abweicht, tragen es als `dd`. Live = Ergebnisse ohne Sieger oder laut Ticker.
+ */
+export function toMatchdays(matches, clubUuid, ticker) {
   const groups = {};
   for (const m of matches) {
     const key = m.matchDayUuid || m.date || m.uuid;
-    const grp = groups[key] || (groups[key] = { date: m.date, matches: [] });
-    grp.matches.push(m);
-    if (m.date && (!grp.date || m.date < grp.date)) grp.date = m.date;
+    (groups[key] || (groups[key] = { matches: [] })).matches.push(m);
   }
-  return Object.values(groups)
-    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
-    .map((g, i) => ({
+  const arr = Object.values(groups);
+  for (const g of arr) g.date = matchdayDate(g.matches);
+  arr.sort((a, b) => (minNo(a) - minNo(b)) || String(a.date).localeCompare(String(b.date)));
+  return arr.map((g, i) => ({
       no: i + 1,
       date: g.date,
       matches: g.matches
@@ -52,6 +63,7 @@ function toMatchdays(matches, clubUuid, ticker) {
             t: m.results ? null : (m.time || null),
             own: t1.sportsclubUuid === clubUuid || t2.sportsclubUuid === clubUuid,
           };
+          if (m.date && g.date && m.date !== g.date) row.dd = weekday(m.date) + ' ' + shortDate(m.date);
           if (m.results && !finished) row.live = true;
           const tk = ticker[m.uuid];                    // Ticker ist schneller als SAMS (Heim:Gast = team1:team2)
           if (tk && tk.started) {

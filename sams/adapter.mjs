@@ -241,13 +241,11 @@ export function teamRecord(mappedGames) {
   return { played, wins, losses, points, setWins, setLosses };
 }
 
-/** Index des aktuellen Spieltags: erster mit einem noch nicht gespielten Spiel (r==null), sonst der letzte. */
-export function currentMatchdayIndex(matchdays) {
-  const mds = matchdays || [];
-  for (let i = 0; i < mds.length; i++) {
-    if ((mds[i].matches || []).some((m) => m.r == null)) return i;
-  }
-  return Math.max(0, mds.length - 1);
+/** Index des aktuellen Spieltags: der letzte, der bis heute begonnen hat (vor Saisonbeginn der erste). */
+export function currentMatchdayIndex(matchdays, today) {
+  let idx = 0;
+  (matchdays || []).forEach((d, i) => { if (d.date && d.date <= today) idx = i; });
+  return idx;
 }
 
 /** SAMS-Tabelle -> App-Tabellenzeilen; markiert die eigenen Vereinsteams (own). */

@@ -168,14 +168,14 @@ test('mapRanking sortiert & markiert eigene Teams', () => {
 });
 
 // ---------- aktueller Spieltag ----------
-test('currentMatchdayIndex: erster mit offenem Spiel, sonst letzter', () => {
-  const done = { matches: [{ r: '3:0' }, { r: '1:3' }] };
-  const open = { matches: [{ r: '3:1' }, { r: null }] };
-  const future = { matches: [{ r: null }, { r: null }] };
-  assert.equal(currentMatchdayIndex([done, open, future]), 1); // Spieltag 2 läuft noch
-  assert.equal(currentMatchdayIndex([done, done]), 1);          // alles gespielt -> letzter
-  assert.equal(currentMatchdayIndex([future, future]), 0);      // Vorsaison -> erster
-  assert.equal(currentMatchdayIndex([]), 0);
+test('currentMatchdayIndex: letzter Spieltag, der bis heute begonnen hat (nach Datum)', () => {
+  const mds = [{ date: '2026-10-03' }, { date: '2026-10-10' }, { date: '2026-10-17' }, { date: '2026-10-24' }];
+  assert.equal(currentMatchdayIndex(mds, '2026-10-10'), 1);   // Spieltag läuft heute
+  assert.equal(currentMatchdayIndex(mds, '2026-10-14'), 1);   // unter der Woche: letzter Spieltag (Ergebnisse)
+  assert.equal(currentMatchdayIndex(mds, '2026-10-17'), 2);   // ab dem Spieltag selbst der neue
+  assert.equal(currentMatchdayIndex(mds, '2026-09-20'), 0);   // Vorsaison -> erster
+  assert.equal(currentMatchdayIndex(mds, '2027-05-01'), 3);   // Saisonende -> letzter
+  assert.equal(currentMatchdayIndex([], '2026-10-10'), 0);
 });
 
 // ---------- Integration gegen ECHTE SAMS-Fixtures ----------
