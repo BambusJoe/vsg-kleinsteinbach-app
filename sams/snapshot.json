@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-11T14:34:01.255Z",
+ "generatedAt": "2026-10-11T19:18:10.763Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1053,11 +1053,11 @@
      "Platz"
     ],
     [
-     "0–1",
+     "0–2",
      "Bilanz"
     ],
     [
-     "0:3",
+     "0:6",
      "Sätze"
     ]
    ],
@@ -1072,18 +1072,18 @@
     },
     {
      "p": 2,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "t": "VC Mönsheim",
      "sp": 3,
-     "pk": 6,
-     "sr": "7:3",
+     "pk": 8,
+     "sr": "9:3",
      "own": false
     },
     {
      "p": 3,
-     "t": "VC Mönsheim",
-     "sp": 2,
-     "pk": 5,
-     "sr": "6:3",
+     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "sp": 3,
+     "pk": 6,
+     "sr": "7:3",
      "own": false
     },
     {
@@ -1129,9 +1129,9 @@
     {
      "p": 9,
      "t": "VSG Kleinsteinbach 2",
-     "sp": 1,
+     "sp": 2,
      "pk": 0,
-     "sr": "0:3",
+     "sr": "0:6",
      "own": true
     },
     {
@@ -1159,8 +1159,8 @@
      "iso": "2026-10-11",
      "h": false,
      "o": "VC Mönsheim",
-     "t": "13:00",
-     "sub": "Landesliga Frauen 2 · Auswärts · Mönsheim"
+     "r": "0:3",
+     "s": "20:25 · 15:25 · 23:25"
     },
     {
      "d": "24.10.",
@@ -1402,8 +1402,8 @@
       {
        "h": "VC Mönsheim",
        "a": "VSG Kleinsteinbach 2",
-       "r": null,
-       "t": "13:00",
+       "r": "3:0",
+       "t": null,
        "own": true
       }
      ]
@@ -2861,10 +2861,10 @@
    "league": "Oberliga Baden Männer",
    "j": false,
    "short": "Herren 1",
-   "pos": 5,
+   "pos": 6,
    "stats": [
     [
-     "5.",
+     "6.",
      "Platz"
     ],
     [
@@ -2895,6 +2895,14 @@
     },
     {
      "p": 3,
+     "t": "FT 1844 Freiburg 3",
+     "sp": 2,
+     "pk": 6,
+     "sr": "6:2",
+     "own": false
+    },
+    {
+     "p": 4,
      "t": "BADEN VOLLEYS SSC Karlsruhe 3",
      "sp": 2,
      "pk": 4,
@@ -2902,7 +2910,7 @@
      "own": false
     },
     {
-     "p": 4,
+     "p": 5,
      "t": "TV Kappelrodeck",
      "sp": 2,
      "pk": 4,
@@ -2910,7 +2918,7 @@
      "own": false
     },
     {
-     "p": 5,
+     "p": 6,
      "t": "VSG Kleinsteinbach",
      "sp": 3,
      "pk": 4,
@@ -2918,19 +2926,11 @@
      "own": true
     },
     {
-     "p": 6,
-     "t": "SG Sinsheim/Helmstadt",
-     "sp": 1,
-     "pk": 3,
-     "sr": "3:0",
-     "own": false
-    },
-    {
      "p": 7,
-     "t": "FT 1844 Freiburg 3",
-     "sp": 1,
+     "t": "SG Sinsheim/Helmstadt",
+     "sp": 2,
      "pk": 3,
-     "sr": "3:1",
+     "sr": "4:3",
      "own": false
     },
     {
@@ -3201,8 +3201,8 @@
       {
        "h": "FT 1844 Freiburg 3",
        "a": "SG Sinsheim/Helmstadt",
-       "r": null,
-       "t": "16:00",
+       "r": "3:1",
+       "t": null,
        "own": false,
        "dd": "So 11.10."
       }
@@ -4825,7 +4825,7 @@
    "league": "Bezirksklasse Männer 3",
    "j": false,
    "short": "Herren 3",
-   "pos": 3,
+   "pos": 4,
    "stats": [
     [
      "–",
@@ -4852,26 +4852,26 @@
     {
      "p": 2,
      "t": "TV Flehingen 2",
-     "sp": 2,
-     "pk": 6,
-     "sr": "6:0",
+     "sp": 3,
+     "pk": 7,
+     "sr": "8:3",
      "own": false
     },
     {
      "p": 3,
+     "t": "TSG Blankenloch 4",
+     "sp": 1,
+     "pk": 2,
+     "sr": "3:2",
+     "own": false
+    },
+    {
+     "p": 4,
      "t": "VSG Kleinsteinbach 3",
      "sp": 0,
      "pk": 0,
      "sr": "0:0",
      "own": true
-    },
-    {
-     "p": 4,
-     "t": "TSG Blankenloch 4",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
     },
     {
      "p": 5,
@@ -5099,8 +5099,8 @@
       {
        "h": "TV Flehingen 2",
        "a": "TSG Blankenloch 4",
-       "r": null,
-       "t": "13:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       }
      ]
