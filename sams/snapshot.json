@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-11T10:58:31.620Z",
+ "generatedAt": "2026-10-11T14:34:01.255Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -9,10 +9,10 @@
    "league": "Regionalliga Süd Frauen",
    "j": false,
    "short": "Damen 1",
-   "pos": 8,
+   "pos": 10,
    "stats": [
     [
-     "8.",
+     "10.",
      "Platz"
     ],
     [
@@ -75,7 +75,7 @@
     },
     {
      "p": 7,
-     "t": "DJK Schwäbisch Gmünd",
+     "t": "SV Fellbach",
      "sp": 2,
      "pk": 2,
      "sr": "3:5",
@@ -83,27 +83,27 @@
     },
     {
      "p": 8,
+     "t": "DJK Schwäbisch Gmünd",
+     "sp": 2,
+     "pk": 2,
+     "sr": "3:5",
+     "own": false
+    },
+    {
+     "p": 9,
+     "t": "USC Konstanz",
+     "sp": 2,
+     "pk": 1,
+     "sr": "2:6",
+     "own": false
+    },
+    {
+     "p": 10,
      "t": "VSG Kleinsteinbach",
      "sp": 2,
      "pk": 0,
      "sr": "1:6",
      "own": true
-    },
-    {
-     "p": 9,
-     "t": "USC Konstanz",
-     "sp": 1,
-     "pk": 0,
-     "sr": "0:3",
-     "own": false
-    },
-    {
-     "p": 10,
-     "t": "SV Fellbach",
-     "sp": 1,
-     "pk": 0,
-     "sr": "0:3",
-     "own": false
     }
    ],
    "games": [
@@ -349,8 +349,8 @@
       {
        "h": "USC Konstanz",
        "a": "SV Fellbach",
-       "r": null,
-       "t": "13:00",
+       "r": "2:3",
+       "t": null,
        "own": false,
        "dd": "So 11.10."
       }
@@ -1046,10 +1046,10 @@
    "league": "Landesliga Frauen 2",
    "j": false,
    "short": "Damen 2",
-   "pos": 7,
+   "pos": 9,
    "stats": [
     [
-     "7.",
+     "9.",
      "Platz"
     ],
     [
@@ -1073,13 +1073,21 @@
     {
      "p": 2,
      "t": "BADEN VOLLEYS SSC Karlsruhe 2",
-     "sp": 2,
+     "sp": 3,
      "pk": 6,
-     "sr": "6:0",
+     "sr": "7:3",
      "own": false
     },
     {
      "p": 3,
+     "t": "VC Mönsheim",
+     "sp": 2,
+     "pk": 5,
+     "sr": "6:3",
+     "own": false
+    },
+    {
+     "p": 4,
      "t": "FT Forchheim",
      "sp": 2,
      "pk": 4,
@@ -1087,7 +1095,7 @@
      "own": false
     },
     {
-     "p": 4,
+     "p": 5,
      "t": "SG Ersingen-Ispringen-Pforzheim",
      "sp": 1,
      "pk": 3,
@@ -1095,44 +1103,36 @@
      "own": false
     },
     {
-     "p": 5,
-     "t": "VC Mönsheim",
-     "sp": 1,
-     "pk": 2,
-     "sr": "3:2",
-     "own": false
-    },
-    {
      "p": 6,
-     "t": "KIT Sport-Club 2010",
-     "sp": 1,
-     "pk": 0,
-     "sr": "1:3",
+     "t": "VSG Ettlingen/Rüppurr 3",
+     "sp": 3,
+     "pk": 3,
+     "sr": "5:8",
      "own": false
     },
     {
      "p": 7,
+     "t": "KIT Sport-Club 2010",
+     "sp": 2,
+     "pk": 2,
+     "sr": "4:5",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "VSG Hochstetten-Liedolsheim",
+     "sp": 2,
+     "pk": 1,
+     "sr": "2:6",
+     "own": false
+    },
+    {
+     "p": 9,
      "t": "VSG Kleinsteinbach 2",
      "sp": 1,
      "pk": 0,
      "sr": "0:3",
      "own": true
-    },
-    {
-     "p": 8,
-     "t": "VSG Ettlingen/Rüppurr 3",
-     "sp": 1,
-     "pk": 0,
-     "sr": "0:3",
-     "own": false
-    },
-    {
-     "p": 9,
-     "t": "VSG Hochstetten-Liedolsheim",
-     "sp": 1,
-     "pk": 0,
-     "sr": "0:3",
-     "own": false
     },
     {
      "p": 10,
@@ -1381,22 +1381,22 @@
       {
        "h": "VSG Ettlingen/Rüppurr 3",
        "a": "VSG Hochstetten-Liedolsheim",
-       "r": null,
-       "t": "11:00",
+       "r": "3:2",
+       "t": null,
        "own": false
       },
       {
        "h": "VSG Ettlingen/Rüppurr 3",
        "a": "KIT Sport-Club 2010",
-       "r": null,
-       "t": "11:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       },
       {
        "h": "VC Mönsheim",
        "a": "BADEN VOLLEYS SSC Karlsruhe 2",
-       "r": null,
-       "t": "13:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
@@ -2073,9 +2073,9 @@
     {
      "p": 1,
      "t": "VSG Hochstetten-Liedolsheim 2",
-     "sp": 3,
-     "pk": 9,
-     "sr": "9:0",
+     "sp": 4,
+     "pk": 12,
+     "sr": "12:0",
      "own": false
     },
     {
@@ -2113,9 +2113,9 @@
     {
      "p": 6,
      "t": "VSG Ettlingen/Rüppurr 5",
-     "sp": 1,
+     "sp": 2,
      "pk": 0,
-     "sr": "0:3",
+     "sr": "0:6",
      "own": false
     },
     {
@@ -2347,8 +2347,8 @@
       {
        "h": "VSG Ho-Li",
        "a": "VSG Ettlingen/Rüppurr 5",
-       "r": null,
-       "t": "11:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       }
      ]
@@ -3914,18 +3914,18 @@
    "table": [
     {
      "p": 1,
-     "t": "FT Forchheim",
-     "sp": 4,
-     "pk": 8,
-     "sr": "10:5",
+     "t": "VT Hagsfeld",
+     "sp": 3,
+     "pk": 9,
+     "sr": "9:3",
      "own": false
     },
     {
      "p": 2,
-     "t": "VT Hagsfeld",
-     "sp": 2,
-     "pk": 6,
-     "sr": "6:2",
+     "t": "FT Forchheim",
+     "sp": 4,
+     "pk": 8,
+     "sr": "10:5",
      "own": false
     },
     {
@@ -3955,9 +3955,9 @@
     {
      "p": 6,
      "t": "TSG Blankenloch 3",
-     "sp": 2,
+     "sp": 3,
      "pk": 3,
-     "sr": "3:4",
+     "sr": "4:7",
      "own": false
     },
     {
@@ -4214,8 +4214,8 @@
       {
        "h": "TSG Blankenloch 3",
        "a": "VT Hagsfeld",
-       "r": null,
-       "t": "11:00",
+       "r": "1:3",
+       "t": null,
        "own": false,
        "dd": "So 11.10."
       },
@@ -4844,17 +4844,17 @@
     {
      "p": 1,
      "t": "VSG Ubstadt/Forst 3",
-     "sp": 2,
-     "pk": 6,
-     "sr": "6:2",
+     "sp": 3,
+     "pk": 9,
+     "sr": "9:3",
      "own": false
     },
     {
      "p": 2,
      "t": "TV Flehingen 2",
-     "sp": 1,
-     "pk": 3,
-     "sr": "3:0",
+     "sp": 2,
+     "pk": 6,
+     "sr": "6:0",
      "own": false
     },
     {
@@ -4875,22 +4875,6 @@
     },
     {
      "p": 5,
-     "t": "SV Langensteinbach",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
-    },
-    {
-     "p": 6,
-     "t": "KTV Karlsruhe 2",
-     "sp": 0,
-     "pk": 0,
-     "sr": "0:0",
-     "own": false
-    },
-    {
-     "p": 7,
      "t": "VC Mönsheim",
      "sp": 1,
      "pk": 0,
@@ -4898,11 +4882,27 @@
      "own": false
     },
     {
-     "p": 8,
+     "p": 6,
+     "t": "SV Langensteinbach",
+     "sp": 1,
+     "pk": 0,
+     "sr": "1:3",
+     "own": false
+    },
+    {
+     "p": 7,
      "t": "VSG Ubstadt/Forst 4",
      "sp": 2,
      "pk": 0,
      "sr": "1:6",
+     "own": false
+    },
+    {
+     "p": 8,
+     "t": "KTV Karlsruhe 2",
+     "sp": 1,
+     "pk": 0,
+     "sr": "0:3",
      "own": false
     }
    ],
@@ -5085,15 +5085,15 @@
       {
        "h": "VSG Ubstadt/Forst 3",
        "a": "SV Langensteinbach",
-       "r": null,
-       "t": "11:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
        "h": "TV Flehingen 2",
        "a": "KTV Karlsruhe 2",
-       "r": null,
-       "t": "13:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
