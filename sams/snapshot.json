@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-11T19:18:10.763Z",
+ "generatedAt": "2026-10-17T08:44:39.342Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -661,18 +661,18 @@
      "date": "2026-12-13",
      "matches": [
       {
-       "h": "TG Biberach",
-       "a": "TSF Ditzingen",
+       "h": "VfB Ulm",
+       "a": "USC Konstanz",
        "r": null,
-       "t": "16:00",
+       "t": "15:00",
        "own": false,
        "dd": "Sa 12.12."
       },
       {
-       "h": "VfB Ulm",
-       "a": "USC Konstanz",
+       "h": "TG Biberach",
+       "a": "TSF Ditzingen",
        "r": null,
-       "t": "19:00",
+       "t": "16:00",
        "own": false,
        "dd": "Sa 12.12."
       },
@@ -1195,7 +1195,7 @@
      "iso": "2026-11-22",
      "h": false,
      "o": "SG Ersingen-Ispringen-Pforzheim",
-     "t": "11:00",
+     "t": "13:00",
      "sub": "Landesliga Frauen 2 · Auswärts · Pforzheim"
     },
     {
@@ -1529,20 +1529,6 @@
        "own": false
       },
       {
-       "h": "SG Ersingen-Ispringen-Pforzheim",
-       "a": "VSG Ettlingen/Rüppurr 3",
-       "r": null,
-       "t": "11:00",
-       "own": false
-      },
-      {
-       "h": "SG Ersingen-Ispringen-Pforzheim",
-       "a": "VSG Kleinsteinbach 2",
-       "r": null,
-       "t": "11:00",
-       "own": true
-      },
-      {
        "h": "VC Mönsheim",
        "a": "KIT Sport-Club 2010",
        "r": null,
@@ -1555,6 +1541,20 @@
        "r": null,
        "t": "11:00",
        "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VSG Ettlingen/Rüppurr 3",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "SG Ersingen-Ispringen-Pforzheim",
+       "a": "VSG Kleinsteinbach 2",
+       "r": null,
+       "t": "13:00",
+       "own": true
       }
      ]
     },
@@ -2447,14 +2447,14 @@
        "h": "Karlsruher TV 2",
        "a": "VSG Ho-Li",
        "r": null,
-       "t": "11:00",
+       "t": "13:00",
        "own": false
       },
       {
        "h": "Karlsruher TV 2",
        "a": "TV Bretten 4",
        "r": null,
-       "t": "11:00",
+       "t": "13:00",
        "own": false
       }
      ]
