@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-17T19:58:38.788Z",
+ "generatedAt": "2026-10-17T22:02:52.699Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -67,18 +67,18 @@
     },
     {
      "p": 6,
-     "t": "TSF Ditzingen",
-     "sp": 2,
-     "pk": 4,
-     "sr": "5:4",
+     "t": "SV Fellbach",
+     "sp": 3,
+     "pk": 5,
+     "sr": "6:6",
      "own": false
     },
     {
      "p": 7,
-     "t": "SV Fellbach",
-     "sp": 2,
-     "pk": 2,
-     "sr": "3:5",
+     "t": "TSF Ditzingen",
+     "sp": 3,
+     "pk": 4,
+     "sr": "6:7",
      "own": false
     },
     {
@@ -391,8 +391,8 @@
       {
        "h": "SV Fellbach",
        "a": "TSF Ditzingen",
-       "r": null,
-       "t": "20:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       }
      ]
@@ -2880,25 +2880,25 @@
     {
      "p": 1,
      "t": "VSG Ettlingen/Rüppurr",
-     "sp": 3,
-     "pk": 6,
-     "sr": "9:6",
+     "sp": 4,
+     "pk": 9,
+     "sr": "12:7",
      "own": false
     },
     {
      "p": 2,
-     "t": "VfR Merzhausen 1",
-     "sp": 2,
-     "pk": 6,
-     "sr": "6:0",
-     "own": false
-    },
-    {
-     "p": 3,
      "t": "FT 1844 Freiburg 3",
      "sp": 2,
      "pk": 6,
      "sr": "6:2",
+     "own": false
+    },
+    {
+     "p": 3,
+     "t": "VfR Merzhausen 1",
+     "sp": 3,
+     "pk": 6,
+     "sr": "7:3",
      "own": false
     },
     {
@@ -2928,25 +2928,25 @@
     {
      "p": 7,
      "t": "SG Sinsheim/Helmstadt",
-     "sp": 2,
+     "sp": 3,
      "pk": 3,
-     "sr": "4:3",
+     "sr": "5:6",
      "own": false
     },
     {
      "p": 8,
-     "t": "FT 1844 Freiburg 4",
+     "t": "USC Freiburg",
      "sp": 3,
      "pk": 3,
-     "sr": "3:6",
+     "sr": "4:7",
      "own": false
     },
     {
      "p": 9,
-     "t": "USC Freiburg",
-     "sp": 2,
-     "pk": 0,
-     "sr": "1:6",
+     "t": "FT 1844 Freiburg 4",
+     "sp": 3,
+     "pk": 3,
+     "sr": "3:6",
      "own": false
     },
     {
@@ -3222,15 +3222,15 @@
       {
        "h": "USC Freiburg",
        "a": "SG Sinsheim/Helmstadt",
-       "r": null,
-       "t": "20:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
        "h": "VSG Ettlingen/Rüppurr",
        "a": "VfR Merzhausen 1",
-       "r": null,
-       "t": "20:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
