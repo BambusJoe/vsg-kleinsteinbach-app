@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-18T12:23:47.555Z",
+ "generatedAt": "2026-10-18T16:02:43.716Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2888,13 +2888,21 @@
     {
      "p": 2,
      "t": "FT 1844 Freiburg 3",
-     "sp": 2,
-     "pk": 6,
-     "sr": "6:2",
+     "sp": 3,
+     "pk": 9,
+     "sr": "9:2",
      "own": false
     },
     {
      "p": 3,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "sp": 3,
+     "pk": 7,
+     "sr": "8:3",
+     "own": false
+    },
+    {
+     "p": 4,
      "t": "VfR Merzhausen 1",
      "sp": 3,
      "pk": 6,
@@ -2902,19 +2910,11 @@
      "own": false
     },
     {
-     "p": 4,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
-     "sp": 2,
-     "pk": 4,
-     "sr": "5:3",
-     "own": false
-    },
-    {
      "p": 5,
      "t": "TV Kappelrodeck",
-     "sp": 2,
+     "sp": 3,
      "pk": 4,
-     "sr": "5:3",
+     "sr": "5:6",
      "own": false
     },
     {
@@ -2952,9 +2952,9 @@
     {
      "p": 10,
      "t": "VSG KiLa",
-     "sp": 2,
+     "sp": 3,
      "pk": 0,
-     "sr": "0:6",
+     "sr": "0:9",
      "own": false
     }
    ],
@@ -3236,16 +3236,16 @@
       {
        "h": "BADEN VOLLEYS SSC Karlsruhe 3",
        "a": "TV Kappelrodeck",
-       "r": null,
-       "t": "16:00",
+       "r": "3:0",
+       "t": null,
        "own": false,
        "dd": "So 18.10."
       },
       {
        "h": "VSG KiLa",
        "a": "FT 1844 Freiburg 3",
-       "r": null,
-       "t": "16:00",
+       "r": "0:3",
+       "t": null,
        "own": false,
        "dd": "So 18.10."
       }
