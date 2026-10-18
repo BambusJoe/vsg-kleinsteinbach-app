@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-17T22:02:52.699Z",
+ "generatedAt": "2026-10-18T12:23:47.555Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1515,20 +1515,6 @@
      "date": "2026-11-22",
      "matches": [
       {
-       "h": "FT Forchheim",
-       "a": "SV KA-Beiertheim 5",
-       "r": null,
-       "t": "11:00",
-       "own": false
-      },
-      {
-       "h": "FT Forchheim",
-       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
-       "r": null,
-       "t": "11:00",
-       "own": false
-      },
-      {
        "h": "VC Mönsheim",
        "a": "KIT Sport-Club 2010",
        "r": null,
@@ -1540,6 +1526,20 @@
        "a": "VSG Hochstetten-Liedolsheim",
        "r": null,
        "t": "11:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "SV KA-Beiertheim 5",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "FT Forchheim",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "13:00",
        "own": false
       },
       {
@@ -3272,13 +3272,6 @@
        "dd": "Fr 23.10."
       },
       {
-       "h": "SG Sinsheim/Helmstadt",
-       "a": "VSG KiLa",
-       "r": null,
-       "t": "19:00",
-       "own": false
-      },
-      {
        "h": "VfR Merzhausen 1",
        "a": "BADEN VOLLEYS SSC Karlsruhe 3",
        "r": null,
@@ -3290,6 +3283,13 @@
        "a": "USC Freiburg",
        "r": null,
        "t": "20:00",
+       "own": false
+      },
+      {
+       "h": "SG Sinsheim/Helmstadt",
+       "a": "VSG KiLa",
+       "r": null,
+       "t": "19:00",
        "own": false
       }
      ]
