@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-18T16:02:43.716Z",
+ "generatedAt": "2026-10-20T09:34:35.784Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -3289,8 +3289,9 @@
        "h": "SG Sinsheim/Helmstadt",
        "a": "VSG KiLa",
        "r": null,
-       "t": "19:00",
-       "own": false
+       "t": "17:00",
+       "own": false,
+       "dd": "Sa 19.12."
       }
      ]
     },
