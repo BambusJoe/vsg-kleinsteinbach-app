@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-20T09:34:35.784Z",
+ "generatedAt": "2026-10-22T09:33:53.885Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1442,7 +1442,7 @@
       },
       {
        "h": "SG Ersingen-Ispringen-Pforzheim",
-       "a": "Post Südstadt Karlsruhe",
+       "a": "VC Mönsheim",
        "r": null,
        "t": "11:00",
        "own": false,
@@ -1450,7 +1450,7 @@
       },
       {
        "h": "SG Ersingen-Ispringen-Pforzheim",
-       "a": "VC Mönsheim",
+       "a": "Post Südstadt Karlsruhe",
        "r": null,
        "t": "11:00",
        "own": false,
