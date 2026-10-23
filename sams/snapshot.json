@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-22T09:33:53.885Z",
+ "generatedAt": "2026-10-23T09:29:35.920Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2373,17 +2373,17 @@
       },
       {
        "h": "TV Bretten 4",
-       "a": "VSG Ettlingen/Rüppurr 5",
-       "r": null,
-       "t": "15:00",
-       "own": false
-      },
-      {
-       "h": "TV Bretten 4",
        "a": "VSG Kleinsteinbach 3",
        "r": null,
        "t": "15:00",
        "own": true
+      },
+      {
+       "h": "TV Bretten 4",
+       "a": "VSG Ettlingen/Rüppurr 5",
+       "r": null,
+       "t": "15:00",
+       "own": false
       }
      ]
     },
