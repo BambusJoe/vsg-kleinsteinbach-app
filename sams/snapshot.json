@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-23T09:29:35.920Z",
+ "generatedAt": "2026-10-24T09:02:42.412Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2879,18 +2879,18 @@
    "table": [
     {
      "p": 1,
-     "t": "VSG Ettlingen/Rüppurr",
+     "t": "FT 1844 Freiburg 3",
      "sp": 4,
-     "pk": 9,
-     "sr": "12:7",
+     "pk": 12,
+     "sr": "12:3",
      "own": false
     },
     {
      "p": 2,
-     "t": "FT 1844 Freiburg 3",
-     "sp": 3,
+     "t": "VSG Ettlingen/Rüppurr",
+     "sp": 4,
      "pk": 9,
-     "sr": "9:2",
+     "sr": "12:7",
      "own": false
     },
     {
@@ -2944,9 +2944,9 @@
     {
      "p": 9,
      "t": "FT 1844 Freiburg 4",
-     "sp": 3,
+     "sp": 4,
      "pk": 3,
-     "sr": "3:6",
+     "sr": "4:9",
      "own": false
     },
     {
@@ -3266,8 +3266,8 @@
       {
        "h": "FT 1844 Freiburg 3",
        "a": "FT 1844 Freiburg 4",
-       "r": null,
-       "t": "20:00",
+       "r": "3:1",
+       "t": null,
        "own": false,
        "dd": "Fr 23.10."
       },
