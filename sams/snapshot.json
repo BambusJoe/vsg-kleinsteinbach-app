@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-24T21:23:15.215Z",
+ "generatedAt": "2026-10-25T12:54:24.568Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1064,6 +1064,14 @@
    "table": [
     {
      "p": 1,
+     "t": "VC Mönsheim",
+     "sp": 4,
+     "pk": 11,
+     "sr": "12:3",
+     "own": false
+    },
+    {
+     "p": 2,
      "t": "BADEN VOLLEYS SSC Karlsruhe 2",
      "sp": 5,
      "pk": 10,
@@ -1071,19 +1079,11 @@
      "own": false
     },
     {
-     "p": 2,
+     "p": 3,
      "t": "Post Südstadt Karlsruhe",
      "sp": 3,
      "pk": 9,
      "sr": "9:1",
-     "own": false
-    },
-    {
-     "p": 3,
-     "t": "VC Mönsheim",
-     "sp": 3,
-     "pk": 8,
-     "sr": "9:3",
      "own": false
     },
     {
@@ -1121,9 +1121,9 @@
     {
      "p": 8,
      "t": "SG Ersingen-Ispringen-Pforzheim",
-     "sp": 1,
+     "sp": 2,
      "pk": 3,
-     "sr": "3:0",
+     "sr": "3:3",
      "own": false
     },
     {
@@ -1443,8 +1443,8 @@
       {
        "h": "SG Ersingen-Ispringen-Pforzheim",
        "a": "VC Mönsheim",
-       "r": null,
-       "t": "11:00",
+       "r": "0:3",
+       "t": null,
        "own": false,
        "dd": "So 25.10."
       },
