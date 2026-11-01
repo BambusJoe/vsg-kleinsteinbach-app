@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-10-31T22:08:05.435Z",
+ "generatedAt": "2026-11-01T14:40:11.767Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2054,10 +2054,10 @@
    "league": "Kreisliga Frauen 4",
    "j": false,
    "short": "Damen 3",
-   "pos": 4,
+   "pos": 5,
    "stats": [
     [
-     "4.",
+     "5.",
      "Platz"
     ],
     [
@@ -2096,19 +2096,19 @@
     },
     {
      "p": 4,
+     "t": "NVV-Kader weiblich",
+     "sp": 3,
+     "pk": 4,
+     "sr": "5:6",
+     "own": false
+    },
+    {
+     "p": 5,
      "t": "VSG Kleinsteinbach 3",
      "sp": 1,
      "pk": 3,
      "sr": "3:0",
      "own": true
-    },
-    {
-     "p": 5,
-     "t": "NVV-Kader weiblich",
-     "sp": 2,
-     "pk": 3,
-     "sr": "3:3",
-     "own": false
     },
     {
      "p": 6,
@@ -2120,18 +2120,18 @@
     },
     {
      "p": 7,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
-     "sp": 2,
-     "pk": 0,
-     "sr": "1:6",
+     "t": "TV Bretten 4",
+     "sp": 4,
+     "pk": 2,
+     "sr": "4:11",
      "own": false
     },
     {
      "p": 8,
-     "t": "TV Bretten 4",
-     "sp": 3,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "sp": 2,
      "pk": 0,
-     "sr": "1:9",
+     "sr": "1:6",
      "own": false
     },
     {
@@ -2800,8 +2800,8 @@
       {
        "h": "NVV-Kader weiblich",
        "a": "TV Bretten 4",
-       "r": null,
-       "t": "11:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       },
       {
