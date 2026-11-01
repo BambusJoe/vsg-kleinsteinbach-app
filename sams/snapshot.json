@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-01T14:40:11.767Z",
+ "generatedAt": "2026-11-01T19:19:25.844Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -43,6 +43,14 @@
     },
     {
      "p": 3,
+     "t": "TG Biberach",
+     "sp": 5,
+     "pk": 9,
+     "sr": "12:10",
+     "own": false
+    },
+    {
+     "p": 4,
      "t": "TSF Ditzingen",
      "sp": 5,
      "pk": 8,
@@ -50,7 +58,7 @@
      "own": false
     },
     {
-     "p": 4,
+     "p": 5,
      "t": "SV Fellbach",
      "sp": 5,
      "pk": 7,
@@ -58,7 +66,7 @@
      "own": false
     },
     {
-     "p": 5,
+     "p": 6,
      "t": "DJK Schwäbisch Gmünd",
      "sp": 5,
      "pk": 6,
@@ -66,7 +74,7 @@
      "own": false
     },
     {
-     "p": 6,
+     "p": 7,
      "t": "Heidelberger TV 2",
      "sp": 4,
      "pk": 6,
@@ -74,19 +82,11 @@
      "own": false
     },
     {
-     "p": 7,
-     "t": "TG Biberach",
-     "sp": 4,
-     "pk": 6,
-     "sr": "9:9",
-     "own": false
-    },
-    {
      "p": 8,
      "t": "FV Tübinger Modell",
-     "sp": 4,
+     "sp": 5,
      "pk": 6,
-     "sr": "7:7",
+     "sr": "8:10",
      "own": false
     },
     {
@@ -476,8 +476,8 @@
       {
        "h": "TG Biberach",
        "a": "FV Tübinger Modell",
-       "r": null,
-       "t": "15:00",
+       "r": "3:1",
+       "t": null,
        "own": false,
        "dd": "So 01.11."
       }
@@ -2088,18 +2088,18 @@
     },
     {
      "p": 3,
-     "t": "Karlsruher TV 2",
-     "sp": 3,
-     "pk": 6,
-     "sr": "6:4",
+     "t": "NVV-Kader weiblich",
+     "sp": 4,
+     "pk": 7,
+     "sr": "8:7",
      "own": false
     },
     {
      "p": 4,
-     "t": "NVV-Kader weiblich",
+     "t": "Karlsruher TV 2",
      "sp": 3,
-     "pk": 4,
-     "sr": "5:6",
+     "pk": 6,
+     "sr": "6:4",
      "own": false
     },
     {
@@ -2137,9 +2137,9 @@
     {
      "p": 9,
      "t": "SV KA-Beiertheim 7",
-     "sp": 3,
+     "sp": 4,
      "pk": 0,
-     "sr": "1:9",
+     "sr": "2:12",
      "own": false
     }
    ],
@@ -2807,8 +2807,8 @@
       {
        "h": "NVV-Kader weiblich",
        "a": "SV KA-Beiertheim 7",
-       "r": null,
-       "t": "11:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       }
      ]
