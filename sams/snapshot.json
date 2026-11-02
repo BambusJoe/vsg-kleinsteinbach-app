@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-01T19:19:25.844Z",
+ "generatedAt": "2026-11-02T12:47:25.691Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -3897,10 +3897,10 @@
    "league": "Landesliga Männer 2",
    "j": false,
    "short": "Herren 2",
-   "pos": 7,
+   "pos": 8,
    "stats": [
     [
-     "7.",
+     "8.",
      "Platz"
     ],
     [
@@ -3924,9 +3924,9 @@
     {
      "p": 2,
      "t": "NVV-Kader männlich",
-     "sp": 8,
+     "sp": 9,
      "pk": 15,
-     "sr": "16:12",
+     "sr": "16:15",
      "own": false
     },
     {
@@ -3955,6 +3955,14 @@
     },
     {
      "p": 6,
+     "t": "TV Flehingen",
+     "sp": 3,
+     "pk": 4,
+     "sr": "6:6",
+     "own": false
+    },
+    {
+     "p": 7,
      "t": "TSG Blankenloch 3",
      "sp": 5,
      "pk": 4,
@@ -3962,7 +3970,7 @@
      "own": false
     },
     {
-     "p": 7,
+     "p": 8,
      "t": "VSG Kleinsteinbach 2",
      "sp": 5,
      "pk": 3,
@@ -3970,19 +3978,11 @@
      "own": true
     },
     {
-     "p": 8,
+     "p": 9,
      "t": "BADEN VOLLEYS SSC Karlsruhe 6",
      "sp": 4,
      "pk": 2,
      "sr": "3:11",
-     "own": false
-    },
-    {
-     "p": 9,
-     "t": "TV Flehingen",
-     "sp": 2,
-     "pk": 1,
-     "sr": "3:6",
      "own": false
     },
     {
@@ -4811,8 +4811,8 @@
       {
        "h": "NVV-Kader männlich",
        "a": "TV Flehingen",
-       "r": null,
-       "t": "11:00",
+       "r": "0:3",
+       "t": null,
        "own": false,
        "dd": "So 01.11."
       }
