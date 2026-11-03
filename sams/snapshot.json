@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-02T12:47:25.691Z",
+ "generatedAt": "2026-11-03T12:14:01.645Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -75,7 +75,7 @@
     },
     {
      "p": 7,
-     "t": "Heidelberger TV 2",
+     "t": "Heidelberger TV II",
      "sp": 4,
      "pk": 6,
      "sr": "7:6",
@@ -175,7 +175,7 @@
      "wd": "So",
      "iso": "2026-11-29",
      "h": true,
-     "o": "Heidelberger TV 2",
+     "o": "Heidelberger TV II",
      "t": "12:00",
      "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
     },
@@ -202,7 +202,7 @@
      "wd": "Sa",
      "iso": "2027-01-23",
      "h": false,
-     "o": "Heidelberger TV 2",
+     "o": "Heidelberger TV II",
      "t": "19:00",
      "sub": "Regionalliga Süd Frauen · Auswärts · Heidelberg"
     },
@@ -276,7 +276,7 @@
      "date": "2026-10-04",
      "matches": [
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "SV Fellbach",
        "r": "3:0",
        "t": null,
@@ -327,7 +327,7 @@
       },
       {
        "h": "TSF Ditzingen",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": "3:1",
        "t": null,
        "own": false
@@ -368,7 +368,7 @@
        "own": false
       },
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "DJK Schwäbisch Gmünd",
        "r": "3:0",
        "t": null,
@@ -433,7 +433,7 @@
       },
       {
        "h": "VSG Kleinsteinbach",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "12:00",
        "own": true,
@@ -446,7 +446,7 @@
      "date": "2026-10-31",
      "matches": [
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "VfB Ulm",
        "r": "0:3",
        "t": null,
@@ -520,7 +520,7 @@
       },
       {
        "h": "FV Tübinger Modell",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "16:00",
        "own": false
@@ -532,7 +532,7 @@
      "date": "2026-11-21",
      "matches": [
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "TV Rottenburg",
        "r": null,
        "t": "15:00",
@@ -589,7 +589,7 @@
       },
       {
        "h": "TG Biberach",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "19:30",
        "own": false
@@ -625,7 +625,7 @@
        "dd": "So 08.11."
       },
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "USC Konstanz",
        "r": null,
        "t": "15:00",
@@ -685,7 +685,7 @@
       },
       {
        "h": "SV Fellbach",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "16:00",
        "own": false
@@ -726,7 +726,7 @@
        "own": false
       },
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "TSF Ditzingen",
        "r": null,
        "t": "15:00",
@@ -756,7 +756,7 @@
       },
       {
        "h": "DJK Schwäbisch Gmünd",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "19:00",
        "own": false
@@ -791,7 +791,7 @@
      "date": "2027-01-24",
      "matches": [
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "VSG Kleinsteinbach",
        "r": null,
        "t": "19:00",
@@ -849,7 +849,7 @@
       },
       {
        "h": "VfB Ulm",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "19:00",
        "own": false
@@ -876,7 +876,7 @@
      "date": "2027-02-13",
      "matches": [
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "FV Tübinger Modell",
        "r": null,
        "t": "15:00",
@@ -926,7 +926,7 @@
       },
       {
        "h": "TV Rottenburg",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "19:00",
        "own": false
@@ -966,7 +966,7 @@
        "own": false
       },
       {
-       "h": "Heidelberger TV 2",
+       "h": "Heidelberger TV II",
        "a": "TG Biberach",
        "r": null,
        "t": "19:00",
@@ -1017,7 +1017,7 @@
       },
       {
        "h": "USC Konstanz",
-       "a": "Heidelberger TV 2",
+       "a": "Heidelberger TV II",
        "r": null,
        "t": "19:00",
        "own": false
