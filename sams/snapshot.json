@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-03T12:14:01.645Z",
+ "generatedAt": "2026-11-04T12:25:44.567Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1231,7 +1231,7 @@
      "iso": "2026-12-12",
      "h": false,
      "o": "VSG Hochstetten-Liedolsheim",
-     "t": "14:00",
+     "t": "12:00",
      "sub": "Landesliga Frauen 2 · Auswärts · Dettenheim"
     },
     {
@@ -1676,14 +1676,14 @@
        "h": "VSG Hochstetten-Liedolsheim",
        "a": "VSG Kleinsteinbach 2",
        "r": null,
-       "t": "14:00",
+       "t": "12:00",
        "own": true
       },
       {
        "h": "VSG Hochstetten-Liedolsheim",
        "a": "KIT Sport-Club 2010",
        "r": null,
-       "t": "14:00",
+       "t": "12:00",
        "own": false
       },
       {
