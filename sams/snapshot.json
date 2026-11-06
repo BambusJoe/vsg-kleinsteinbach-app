@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-04T12:25:44.567Z",
+ "generatedAt": "2026-11-06T12:22:59.691Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -5200,14 +5200,14 @@
        "h": "KTV Karlsruhe 2",
        "a": "TSG Blankenloch 4",
        "r": null,
-       "t": "11:00",
+       "t": "13:00",
        "own": false
       },
       {
        "h": "KTV Karlsruhe 2",
        "a": "VSG Ubstadt/Forst 3",
        "r": null,
-       "t": "11:00",
+       "t": "13:00",
        "own": false
       }
      ]
