@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-07T19:14:10.884Z",
+ "generatedAt": "2026-11-07T22:52:41.211Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -4826,10 +4826,10 @@
    "league": "Bezirksklasse Männer 3",
    "j": false,
    "short": "Herren 3",
-   "pos": 6,
+   "pos": 7,
    "stats": [
     [
-     "6.",
+     "7.",
      "Platz"
     ],
     [
@@ -4869,13 +4869,21 @@
     {
      "p": 4,
      "t": "VC Mönsheim",
-     "sp": 3,
-     "pk": 3,
-     "sr": "4:7",
+     "sp": 4,
+     "pk": 5,
+     "sr": "7:9",
      "own": false
     },
     {
      "p": 5,
+     "t": "VSG Ubstadt/Forst 4",
+     "sp": 4,
+     "pk": 3,
+     "sr": "6:11",
+     "own": false
+    },
+    {
+     "p": 6,
      "t": "SV Langensteinbach",
      "sp": 2,
      "pk": 2,
@@ -4883,20 +4891,12 @@
      "own": false
     },
     {
-     "p": 6,
+     "p": 7,
      "t": "VSG Kleinsteinbach 3",
      "sp": 3,
      "pk": 2,
      "sr": "5:8",
      "own": true
-    },
-    {
-     "p": 7,
-     "t": "VSG Ubstadt/Forst 4",
-     "sp": 3,
-     "pk": 2,
-     "sr": "4:8",
-     "own": false
     },
     {
      "p": 8,
@@ -5170,8 +5170,8 @@
       {
        "h": "VC Mönsheim",
        "a": "VSG Ubstadt/Forst 4",
-       "r": null,
-       "t": "16:00",
+       "r": "3:2",
+       "t": null,
        "own": false
       }
      ]
