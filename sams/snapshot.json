@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-07T22:52:41.211Z",
+ "generatedAt": "2026-11-08T11:28:01.392Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1064,18 +1064,18 @@
    "table": [
     {
      "p": 1,
-     "t": "Post Südstadt Karlsruhe",
-     "sp": 4,
-     "pk": 12,
-     "sr": "12:2",
+     "t": "VC Mönsheim",
+     "sp": 5,
+     "pk": 14,
+     "sr": "15:3",
      "own": false
     },
     {
      "p": 2,
-     "t": "VC Mönsheim",
-     "sp": 4,
-     "pk": 11,
-     "sr": "12:3",
+     "t": "Post Südstadt Karlsruhe",
+     "sp": 5,
+     "pk": 12,
+     "sr": "12:5",
      "own": false
     },
     {
@@ -1481,8 +1481,8 @@
       {
        "h": "Post Südstadt Karlsruhe",
        "a": "VC Mönsheim",
-       "r": null,
-       "t": "11:00",
+       "r": "0:3",
+       "t": null,
        "own": false,
        "dd": "So 08.11."
       },
@@ -3923,6 +3923,14 @@
     },
     {
      "p": 2,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 5",
+     "sp": 6,
+     "pk": 15,
+     "sr": "17:6",
+     "own": false
+    },
+    {
+     "p": 3,
      "t": "NVV-Kader männlich",
      "sp": 9,
      "pk": 15,
@@ -3930,35 +3938,27 @@
      "own": false
     },
     {
-     "p": 3,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 5",
-     "sp": 5,
-     "pk": 12,
-     "sr": "14:6",
-     "own": false
-    },
-    {
      "p": 4,
-     "t": "TSV Ötisheim",
-     "sp": 5,
+     "t": "FT Forchheim",
+     "sp": 6,
      "pk": 11,
-     "sr": "12:5",
+     "sr": "13:8",
      "own": false
     },
     {
      "p": 5,
-     "t": "TV Flehingen",
-     "sp": 5,
-     "pk": 9,
+     "t": "TSV Ötisheim",
+     "sp": 6,
+     "pk": 11,
      "sr": "12:8",
      "own": false
     },
     {
      "p": 6,
-     "t": "FT Forchheim",
+     "t": "TV Flehingen",
      "sp": 5,
-     "pk": 8,
-     "sr": "10:8",
+     "pk": 9,
+     "sr": "12:8",
      "own": false
     },
     {
@@ -3980,9 +3980,9 @@
     {
      "p": 9,
      "t": "BADEN VOLLEYS SSC Karlsruhe 6",
-     "sp": 4,
+     "sp": 5,
      "pk": 2,
-     "sr": "3:11",
+     "sr": "3:14",
      "own": false
     },
     {
@@ -4323,8 +4323,8 @@
       {
        "h": "BADEN VOLLEYS SSC Karlsruhe 5",
        "a": "BADEN VOLLEYS SSC Karlsruhe 6",
-       "r": null,
-       "t": "11:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
@@ -4337,8 +4337,8 @@
       {
        "h": "FT Forchheim",
        "a": "TSV Ötisheim",
-       "r": null,
-       "t": "11:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
