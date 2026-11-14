@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-08T19:17:21.486Z",
+ "generatedAt": "2026-11-14T14:42:38.864Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2061,11 +2061,11 @@
      "Platz"
     ],
     [
-     "1–0",
+     "1–1",
      "Bilanz"
     ],
     [
-     "3:0",
+     "3:3",
      "Sätze"
     ]
    ],
@@ -2073,9 +2073,9 @@
     {
      "p": 1,
      "t": "VSG Hochstetten-Liedolsheim 2",
-     "sp": 4,
-     "pk": 12,
-     "sr": "12:0",
+     "sp": 5,
+     "pk": 15,
+     "sr": "15:0",
      "own": false
     },
     {
@@ -2113,9 +2113,9 @@
     {
      "p": 6,
      "t": "VSG Kleinsteinbach 3",
-     "sp": 1,
+     "sp": 2,
      "pk": 3,
-     "sr": "3:0",
+     "sr": "3:3",
      "own": true
     },
     {
@@ -2159,8 +2159,8 @@
      "iso": "2026-11-14",
      "h": true,
      "o": "VSG Hochstetten-Liedolsheim 2",
-     "t": "14:00",
-     "sub": "Kreisliga Frauen 4 · Heim · Pfinztal"
+     "r": "0:3",
+     "s": "16:25 · 18:25 · 23:25"
     },
     {
      "d": "14.11.",
@@ -2410,8 +2410,8 @@
       {
        "h": "VSG Kleinsteinbach 3",
        "a": "VSG Ho-Li",
-       "r": null,
-       "t": "14:00",
+       "r": "0:3",
+       "t": null,
        "own": true
       },
       {
@@ -4826,18 +4826,18 @@
    "league": "Bezirksklasse Männer 3",
    "j": false,
    "short": "Herren 3",
-   "pos": 7,
+   "pos": 4,
    "stats": [
     [
-     "7.",
+     "4.",
      "Platz"
     ],
     [
-     "1–2",
+     "2–2",
      "Bilanz"
     ],
     [
-     "5:8",
+     "8:8",
      "Sätze"
     ]
    ],
@@ -4868,6 +4868,14 @@
     },
     {
      "p": 4,
+     "t": "VSG Kleinsteinbach 3",
+     "sp": 4,
+     "pk": 5,
+     "sr": "8:8",
+     "own": true
+    },
+    {
+     "p": 5,
      "t": "VC Mönsheim",
      "sp": 4,
      "pk": 5,
@@ -4875,7 +4883,7 @@
      "own": false
     },
     {
-     "p": 5,
+     "p": 6,
      "t": "VSG Ubstadt/Forst 4",
      "sp": 4,
      "pk": 3,
@@ -4883,20 +4891,12 @@
      "own": false
     },
     {
-     "p": 6,
-     "t": "SV Langensteinbach",
-     "sp": 2,
-     "pk": 2,
-     "sr": "4:5",
-     "own": false
-    },
-    {
      "p": 7,
-     "t": "VSG Kleinsteinbach 3",
+     "t": "SV Langensteinbach",
      "sp": 3,
      "pk": 2,
-     "sr": "5:8",
-     "own": true
+     "sr": "4:8",
+     "own": false
     },
     {
      "p": 8,
@@ -4941,8 +4941,8 @@
      "iso": "2026-11-14",
      "h": true,
      "o": "SV Langensteinbach",
-     "t": "14:00",
-     "sub": "Bezirksklasse Männer 3 · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+     "r": "3:0",
+     "s": "25:23 · 25:21 · 25:19"
     },
     {
      "d": "14.11.",
@@ -5059,8 +5059,8 @@
       {
        "h": "VSG Kleinsteinbach 3",
        "a": "SV Langensteinbach",
-       "r": null,
-       "t": "14:00",
+       "r": "3:0",
+       "t": null,
        "own": true
       },
       {
