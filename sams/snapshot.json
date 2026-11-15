@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-14T23:34:44.954Z",
+ "generatedAt": "2026-11-15T15:12:56.582Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -9,18 +9,18 @@
    "league": "Regionalliga Süd Frauen",
    "j": false,
    "short": "Damen 1",
-   "pos": 10,
+   "pos": 9,
    "stats": [
     [
-     "10.",
+     "9.",
      "Platz"
     ],
     [
-     "1–4",
+     "2–4",
      "Bilanz"
     ],
     [
-     "6:14",
+     "9:16",
      "Sätze"
     ]
    ],
@@ -52,9 +52,9 @@
     {
      "p": 4,
      "t": "TSF Ditzingen",
-     "sp": 5,
-     "pk": 8,
-     "sr": "11:10",
+     "sp": 6,
+     "pk": 9,
+     "sr": "13:13",
      "own": false
     },
     {
@@ -91,19 +91,19 @@
     },
     {
      "p": 9,
+     "t": "VSG Kleinsteinbach",
+     "sp": 6,
+     "pk": 4,
+     "sr": "9:16",
+     "own": true
+    },
+    {
+     "p": 10,
      "t": "USC Konstanz",
      "sp": 6,
      "pk": 4,
      "sr": "6:15",
      "own": false
-    },
-    {
-     "p": 10,
-     "t": "VSG Kleinsteinbach",
-     "sp": 5,
-     "pk": 2,
-     "sr": "6:14",
-     "own": true
     }
    ],
    "games": [
@@ -158,8 +158,8 @@
      "iso": "2026-11-15",
      "h": true,
      "o": "TSF Ditzingen",
-     "t": "12:00",
-     "sub": "Regionalliga Süd Frauen · Heim · Pfinztal, Ortsteil Kleinsteinbach"
+     "r": "3:2",
+     "s": "25:19 · 19:25 · 26:24 · 24:26 · 15:7"
     },
     {
      "d": "21.11.",
@@ -514,8 +514,8 @@
       {
        "h": "VSG Kleinsteinbach",
        "a": "TSF Ditzingen",
-       "r": null,
-       "t": "12:00",
+       "r": "3:2",
+       "t": null,
        "own": true
       },
       {
@@ -3897,10 +3897,10 @@
    "league": "Landesliga Männer 2",
    "j": false,
    "short": "Herren 2",
-   "pos": 8,
+   "pos": 9,
    "stats": [
     [
-     "8.",
+     "9.",
      "Platz"
     ],
     [
@@ -3964,13 +3964,21 @@
     {
      "p": 7,
      "t": "TSG Blankenloch 3",
-     "sp": 6,
+     "sp": 7,
      "pk": 4,
-     "sr": "7:16",
+     "sr": "8:19",
      "own": false
     },
     {
      "p": 8,
+     "t": "TG Ötigheim",
+     "sp": 6,
+     "pk": 4,
+     "sr": "6:16",
+     "own": false
+    },
+    {
+     "p": 9,
      "t": "VSG Kleinsteinbach 2",
      "sp": 6,
      "pk": 3,
@@ -3978,19 +3986,11 @@
      "own": true
     },
     {
-     "p": 9,
+     "p": 10,
      "t": "BADEN VOLLEYS SSC Karlsruhe 6",
      "sp": 5,
      "pk": 2,
      "sr": "3:14",
-     "own": false
-    },
-    {
-     "p": 10,
-     "t": "TG Ötigheim",
-     "sp": 5,
-     "pk": 1,
-     "sr": "3:15",
      "own": false
     }
    ],
@@ -4357,8 +4357,8 @@
       {
        "h": "TG Ötigheim",
        "a": "TSG Blankenloch 3",
-       "r": null,
-       "t": "14:00",
+       "r": "3:1",
+       "t": null,
        "own": false,
        "dd": "So 15.11."
       },
