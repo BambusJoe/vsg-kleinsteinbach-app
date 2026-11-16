@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-15T20:27:50.304Z",
+ "generatedAt": "2026-11-16T00:11:59.447Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -2920,9 +2920,9 @@
     {
      "p": 6,
      "t": "FT 1844 Freiburg 4",
-     "sp": 6,
+     "sp": 7,
      "pk": 7,
-     "sr": "9:13",
+     "sr": "10:16",
      "own": false
     },
     {
@@ -2952,9 +2952,9 @@
     {
      "p": 10,
      "t": "VSG KiLa",
-     "sp": 4,
-     "pk": 1,
-     "sr": "2:12",
+     "sp": 5,
+     "pk": 4,
+     "sr": "5:13",
      "own": false
     }
    ],
@@ -3357,8 +3357,8 @@
       {
        "h": "VSG KiLa",
        "a": "FT 1844 Freiburg 4",
-       "r": null,
-       "t": "19:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
