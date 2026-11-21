@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-21T15:51:27.511Z",
+ "generatedAt": "2026-11-21T21:24:33.277Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -9,18 +9,18 @@
    "league": "Regionalliga Süd Frauen",
    "j": false,
    "short": "Damen 1",
-   "pos": 9,
+   "pos": 10,
    "stats": [
     [
-     "9.",
+     "10.",
      "Platz"
     ],
     [
-     "2–4",
+     "3–4",
      "Bilanz"
     ],
     [
-     "9:16",
+     "12:18",
      "Sätze"
     ]
    ],
@@ -51,14 +51,22 @@
     },
     {
      "p": 4,
-     "t": "TG Biberach",
-     "sp": 6,
+     "t": "FV Tübinger Modell",
+     "sp": 7,
      "pk": 9,
-     "sr": "13:13",
+     "sr": "12:14",
      "own": false
     },
     {
      "p": 5,
+     "t": "TG Biberach",
+     "sp": 7,
+     "pk": 9,
+     "sr": "13:16",
+     "own": false
+    },
+    {
+     "p": 6,
      "t": "TSF Ditzingen",
      "sp": 6,
      "pk": 9,
@@ -66,44 +74,36 @@
      "own": false
     },
     {
-     "p": 6,
-     "t": "SV Fellbach",
-     "sp": 6,
-     "pk": 7,
-     "sr": "10:15",
-     "own": false
-    },
-    {
      "p": 7,
      "t": "DJK Schwäbisch Gmünd",
-     "sp": 6,
-     "pk": 6,
-     "sr": "9:15",
+     "sp": 7,
+     "pk": 7,
+     "sr": "11:18",
      "own": false
     },
     {
      "p": 8,
-     "t": "FV Tübinger Modell",
-     "sp": 6,
-     "pk": 6,
-     "sr": "9:13",
+     "t": "SV Fellbach",
+     "sp": 7,
+     "pk": 7,
+     "sr": "11:18",
      "own": false
     },
     {
      "p": 9,
-     "t": "VSG Kleinsteinbach",
-     "sp": 6,
-     "pk": 4,
-     "sr": "9:16",
-     "own": true
+     "t": "USC Konstanz",
+     "sp": 7,
+     "pk": 7,
+     "sr": "9:15",
+     "own": false
     },
     {
      "p": 10,
-     "t": "USC Konstanz",
-     "sp": 6,
-     "pk": 4,
-     "sr": "6:15",
-     "own": false
+     "t": "VSG Kleinsteinbach",
+     "sp": 7,
+     "pk": 6,
+     "sr": "12:18",
+     "own": true
     }
    ],
    "games": [
@@ -167,8 +167,8 @@
      "iso": "2026-11-21",
      "h": false,
      "o": "DJK Schwäbisch Gmünd",
-     "t": "19:00",
-     "sub": "Regionalliga Süd Frauen · Auswärts · Schwäbisch Gmünd-Straßdorf"
+     "r": "3:2",
+     "s": "25:19 · 14:25 · 25:18 · 24:26 · 15:9"
     },
     {
      "d": "29.11.",
@@ -541,22 +541,22 @@
       {
        "h": "DJK Schwäbisch Gmünd",
        "a": "VSG Kleinsteinbach",
-       "r": null,
-       "t": "19:00",
+       "r": "2:3",
+       "t": null,
        "own": true
       },
       {
        "h": "USC Konstanz",
        "a": "TG Biberach",
-       "r": null,
-       "t": "19:30",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
        "h": "SV Fellbach",
        "a": "FV Tübinger Modell",
-       "r": null,
-       "t": "20:00",
+       "r": "1:3",
+       "t": null,
        "own": false
       },
       {
@@ -2054,10 +2054,10 @@
    "league": "Kreisliga Frauen 4",
    "j": false,
    "short": "Damen 3",
-   "pos": 6,
+   "pos": 7,
    "stats": [
     [
-     "6.",
+     "7.",
      "Platz"
     ],
     [
@@ -2104,6 +2104,14 @@
     },
     {
      "p": 5,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
+     "sp": 4,
+     "pk": 6,
+     "sr": "7:8",
+     "own": false
+    },
+    {
+     "p": 6,
      "t": "VSG Ettlingen/Rüppurr 5",
      "sp": 6,
      "pk": 5,
@@ -2111,20 +2119,12 @@
      "own": false
     },
     {
-     "p": 6,
+     "p": 7,
      "t": "VSG Kleinsteinbach 3",
      "sp": 3,
      "pk": 4,
      "sr": "5:6",
      "own": true
-    },
-    {
-     "p": 7,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
-     "sp": 3,
-     "pk": 3,
-     "sr": "4:7",
-     "own": false
     },
     {
      "p": 8,
@@ -2137,9 +2137,9 @@
     {
      "p": 9,
      "t": "SV KA-Beiertheim 7",
-     "sp": 5,
+     "sp": 6,
      "pk": 2,
-     "sr": "5:14",
+     "sr": "6:17",
      "own": false
     }
    ],
@@ -2438,8 +2438,8 @@
       {
        "h": "BADEN VOLLEYS SSC Karlsruhe 3",
        "a": "SV KA-Beiertheim 7",
-       "r": null,
-       "t": "15:00",
+       "r": "3:1",
+       "t": null,
        "own": false,
        "dd": "Sa 21.11."
       },
@@ -2868,33 +2868,49 @@
      "Platz"
     ],
     [
-     "1–6",
+     "1–7",
      "Bilanz"
     ],
     [
-     "9:18",
+     "9:21",
      "Sätze"
     ]
    ],
    "table": [
     {
      "p": 1,
-     "t": "FT 1844 Freiburg 3",
+     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
      "sp": 7,
      "pk": 18,
-     "sr": "19:8",
+     "sr": "20:6",
      "own": false
     },
     {
      "p": 2,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 3",
-     "sp": 6,
-     "pk": 15,
-     "sr": "17:6",
+     "t": "FT 1844 Freiburg 3",
+     "sp": 8,
+     "pk": 18,
+     "sr": "20:11",
      "own": false
     },
     {
      "p": 3,
+     "t": "VfR Merzhausen 1",
+     "sp": 7,
+     "pk": 14,
+     "sr": "16:9",
+     "own": false
+    },
+    {
+     "p": 4,
+     "t": "TV Kappelrodeck",
+     "sp": 7,
+     "pk": 14,
+     "sr": "16:11",
+     "own": false
+    },
+    {
+     "p": 5,
      "t": "VSG Ettlingen/Rüppurr",
      "sp": 7,
      "pk": 12,
@@ -2902,51 +2918,35 @@
      "own": false
     },
     {
-     "p": 4,
-     "t": "VfR Merzhausen 1",
-     "sp": 6,
-     "pk": 11,
-     "sr": "13:9",
-     "own": false
-    },
-    {
-     "p": 5,
-     "t": "TV Kappelrodeck",
-     "sp": 6,
-     "pk": 11,
-     "sr": "13:10",
-     "own": false
-    },
-    {
      "p": 6,
      "t": "FT 1844 Freiburg 4",
-     "sp": 7,
-     "pk": 7,
-     "sr": "10:16",
+     "sp": 8,
+     "pk": 9,
+     "sr": "13:18",
      "own": false
     },
     {
      "p": 7,
-     "t": "SG Sinsheim/Helmstadt",
-     "sp": 5,
-     "pk": 5,
-     "sr": "8:11",
+     "t": "USC Freiburg",
+     "sp": 7,
+     "pk": 6,
+     "sr": "10:18",
      "own": false
     },
     {
      "p": 8,
-     "t": "USC Freiburg",
+     "t": "SG Sinsheim/Helmstadt",
      "sp": 6,
      "pk": 5,
-     "sr": "8:15",
+     "sr": "8:14",
      "own": false
     },
     {
      "p": 9,
      "t": "VSG Kleinsteinbach",
-     "sp": 7,
+     "sp": 8,
      "pk": 5,
-     "sr": "9:18",
+     "sr": "9:21",
      "own": true
     },
     {
@@ -3028,8 +3028,8 @@
      "iso": "2026-11-21",
      "h": false,
      "o": "VfR Merzhausen 1",
-     "t": "19:00",
-     "sub": "Oberliga Baden Männer · Auswärts · Merzhausen"
+     "r": "0:3",
+     "s": "19:25 · 20:25 · 24:26"
     },
     {
      "d": "28.11.",
@@ -3386,29 +3386,29 @@
       {
        "h": "BADEN VOLLEYS SSC Karlsruhe 3",
        "a": "SG Sinsheim/Helmstadt",
-       "r": null,
-       "t": "19:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
        "h": "VfR Merzhausen 1",
        "a": "VSG Kleinsteinbach",
-       "r": null,
-       "t": "19:00",
+       "r": "3:0",
+       "t": null,
        "own": true
       },
       {
        "h": "TV Kappelrodeck",
        "a": "FT 1844 Freiburg 3",
-       "r": null,
-       "t": "20:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
        "h": "USC Freiburg",
        "a": "FT 1844 Freiburg 4",
-       "r": null,
-       "t": "20:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       },
       {
@@ -3923,6 +3923,14 @@
     },
     {
      "p": 2,
+     "t": "TSV Ötisheim",
+     "sp": 8,
+     "pk": 17,
+     "sr": "18:9",
+     "own": false
+    },
+    {
+     "p": 3,
      "t": "VT Hagsfeld",
      "sp": 8,
      "pk": 17,
@@ -3930,7 +3938,7 @@
      "own": false
     },
     {
-     "p": 3,
+     "p": 4,
      "t": "FT Forchheim",
      "sp": 8,
      "pk": 16,
@@ -3938,7 +3946,7 @@
      "own": false
     },
     {
-     "p": 4,
+     "p": 5,
      "t": "NVV-Kader männlich",
      "sp": 9,
      "pk": 15,
@@ -3946,19 +3954,11 @@
      "own": false
     },
     {
-     "p": 5,
-     "t": "TSV Ötisheim",
-     "sp": 7,
-     "pk": 14,
-     "sr": "15:8",
-     "own": false
-    },
-    {
      "p": 6,
      "t": "TV Flehingen",
-     "sp": 5,
+     "sp": 6,
      "pk": 9,
-     "sr": "12:8",
+     "sr": "13:11",
      "own": false
     },
     {
@@ -4394,8 +4394,8 @@
       {
        "h": "TSV Ötisheim",
        "a": "TV Flehingen",
-       "r": null,
-       "t": "15:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       }
      ]
@@ -4876,26 +4876,26 @@
     },
     {
      "p": 5,
-     "t": "VC Mönsheim",
-     "sp": 4,
-     "pk": 5,
-     "sr": "7:9",
+     "t": "SV Langensteinbach",
+     "sp": 5,
+     "pk": 6,
+     "sr": "10:12",
      "own": false
     },
     {
      "p": 6,
-     "t": "VSG Ubstadt/Forst 4",
-     "sp": 4,
-     "pk": 3,
-     "sr": "6:11",
+     "t": "VC Mönsheim",
+     "sp": 5,
+     "pk": 6,
+     "sr": "9:12",
      "own": false
     },
     {
      "p": 7,
-     "t": "SV Langensteinbach",
-     "sp": 3,
-     "pk": 2,
-     "sr": "4:8",
+     "t": "VSG Ubstadt/Forst 4",
+     "sp": 5,
+     "pk": 4,
+     "sr": "8:14",
      "own": false
     },
     {
@@ -5183,16 +5183,16 @@
       {
        "h": "SV Langensteinbach",
        "a": "VC Mönsheim",
-       "r": null,
-       "t": "15:00",
+       "r": "3:2",
+       "t": null,
        "own": false,
        "dd": "Sa 21.11."
       },
       {
        "h": "SV Langensteinbach",
        "a": "VSG Ubstadt/Forst 4",
-       "r": null,
-       "t": "15:00",
+       "r": "3:2",
+       "t": null,
        "own": false,
        "dd": "Sa 21.11."
       },
