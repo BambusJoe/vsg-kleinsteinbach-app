@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-22T15:51:09.729Z",
+ "generatedAt": "2026-11-22T21:27:10.724Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -28,9 +28,9 @@
     {
      "p": 1,
      "t": "VfB Ulm",
-     "sp": 7,
-     "pk": 21,
-     "sr": "21:3",
+     "sp": 8,
+     "pk": 24,
+     "sr": "24:4",
      "own": false
     },
     {
@@ -68,9 +68,9 @@
     {
      "p": 6,
      "t": "TSF Ditzingen",
-     "sp": 6,
+     "sp": 7,
      "pk": 9,
-     "sr": "13:13",
+     "sr": "14:16",
      "own": false
     },
     {
@@ -562,8 +562,8 @@
       {
        "h": "TSF Ditzingen",
        "a": "VfB Ulm",
-       "r": null,
-       "t": "15:00",
+       "r": "1:3",
+       "t": null,
        "own": false,
        "dd": "So 22.11."
       }
@@ -1053,11 +1053,11 @@
      "Platz"
     ],
     [
-     "0–5",
+     "0–6",
      "Bilanz"
     ],
     [
-     "1:15",
+     "2:18",
      "Sätze"
     ]
    ],
@@ -1065,9 +1065,9 @@
     {
      "p": 1,
      "t": "VC Mönsheim",
-     "sp": 6,
-     "pk": 16,
-     "sr": "18:5",
+     "sp": 7,
+     "pk": 19,
+     "sr": "21:5",
      "own": false
     },
     {
@@ -1088,14 +1088,30 @@
     },
     {
      "p": 4,
-     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "t": "FT Forchheim",
      "sp": 6,
-     "pk": 10,
-     "sr": "13:9",
+     "pk": 11,
+     "sr": "13:10",
      "own": false
     },
     {
      "p": 5,
+     "t": "BADEN VOLLEYS SSC Karlsruhe 2",
+     "sp": 7,
+     "pk": 10,
+     "sr": "14:12",
+     "own": false
+    },
+    {
+     "p": 6,
+     "t": "SG Ersingen-Ispringen-Pforzheim",
+     "sp": 5,
+     "pk": 9,
+     "sr": "10:7",
+     "own": false
+    },
+    {
+     "p": 7,
      "t": "VSG Ettlingen/Rüppurr 3",
      "sp": 6,
      "pk": 8,
@@ -1103,35 +1119,19 @@
      "own": false
     },
     {
-     "p": 6,
-     "t": "FT Forchheim",
-     "sp": 5,
-     "pk": 8,
-     "sr": "10:9",
-     "own": false
-    },
-    {
-     "p": 7,
-     "t": "VSG Hochstetten-Liedolsheim",
-     "sp": 5,
-     "pk": 7,
-     "sr": "10:11",
-     "own": false
-    },
-    {
      "p": 8,
-     "t": "SG Ersingen-Ispringen-Pforzheim",
-     "sp": 4,
-     "pk": 6,
-     "sr": "7:6",
+     "t": "VSG Hochstetten-Liedolsheim",
+     "sp": 6,
+     "pk": 7,
+     "sr": "10:14",
      "own": false
     },
     {
      "p": 9,
      "t": "VSG Kleinsteinbach 2",
-     "sp": 5,
+     "sp": 6,
      "pk": 0,
-     "sr": "1:15",
+     "sr": "2:18",
      "own": true
     },
     {
@@ -1195,8 +1195,8 @@
      "iso": "2026-11-22",
      "h": false,
      "o": "SG Ersingen-Ispringen-Pforzheim",
-     "t": "13:00",
-     "sub": "Landesliga Frauen 2 · Auswärts · Pforzheim"
+     "r": "1:3",
+     "s": "19:25 · 25:18 · 22:25 · 17:25"
     },
     {
      "d": "28.11.",
@@ -1524,8 +1524,8 @@
       {
        "h": "FT Forchheim",
        "a": "BADEN VOLLEYS SSC Karlsruhe 2",
-       "r": null,
-       "t": "13:00",
+       "r": "3:1",
+       "t": null,
        "own": false
       },
       {
@@ -1538,8 +1538,8 @@
       {
        "h": "SG Ersingen-Ispringen-Pforzheim",
        "a": "VSG Kleinsteinbach 2",
-       "r": null,
-       "t": "13:00",
+       "r": "3:1",
+       "t": null,
        "own": true
       },
       {
@@ -1552,8 +1552,8 @@
       {
        "h": "VC Mönsheim",
        "a": "VSG Hochstetten-Liedolsheim",
-       "r": null,
-       "t": "13:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       }
      ]
@@ -1562,6 +1562,20 @@
      "no": 6,
      "date": "2026-11-28",
      "matches": [
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
+      {
+       "h": "KIT Sport-Club 2010",
+       "a": "SG Ersingen-Ispringen-Pforzheim",
+       "r": null,
+       "t": "13:00",
+       "own": false
+      },
       {
        "h": "Post Südstadt Karlsruhe",
        "a": "VSG Kleinsteinbach 2",
@@ -1574,20 +1588,6 @@
        "a": "FT Forchheim",
        "r": null,
        "t": "14:00",
-       "own": false
-      },
-      {
-       "h": "KIT Sport-Club 2010",
-       "a": "BADEN VOLLEYS SSC Karlsruhe 2",
-       "r": null,
-       "t": "15:00",
-       "own": false
-      },
-      {
-       "h": "KIT Sport-Club 2010",
-       "a": "SG Ersingen-Ispringen-Pforzheim",
-       "r": null,
-       "t": "15:00",
        "own": false
       },
       {
@@ -2054,10 +2054,10 @@
    "league": "Kreisliga Frauen 4",
    "j": false,
    "short": "Damen 3",
-   "pos": 7,
+   "pos": 8,
    "stats": [
     [
-     "7.",
+     "8.",
      "Platz"
     ],
     [
@@ -2089,9 +2089,9 @@
     {
      "p": 3,
      "t": "Karlsruher TV 2",
-     "sp": 5,
-     "pk": 8,
-     "sr": "9:9",
+     "sp": 6,
+     "pk": 9,
+     "sr": "11:12",
      "own": false
     },
     {
@@ -2120,19 +2120,19 @@
     },
     {
      "p": 7,
+     "t": "TV Bretten 4",
+     "sp": 5,
+     "pk": 4,
+     "sr": "7:13",
+     "own": false
+    },
+    {
+     "p": 8,
      "t": "VSG Kleinsteinbach 3",
      "sp": 3,
      "pk": 4,
      "sr": "5:6",
      "own": true
-    },
-    {
-     "p": 8,
-     "t": "TV Bretten 4",
-     "sp": 4,
-     "pk": 2,
-     "sr": "4:11",
-     "own": false
     },
     {
      "p": 9,
@@ -2453,8 +2453,8 @@
       {
        "h": "Karlsruher TV 2",
        "a": "TV Bretten 4",
-       "r": null,
-       "t": "13:00",
+       "r": "2:3",
+       "t": null,
        "own": false
       }
      ]
@@ -2895,6 +2895,14 @@
     },
     {
      "p": 3,
+     "t": "VSG Ettlingen/Rüppurr",
+     "sp": 8,
+     "pk": 15,
+     "sr": "20:13",
+     "own": false
+    },
+    {
+     "p": 4,
      "t": "VfR Merzhausen 1",
      "sp": 7,
      "pk": 14,
@@ -2902,19 +2910,11 @@
      "own": false
     },
     {
-     "p": 4,
+     "p": 5,
      "t": "TV Kappelrodeck",
      "sp": 7,
      "pk": 14,
      "sr": "16:11",
-     "own": false
-    },
-    {
-     "p": 5,
-     "t": "VSG Ettlingen/Rüppurr",
-     "sp": 7,
-     "pk": 12,
-     "sr": "17:13",
      "own": false
     },
     {
@@ -2952,9 +2952,9 @@
     {
      "p": 10,
      "t": "VSG KiLa",
-     "sp": 5,
+     "sp": 6,
      "pk": 4,
-     "sr": "5:13",
+     "sr": "5:16",
      "own": false
     }
    ],
@@ -3414,8 +3414,8 @@
       {
        "h": "VSG Ettlingen/Rüppurr",
        "a": "VSG KiLa",
-       "r": null,
-       "t": "16:30",
+       "r": "3:0",
+       "t": null,
        "own": false,
        "dd": "So 22.11."
       }
