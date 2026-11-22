@@ -1,6 +1,6 @@
 {
  "season": "2026/27",
- "generatedAt": "2026-11-21T21:24:33.277Z",
+ "generatedAt": "2026-11-22T15:51:09.729Z",
  "club": "VSG Kleinsteinbach",
  "teams": {
   "d1": {
@@ -1046,10 +1046,10 @@
    "league": "Landesliga Frauen 2",
    "j": false,
    "short": "Damen 2",
-   "pos": 10,
+   "pos": 9,
    "stats": [
     [
-     "10.",
+     "9.",
      "Platz"
     ],
     [
@@ -1064,6 +1064,14 @@
    "table": [
     {
      "p": 1,
+     "t": "VC Mönsheim",
+     "sp": 6,
+     "pk": 16,
+     "sr": "18:5",
+     "own": false
+    },
+    {
+     "p": 2,
      "t": "Post Südstadt Karlsruhe",
      "sp": 6,
      "pk": 15,
@@ -1071,19 +1079,11 @@
      "own": false
     },
     {
-     "p": 2,
-     "t": "VC Mönsheim",
-     "sp": 5,
-     "pk": 14,
-     "sr": "15:3",
-     "own": false
-    },
-    {
      "p": 3,
      "t": "KIT Sport-Club 2010",
-     "sp": 5,
-     "pk": 10,
-     "sr": "13:8",
+     "sp": 6,
+     "pk": 11,
+     "sr": "15:11",
      "own": false
     },
     {
@@ -1097,13 +1097,21 @@
     {
      "p": 5,
      "t": "VSG Ettlingen/Rüppurr 3",
-     "sp": 5,
+     "sp": 6,
      "pk": 8,
-     "sr": "11:11",
+     "sr": "11:14",
      "own": false
     },
     {
      "p": 6,
+     "t": "FT Forchheim",
+     "sp": 5,
+     "pk": 8,
+     "sr": "10:9",
+     "own": false
+    },
+    {
+     "p": 7,
      "t": "VSG Hochstetten-Liedolsheim",
      "sp": 5,
      "pk": 7,
@@ -1111,36 +1119,28 @@
      "own": false
     },
     {
-     "p": 7,
-     "t": "FT Forchheim",
-     "sp": 4,
-     "pk": 5,
-     "sr": "7:9",
-     "own": false
-    },
-    {
      "p": 8,
      "t": "SG Ersingen-Ispringen-Pforzheim",
-     "sp": 3,
-     "pk": 3,
-     "sr": "4:6",
+     "sp": 4,
+     "pk": 6,
+     "sr": "7:6",
      "own": false
     },
     {
      "p": 9,
-     "t": "SV KA-Beiertheim 5",
-     "sp": 4,
-     "pk": 0,
-     "sr": "1:12",
-     "own": false
-    },
-    {
-     "p": 10,
      "t": "VSG Kleinsteinbach 2",
      "sp": 5,
      "pk": 0,
      "sr": "1:15",
      "own": true
+    },
+    {
+     "p": 10,
+     "t": "SV KA-Beiertheim 5",
+     "sp": 5,
+     "pk": 0,
+     "sr": "1:15",
+     "own": false
     }
    ],
    "games": [
@@ -1517,8 +1517,8 @@
       {
        "h": "FT Forchheim",
        "a": "SV KA-Beiertheim 5",
-       "r": null,
-       "t": "13:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
@@ -1531,8 +1531,8 @@
       {
        "h": "SG Ersingen-Ispringen-Pforzheim",
        "a": "VSG Ettlingen/Rüppurr 3",
-       "r": null,
-       "t": "13:00",
+       "r": "3:0",
+       "t": null,
        "own": false
       },
       {
@@ -1545,8 +1545,8 @@
       {
        "h": "VC Mönsheim",
        "a": "KIT Sport-Club 2010",
-       "r": null,
-       "t": "13:00",
+       "r": "3:2",
+       "t": null,
        "own": false
       },
       {
@@ -2073,9 +2073,9 @@
     {
      "p": 1,
      "t": "VSG Hochstetten-Liedolsheim 2",
-     "sp": 5,
-     "pk": 15,
-     "sr": "15:0",
+     "sp": 6,
+     "pk": 18,
+     "sr": "18:0",
      "own": false
     },
     {
@@ -2089,9 +2089,9 @@
     {
      "p": 3,
      "t": "Karlsruher TV 2",
-     "sp": 4,
+     "sp": 5,
      "pk": 8,
-     "sr": "9:6",
+     "sr": "9:9",
      "own": false
     },
     {
@@ -2446,8 +2446,8 @@
       {
        "h": "Karlsruher TV 2",
        "a": "VSG Ho-Li",
-       "r": null,
-       "t": "13:00",
+       "r": "0:3",
+       "t": null,
        "own": false
       },
       {
@@ -4845,17 +4845,17 @@
     {
      "p": 1,
      "t": "VSG Ubstadt/Forst 3",
-     "sp": 4,
-     "pk": 12,
-     "sr": "12:4",
+     "sp": 5,
+     "pk": 15,
+     "sr": "15:4",
      "own": false
     },
     {
      "p": 2,
      "t": "TSG Blankenloch 4",
-     "sp": 3,
-     "pk": 8,
-     "sr": "9:3",
+     "sp": 4,
+     "pk": 11,
+     "sr": "12:3",
      "own": false
     },
     {
@@ -4901,9 +4901,9 @@
     {
      "p": 8,
      "t": "KTV Karlsruhe 2",
-     "sp": 5,
+     "sp": 7,
      "pk": 2,
-     "sr": "5:15",
+     "sr": "5:21",
      "own": false
     }
    ],
@@ -5199,15 +5199,15 @@
       {
        "h": "KTV Karlsruhe 2",
        "a": "TSG Blankenloch 4",
-       "r": null,
-       "t": "13:00",
+       "r": "0:3",
+       "t": null,
        "own": false
       },
       {
        "h": "KTV Karlsruhe 2",
        "a": "VSG Ubstadt/Forst 3",
-       "r": null,
-       "t": "13:00",
+       "r": "0:3",
+       "t": null,
        "own": false
       }
      ]
